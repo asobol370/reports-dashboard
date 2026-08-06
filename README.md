@@ -1,6 +1,6 @@
 # Bohatyrov Marketing — Reports Dashboard
 
-Веб-звіти для клієнтів агентства. Публічний host: **https://reports.bogatyrov.pro/**.
+Веб-звіти для клієнтів агентства. Публічний host: **https://reports.bohatyrov.pro/**.
 
 Один клієнт = одна підпапка з незалежним `index.html`, `data.json`, лого. Пароль-гейт на клієнті (client-side, sessionStorage).
 
@@ -16,7 +16,7 @@
 
 ```
 reports-dashboard/
-├── CNAME                   # reports.bogatyrov.pro
+├── CNAME                   # reports.bohatyrov.pro
 ├── README.md               # цей файл
 ├── .gitignore
 └── <client>/               # одна папка на клієнта
