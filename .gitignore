@@ -1,0 +1,24 @@
+# Локальные бэкапы data.json на всякий случай
+*.bak
+*.orig
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Никогда не коммитить credentials Google Ads / Sheets
+# (они лежат в отдельной папке ../api mcc/ и не попадают в этот репо,
+# но на всякий случай — блок-лист)
+google-ads.yaml
+refresh_token.txt
+client_secret_*.json
+developer_token.txt
