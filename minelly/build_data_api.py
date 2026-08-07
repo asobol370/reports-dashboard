@@ -206,6 +206,48 @@ def calc_delta(cur, prev, inverted=False):
     return round((cur - prev) / prev * 100, 2)
 
 
+def daily_chart(metrics_d, atc_d, date_from, date_to):
+    """Возвращает {labels, series} с daily-точками внутри периода [date_from, date_to]."""
+    days = []
+    d = date_from
+    while d <= date_to:
+        days.append(d)
+        d += timedelta(days=1)
+
+    per_day = {fmt(day): {'cost': 0, 'imp': 0, 'clk': 0, 'purchases': 0, 'revenue': 0, 'atc': 0}
+               for day in days}
+
+    for (cid, dstr), row in metrics_d.items():
+        if dstr in per_day:
+            per_day[dstr]['cost']      += row['cost']
+            per_day[dstr]['imp']       += row['imp']
+            per_day[dstr]['clk']       += row['clk']
+            per_day[dstr]['purchases'] += row['purchases']
+            per_day[dstr]['revenue']   += row['revenue']
+    for (cid, dstr), atc in atc_d.items():
+        if dstr in per_day:
+            per_day[dstr]['atc'] += atc
+
+    for stats in per_day.values():
+        stats['ctr']       = (stats['clk'] / stats['imp'] * 100)    if stats['imp'] > 0 else 0
+        stats['cpc']       = (stats['cost'] / stats['clk'])         if stats['clk'] > 0 else 0
+        stats['cpa']       = (stats['cost'] / stats['purchases'])   if stats['purchases'] > 0 else 0
+        stats['avg_check'] = (stats['revenue'] / stats['purchases']) if stats['purchases'] > 0 else 0
+        stats['cr_pur']    = (stats['purchases'] / stats['clk'] * 100) if stats['clk'] > 0 else 0
+        stats['roas']      = (stats['revenue'] / stats['cost'] * 100)  if stats['cost'] > 0 else 0
+
+    labels = [day.strftime('%d.%m') for day in days]
+    keys_map = [
+        ('revenue', 'revenue'), ('spend', 'cost'), ('roas', 'roas'),
+        ('purchases', 'purchases'), ('cpa', 'cpa'), ('avg_check', 'avg_check'),
+        ('cr_purchase', 'cr_pur'), ('cpc', 'cpc'),
+    ]
+    series = {}
+    for out_key, o_key in keys_map:
+        series[out_key] = [round(per_day[fmt(day)][o_key], 2) for day in days]
+    return {'labels': labels, 'series': series}
+
+
 CTYPE = {
     'SEARCH':          'Search',
     'PERFORMANCE_MAX': 'PMax',
@@ -391,24 +433,9 @@ def main():
             prev_agg = aggs[i - 1] if i > 0 else None
             prev_range = ranges[i - 1] if i > 0 else None
             p = build_period(agg, prev_agg, label_fn(a, b), a, b, prev_range, None)
+            # daily chart внутри самого периода (Google Ads style)
+            p['chart'] = daily_chart(metrics_d, atc_d, a, b)
             result.append(p)
-        # заполним chart историей
-        overall_by_key = {
-            'revenue': [a['overall']['revenue'] for a in aggs],
-            'spend':   [a['overall']['cost']    for a in aggs],
-            'roas':    [a['overall']['roas']    for a in aggs],
-            'purchases':[a['overall']['purchases'] for a in aggs],
-            'cpa':     [a['overall']['cpa']     for a in aggs],
-            'avg_check':[a['overall']['avg_check'] for a in aggs],
-            'cr_purchase':[a['overall']['cr_pur'] for a in aggs],
-            'cpc':     [a['overall']['cpc']     for a in aggs],
-        }
-        short_labels = [r['label'].split('-')[0] for r in result]
-        for i, r in enumerate(result):
-            r['chart'] = {
-                'labels': short_labels[:i+1],
-                'series': {k: [round(v[j], 2) for j in range(i + 1)] for k, v in overall_by_key.items()},
-            }
         return result
 
     weekly_out = build_all(weeks, weekly_agg, label_weekly)

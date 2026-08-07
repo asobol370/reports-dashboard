@@ -1,0 +1,84 @@
+{
+  "client": {
+    "name": "Demo Client",
+    "logo": "logo-client.png"
+  },
+  "agency": {
+    "name": "Your Agency",
+    "logo": "logo-agency.png"
+  },
+  "updated_at": "2026-01-15T09:00:00Z",
+  "source": "demo",
+  "weekly": [
+    {
+      "label": "05.01-11.01.2026",
+      "period": {
+        "current":  {"from": "2026-01-05", "to": "2026-01-11"},
+        "previous": null
+      },
+      "kpi": [
+        {"key": "revenue",   "label": "Виручка", "value": 120000, "unit": "грн", "delta_pct": null, "prev": 0, "delta_inverted": false},
+        {"key": "spend",     "label": "Витрати", "value":  10000, "unit": "грн", "delta_pct": null, "prev": 0, "delta_inverted": true},
+        {"key": "roas",      "label": "ROAS",    "value":   1200, "unit": "%",   "delta_pct": null, "prev": 0, "delta_inverted": false},
+        {"key": "purchases", "label": "Покупок", "value":     80, "unit": "",    "delta_pct": null, "prev": 0, "delta_inverted": false}
+      ],
+      "kpi_secondary": [
+        {"key": "cpa",         "label": "CPA (ціна покупки)", "value":  125, "unit": "грн", "delta_pct": null, "prev": 0, "delta_inverted": true},
+        {"key": "avg_check",   "label": "Ср. чек",            "value": 1500, "unit": "грн", "delta_pct": null, "prev": 0, "delta_inverted": false},
+        {"key": "cr_purchase", "label": "Кф. конверсії",      "value":    5, "unit": "%",   "delta_pct": null, "prev": 0, "delta_inverted": false},
+        {"key": "cpc",         "label": "CPC (ціна кліку)",   "value":    6, "unit": "грн", "delta_pct": null, "prev": 0, "delta_inverted": true}
+      ],
+      "chart": {
+        "labels": ["05.01"],
+        "series": {
+          "revenue":     [120000],
+          "spend":       [10000],
+          "roas":        [1200],
+          "purchases":   [80],
+          "cpa":         [125],
+          "avg_check":   [1500],
+          "cr_purchase": [5],
+          "cpc":         [6]
+        }
+      },
+      "metrics": [
+        {"name": "Вартість покупки",  "current":  125,  "previous": 0, "unit": "грн", "delta_inverted": true},
+        {"name": "Ср. чек",           "current": 1500,  "previous": 0, "unit": "грн"},
+        {"name": "Кф. конверсії",     "current":    5,  "previous": 0, "unit": "%"},
+        {"name": "Покази",            "current": 45000, "previous": 0, "unit": ""},
+        {"name": "Кліки",             "current":  1500, "previous": 0, "unit": ""},
+        {"name": "CPC",               "current":     6, "previous": 0, "unit": "грн", "delta_inverted": true},
+        {"name": "CTR",               "current":  3.33, "previous": 0, "unit": "%"},
+        {"name": "Додавання в кошик", "current":   350, "previous": 0, "unit": ""},
+        {"name": "CR → Add to cart",  "current":  23.3, "previous": 0, "unit": "%"},
+        {"name": "Ціна дод. в кошик", "current":  28.6, "previous": 0, "unit": "грн", "delta_inverted": true}
+      ],
+      "campaigns": [
+        {
+          "name": "Demo | Search — Brand | 010126",
+          "type": "Search",
+          "summary": {
+            "spend": 4500, "revenue": 60000, "roas": 1333, "conversions": 40, "delta_roas": 0, "cpa": 112.5
+          },
+          "details": [
+            {"name": "Витрати",             "current":  4500, "previous": 0, "unit": "грн", "delta_inverted": true},
+            {"name": "Покупок",             "current":    40, "previous": 0, "unit": ""},
+            {"name": "Вартість покупки",    "current": 112.5, "previous": 0, "unit": "грн", "delta_inverted": true},
+            {"name": "Ср.чек",              "current":  1500, "previous": 0, "unit": "грн"},
+            {"name": "Виручка",             "current": 60000, "previous": 0, "unit": "грн"},
+            {"name": "Кф. конверсії",       "current":     8, "previous": 0, "unit": "%"},
+            {"name": "ROAS",                "current":  1333, "previous": 0, "unit": "%"},
+            {"name": "Покази",              "current":  6000, "previous": 0, "unit": ""},
+            {"name": "Кліки",               "current":   500, "previous": 0, "unit": ""},
+            {"name": "CPC",                 "current":     9, "previous": 0, "unit": "грн", "delta_inverted": true},
+            {"name": "CTR",                 "current":  8.33, "previous": 0, "unit": "%"},
+            {"name": "Impression Share",    "current":    85, "previous": 0, "unit": "%"},
+            {"name": "Показів у верхній ч.","current":    72, "previous": 0, "unit": "%"},
+            {"name": "Показів на 1-й поз.", "current":    65, "previous": 0, "unit": "%"}
+          ]
+        }
+      ]
+    }
+  ],
+  "monthly": []
+}
