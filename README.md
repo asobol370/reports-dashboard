@@ -11,6 +11,7 @@
 | URL | Клієнт | customer_id | Пароль |
 |---|---|---|---|
 | `/minelly/` | Minelly Coffee (кава) | 1392573958 | `minelly2026` |
+| `/kancbaza/` | Kancbaza (канцтовари) | 7320619864 + Horoshop API + Meta CSV | `kancbaza2026` |
 
 ## Структура репо
 
