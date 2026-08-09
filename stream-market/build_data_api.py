@@ -1,11 +1,11 @@
 """
-Собирает data.json для Minelly-дашборда НАПРЯМУЮ из Google Ads API.
-Все weekly + monthly периоды перезапрашиваются каждый раз — учитывает атрибуцию,
-подтянутую за прошедшие 10-15 дней.
+Собирает data.json для Stream Market дашборда из Google Ads API.
 
-customer_id 1392573958 (minelly.com.ua)
-Purchase conversion_action: "Purchase (google ads)" (id 7568983397)
-Add to cart action: "Minelly (web) add_to_cart" (all_conversions)
+customer_id 9496496231 (Stream-market)
+ВАЖНО: у клиента в primary+included конверсиях три действия
+(Покупка_GAds + GAds_Addtocart + Клик по телефону), поэтому metrics.conversions
+использовать НЕЛЬЗЯ — покупки тянем сегментацией по conversion_action_name.
+Покупки = 'Покупка_GAds'; Add to cart = 'GAds_Addtocart'.
 """
 import json
 import os
@@ -16,12 +16,12 @@ from collections import defaultdict
 sys.path.insert(0, '/Users/vlad/claude_gads/api mcc')
 from google.ads.googleads.client import GoogleAdsClient  # noqa: E402
 
-CID = '1392573958'
+CID = '9496496231'
 CLIENT = GoogleAdsClient.load_from_storage('/Users/vlad/claude_gads/api mcc/google-ads.yaml')
 GS = CLIENT.get_service('GoogleAdsService')
 
 # Клиентские настройки
-FIRST_MONDAY = date(2026, 4, 6)  # первая неделя запуска
+FIRST_MONDAY = date(2025, 9, 8)  # первая неделя запуска
 
 def _last_sunday(today):
     return today - timedelta(days=(today.weekday() + 1) % 7)
@@ -33,11 +33,9 @@ _TODAY = datetime.now().date()
 LAST_SUNDAY_END = _last_sunday(_TODAY)          # weekly — до последней завершённой ВС
 LAST_MONTH_END = _last_finished_month_end(_TODAY)  # monthly — только завершённые месяцы
 
-# Ключевые конверсії клиента = все primary+included actions в кабинете
-# (сейчас активны: "Purchase (google ads)" + "Generate_lead (google ads)").
-# metrics.conversions без сегментации агрегирует их автоматически — не нужно перечислять.
-ATC_ACTION = 'Minelly (web) add_to_cart'
-EXCLUDE_CAMPAIGN_IDS = {23168314448}  # 'Lisskins' — не относится к Minelly
+PURCHASE_ACTION = 'Покупка_GAds'
+ATC_ACTION = 'GAds_Addtocart'
+EXCLUDE_CAMPAIGN_IDS = set()
 
 # ────── период-функции ──────
 
@@ -86,12 +84,11 @@ def label_monthly(a, b):
 # ────── API запросы ──────
 
 def fetch_metrics(date_from, date_to):
-    """Возвращает {(campaign_id, date_str): {cost, imp, clk, purchases, revenue, is, top_is, first_is, name, channel}}.
-    purchases/revenue = metrics.conversions/value (без сегментации) = Purchase + Lead."""
+    """{(campaign_id, date_str): {cost, imp, clk, is, top_is, first_is, name, channel}}.
+    Покупки тут НЕ берём (см. fetch_purchases — сегментация по action)."""
     query = f"""
       SELECT segments.date, campaign.id, campaign.name, campaign.advertising_channel_type,
              metrics.cost_micros, metrics.impressions, metrics.clicks,
-             metrics.conversions, metrics.conversions_value,
              metrics.search_impression_share, metrics.search_top_impression_share,
              metrics.search_absolute_top_impression_share
       FROM campaign
@@ -110,13 +107,29 @@ def fetch_metrics(date_from, date_to):
             'cost': m.cost_micros / 1e6,
             'imp': m.impressions,
             'clk': m.clicks,
-            'purchases': m.conversions,          # = Purchase + Generate_lead (primary+incl)
-            'revenue':   m.conversions_value,
+            'purchases': 0.0,
+            'revenue': 0.0,
             'is': m.search_impression_share if m.search_impression_share else 0,
             'top_is': m.search_top_impression_share if m.search_top_impression_share else 0,
             'first_is': m.search_absolute_top_impression_share if m.search_absolute_top_impression_share else 0,
         }
     return out
+
+
+def fetch_purchases(metrics_daily, date_from, date_to):
+    """Вливает покупки/выручку (только PURCHASE_ACTION) в metrics_daily."""
+    query = f"""
+      SELECT segments.date, campaign.id, segments.conversion_action_name,
+             metrics.conversions, metrics.conversions_value
+      FROM campaign
+      WHERE segments.date BETWEEN '{fmt(date_from)}' AND '{fmt(date_to)}'
+        AND segments.conversion_action_name = '{PURCHASE_ACTION}'
+    """
+    for r in GS.search(customer_id=CID, query=query):
+        key = (r.campaign.id, r.segments.date)
+        if key in metrics_daily:
+            metrics_daily[key]['purchases'] += r.metrics.conversions
+            metrics_daily[key]['revenue'] += r.metrics.conversions_value
 
 
 def fetch_add_to_carts(date_from, date_to):
@@ -417,6 +430,8 @@ def main():
     print(f'Fetching metrics {full_from}..{full_to} ...')
     metrics_d = fetch_metrics(full_from, full_to)
     print(f'  {len(metrics_d)} (campaign, day) rows')
+    print('Fetching purchases (Покупка_GAds) ...')
+    fetch_purchases(metrics_d, full_from, full_to)
     print(f'Fetching add-to-carts ...')
     atc_d = fetch_add_to_carts(full_from, full_to)
     print(f'  {len(atc_d)} (campaign, day) atc rows')
@@ -443,7 +458,7 @@ def main():
     monthly_out = build_all(months, monthly_agg, label_monthly)
 
     out = {
-        'client': {'name': 'Minelly Coffee', 'logo': 'logo-minelly.png'},
+        'client': {'name': 'Stream Market', 'logo': 'logo-streammarket.png'},
         'agency': {'name': 'Bohatyrov Marketing'},
         'updated_at': datetime.now().isoformat() + 'Z',
         'source': 'google_ads_api',

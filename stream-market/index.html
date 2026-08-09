@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Minelly · Звіт Bohatyrov Marketing</title>
+<title>Stream Market · Звіт Bohatyrov Marketing</title>
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -334,9 +334,9 @@
       <a class="nav-item" href="#campaigns"><span class="dot"></span>Кампанії</a>
     </nav>
     <div class="client-card">
-      <div class="logo-wrap"><img src="logo-minelly.png" alt="" id="clientLogo" onerror="this.parentNode.style.display='none'"></div>
+      <div class="logo-wrap"><img src="logo-streammarket.png" alt="" id="clientLogo" onerror="this.parentNode.style.display='none'"></div>
       <div class="info">
-        <div class="info-name" id="clientName">Minelly Coffee</div>
+        <div class="info-name" id="clientName">Stream Market</div>
         <div class="info-role">Оновлено: <span id="updatedAt">—</span></div>
       </div>
     </div>
@@ -412,8 +412,8 @@
 
 <script>
 // ============= AUTH =============
-const PASSWORD = 'minelly2026';
-const authOk = () => sessionStorage.getItem('mnl_auth') === PASSWORD;
+const PASSWORD = 'streammarket2026';
+const authOk = () => sessionStorage.getItem('smk_auth') === PASSWORD;
 function showApp() {
   document.getElementById('auth').style.display = 'none';
   document.getElementById('app').style.display = 'grid';
@@ -424,7 +424,7 @@ document.getElementById('authForm').addEventListener('submit', e => {
   e.preventDefault();
   const p = document.getElementById('pwd').value.trim();
   if (p === PASSWORD) {
-    sessionStorage.setItem('mnl_auth', PASSWORD);
+    sessionStorage.setItem('smk_auth', PASSWORD);
     showApp();
   } else {
     document.getElementById('err').textContent = 'Невірний пароль';
