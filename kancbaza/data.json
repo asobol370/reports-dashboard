@@ -6,7 +6,7 @@
   "agency": {
     "name": "Bohatyrov Marketing"
   },
-  "updated_at": "2026-08-17T13:17:49.381039Z",
+  "updated_at": "2026-08-17T13:24:31.802968Z",
   "source": "horoshop_api + google_ads_api + meta_csv",
   "weekly": [
     {
@@ -4302,9 +4302,9 @@
         {
           "key": "ad_spend",
           "label": "Витрати на рекламу",
-          "value": 35347.78,
+          "value": 46337.94,
           "unit": "грн",
-          "delta_pct": -24.27,
+          "delta_pct": -0.72,
           "prev": 46673.64,
           "delta_inverted": true
         },
@@ -4320,18 +4320,18 @@
         {
           "key": "blended_roas",
           "label": "Blended ROAS",
-          "value": 2089.0,
+          "value": 1593.54,
           "unit": "%",
-          "delta_pct": -5.34,
+          "delta_pct": -27.79,
           "prev": 2206.84,
           "delta_inverted": false
         },
         {
           "key": "cpo",
           "label": "Вартість замовлення",
-          "value": 102.46,
+          "value": 134.31,
           "unit": "грн",
-          "delta_pct": 1.2,
+          "delta_pct": 32.66,
           "prev": 101.24,
           "delta_inverted": true
         }
@@ -4384,13 +4384,13 @@
             97.17
           ],
           "ad_spend": [
-            4820.67,
-            5101.75,
-            5127.26,
-            4482.74,
-            5723.24,
-            4744.89,
-            5347.22
+            6390.7,
+            6671.77,
+            6697.28,
+            6052.77,
+            7293.27,
+            6314.92,
+            6917.24
           ],
           "all_orders": [
             91,
@@ -4402,22 +4402,22 @@
             106
           ],
           "blended_roas": [
-            3893.25,
-            2316.54,
-            2609.49,
-            2529.11,
-            2962.42,
-            207.51,
-            111.98
+            2936.78,
+            1771.41,
+            1997.76,
+            1873.08,
+            2324.69,
+            155.92,
+            86.56
           ],
           "cpo": [
-            58.08,
-            83.64,
-            75.4,
-            81.5,
-            78.4,
-            2372.45,
-            1782.41
+            77.0,
+            109.37,
+            98.49,
+            110.05,
+            99.91,
+            3157.46,
+            2305.75
           ]
         }
       },
@@ -4455,7 +4455,7 @@
         },
         {
           "name": "ДРР",
-          "current": 4.79,
+          "current": 6.28,
           "previous": 4.53,
           "unit": "%",
           "delta_inverted": true
@@ -4469,26 +4469,26 @@
         },
         {
           "name": "Витрати Meta Ads",
-          "current": 0,
+          "current": 10990.16,
           "previous": 11125.73,
           "unit": "грн",
           "delta_inverted": true
         },
         {
           "name": "Виручка за кабінетами",
-          "current": 796287.4,
+          "current": 1105733.97,
           "previous": 1035421.38,
           "unit": "грн"
         },
         {
           "name": "Кліки (реклама)",
-          "current": 6049,
+          "current": 9878.0,
           "previous": 9772.0,
           "unit": ""
         },
         {
           "name": "Покази (реклама)",
-          "current": 109687,
+          "current": 227732.0,
           "previous": 261122.0,
           "unit": ""
         }
@@ -4496,12 +4496,18 @@
       "channels": {
         "google": {
           "spend": 35347.78,
-          "purchases": 365.09,
-          "revenue": 796287.4,
+          "purchases": 369.76,
+          "revenue": 814116.44,
           "clicks": 6049,
-          "impressions": 109687
+          "impressions": 109696
         },
-        "meta": null
+        "meta": {
+          "spend": 10990.16,
+          "purchases": 160.0,
+          "revenue": 291617.53,
+          "clicks": 3829.0,
+          "impressions": 118036.0
+        }
       },
       "campaigns": [
         {
@@ -4510,11 +4516,11 @@
           "type": "PMax",
           "summary": {
             "spend": 24753.13,
-            "revenue": 350049.47,
-            "roas": 1414.16,
-            "conversions": 168,
-            "delta_roas": -27.34,
-            "cpa": 147.63
+            "revenue": 357838.0,
+            "roas": 1445.63,
+            "conversions": 170,
+            "delta_roas": -25.72,
+            "cpa": 145.32
           },
           "details": [
             {
@@ -4526,44 +4532,44 @@
             },
             {
               "name": "Покупок",
-              "current": 168,
+              "current": 170,
               "previous": 213,
               "unit": ""
             },
             {
               "name": "Вартість покупки",
-              "current": 147.63,
+              "current": 145.32,
               "previous": 116.0,
               "unit": "грн",
               "delta_inverted": true
             },
             {
               "name": "Ср.чек",
-              "current": 2087.78,
+              "current": 2100.82,
               "previous": 2257.7,
               "unit": "грн"
             },
             {
               "name": "Виручка",
-              "current": 350049.47,
+              "current": 357838.0,
               "previous": 480216.94,
               "unit": "грн"
             },
             {
               "name": "Кф. конверсії",
-              "current": 4.94,
+              "current": 5.02,
               "previous": 5.58,
               "unit": "%"
             },
             {
               "name": "ROAS",
-              "current": 1414.16,
+              "current": 1445.63,
               "previous": 1946.3,
               "unit": "%"
             },
             {
               "name": "Покази",
-              "current": 74959,
+              "current": 74967,
               "previous": 91949,
               "unit": ""
             },
@@ -4589,16 +4595,100 @@
           ]
         },
         {
+          "ch": "meta",
+          "name": "bv | ASC kanctovari | 050626",
+          "type": "Meta",
+          "summary": {
+            "spend": 6514.2,
+            "revenue": 164707.64,
+            "roas": 2528.44,
+            "conversions": 96,
+            "delta_roas": 107.82,
+            "cpa": 67.86
+          },
+          "details": [
+            {
+              "name": "Витрати",
+              "current": 6514.2,
+              "previous": 6611.54,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Покупок",
+              "current": 96,
+              "previous": 54,
+              "unit": ""
+            },
+            {
+              "name": "Вартість покупки",
+              "current": 67.86,
+              "previous": 122.44,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Ср.чек",
+              "current": 1715.7,
+              "previous": 1489.61,
+              "unit": "грн"
+            },
+            {
+              "name": "Виручка",
+              "current": 164707.64,
+              "previous": 80438.98,
+              "unit": "грн"
+            },
+            {
+              "name": "Кф. конверсії",
+              "current": 3.14,
+              "previous": 1.89,
+              "unit": "%"
+            },
+            {
+              "name": "ROAS",
+              "current": 2528.44,
+              "previous": 1216.65,
+              "unit": "%"
+            },
+            {
+              "name": "Покази",
+              "current": 85315.0,
+              "previous": 97506.0,
+              "unit": ""
+            },
+            {
+              "name": "Кліки",
+              "current": 3056.0,
+              "previous": 2864.0,
+              "unit": ""
+            },
+            {
+              "name": "CPC",
+              "current": 2.13,
+              "previous": 2.31,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "CTR",
+              "current": 3.58,
+              "previous": 2.94,
+              "unit": "%"
+            }
+          ]
+        },
+        {
           "ch": "google",
           "name": "BV | Pmax All Feed Max Roas | 150626",
           "type": "PMax",
           "summary": {
             "spend": 5703.6,
-            "revenue": 162277.07,
-            "roas": 2845.17,
-            "conversions": 78,
-            "delta_roas": 5.51,
-            "cpa": 73.24
+            "revenue": 172317.58,
+            "roas": 3021.21,
+            "conversions": 80,
+            "delta_roas": 12.04,
+            "cpa": 71.41
           },
           "details": [
             {
@@ -4610,44 +4700,44 @@
             },
             {
               "name": "Покупок",
-              "current": 78,
+              "current": 80,
               "previous": 70,
               "unit": ""
             },
             {
               "name": "Вартість покупки",
-              "current": 73.24,
+              "current": 71.41,
               "previous": 88.17,
               "unit": "грн",
               "delta_inverted": true
             },
             {
               "name": "Ср.чек",
-              "current": 2083.78,
+              "current": 2157.3,
               "previous": 2377.6,
               "unit": "грн"
             },
             {
               "name": "Виручка",
-              "current": 162277.07,
+              "current": 172317.58,
               "previous": 165917.97,
               "unit": "грн"
             },
             {
               "name": "Кф. конверсії",
-              "current": 8.75,
+              "current": 8.97,
               "previous": 7.99,
               "unit": "%"
             },
             {
               "name": "ROAS",
-              "current": 2845.17,
+              "current": 3021.21,
               "previous": 2696.55,
               "unit": "%"
             },
             {
               "name": "Покази",
-              "current": 12797,
+              "current": 12798,
               "previous": 17443,
               "unit": ""
             },
@@ -4752,6 +4842,174 @@
               "name": "CTR",
               "current": 3.92,
               "previous": 3.04,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "ch": "meta",
+          "name": "bv | shkola | 010826",
+          "type": "Meta",
+          "summary": {
+            "spend": 2746.07,
+            "revenue": 72557.34,
+            "roas": 2642.22,
+            "conversions": 36,
+            "delta_roas": 32.59,
+            "cpa": 76.28
+          },
+          "details": [
+            {
+              "name": "Витрати",
+              "current": 2746.07,
+              "previous": 2755.12,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Покупок",
+              "current": 36,
+              "previous": 25,
+              "unit": ""
+            },
+            {
+              "name": "Вартість покупки",
+              "current": 76.28,
+              "previous": 110.2,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Ср.чек",
+              "current": 2015.48,
+              "previous": 2196.09,
+              "unit": "грн"
+            },
+            {
+              "name": "Виручка",
+              "current": 72557.34,
+              "previous": 54902.29,
+              "unit": "грн"
+            },
+            {
+              "name": "Кф. конверсії",
+              "current": 7.36,
+              "previous": 4.71,
+              "unit": "%"
+            },
+            {
+              "name": "ROAS",
+              "current": 2642.22,
+              "previous": 1992.74,
+              "unit": "%"
+            },
+            {
+              "name": "Покази",
+              "current": 21662.0,
+              "previous": 20088.0,
+              "unit": ""
+            },
+            {
+              "name": "Кліки",
+              "current": 489.0,
+              "previous": 531.0,
+              "unit": ""
+            },
+            {
+              "name": "CPC",
+              "current": 5.62,
+              "previous": 5.19,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "CTR",
+              "current": 2.26,
+              "previous": 2.64,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "ch": "meta",
+          "name": "bv | dynamic remarketing | 150326",
+          "type": "Meta",
+          "summary": {
+            "spend": 1729.89,
+            "revenue": 54352.55,
+            "roas": 3141.97,
+            "conversions": 28,
+            "delta_roas": 71.61,
+            "cpa": 61.78
+          },
+          "details": [
+            {
+              "name": "Витрати",
+              "current": 1729.89,
+              "previous": 1759.07,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Покупок",
+              "current": 28,
+              "previous": 20,
+              "unit": ""
+            },
+            {
+              "name": "Вартість покупки",
+              "current": 61.78,
+              "previous": 87.95,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Ср.чек",
+              "current": 1941.16,
+              "previous": 1610.36,
+              "unit": "грн"
+            },
+            {
+              "name": "Виручка",
+              "current": 54352.55,
+              "previous": 32207.12,
+              "unit": "грн"
+            },
+            {
+              "name": "Кф. конверсії",
+              "current": 9.86,
+              "previous": 6.47,
+              "unit": "%"
+            },
+            {
+              "name": "ROAS",
+              "current": 3141.97,
+              "previous": 1830.92,
+              "unit": "%"
+            },
+            {
+              "name": "Покази",
+              "current": 11059.0,
+              "previous": 11192.0,
+              "unit": ""
+            },
+            {
+              "name": "Кліки",
+              "current": 284.0,
+              "previous": 309.0,
+              "unit": ""
+            },
+            {
+              "name": "CPC",
+              "current": 6.09,
+              "previous": 5.69,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "CTR",
+              "current": 2.57,
+              "previous": 2.76,
               "unit": "%"
             }
           ]
