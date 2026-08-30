@@ -332,6 +332,7 @@
       <a class="nav-item active" href="#overview"><span class="dot"></span>Огляд</a>
       <a class="nav-item" href="#metrics"><span class="dot"></span>Метрики</a>
       <a class="nav-item" href="#campaigns"><span class="dot"></span>Кампанії</a>
+        <a class="nav-item" href="#nonbrand" id="nonbrandNav" style="display:none"><span class="dot"></span>Небренд</a>
     </nav>
     <div class="client-card">
       <div class="logo-wrap"><img src="logo-minelly.png" alt="" id="clientLogo" onerror="this.parentNode.style.display='none'"></div>
@@ -405,6 +406,27 @@
         <div class="section-note">Клікніть на рядок для детальних метрик</div>
       </div>
       <div id="campaignsList"></div>
+    </div>
+
+    <!-- NONBRAND (monthly only) -->
+    <div class="section" id="nonbrand" style="display:none">
+      <div class="section-header">
+        <div class="section-title">Небрендовий трафік</div>
+        <div class="section-note">без бренд-кампанії · Δ vs попередній період</div>
+      </div>
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>Показник</th>
+              <th class="right">Поточний</th>
+              <th class="right">Попередній</th>
+              <th class="right">Δ</th>
+            </tr>
+          </thead>
+          <tbody id="nonbrandBody"></tbody>
+        </table>
+      </div>
     </div>
 
   </main>
@@ -498,7 +520,7 @@ async function init() {
     });
   });
   // Auto-highlight on scroll
-  const sections = document.querySelectorAll('#overview, #metrics, #campaigns');
+  const sections = document.querySelectorAll('#overview, #metrics, #campaigns, #nonbrand');
   const io = new IntersectionObserver((entries) => {
     entries.forEach(en => {
       if (en.isIntersecting) {
@@ -537,6 +559,10 @@ function render() {
   renderKpi(d.kpi_secondary || [], 'kpiSecondaryGrid');
   renderMetrics(d.metrics);
   renderCampaigns(d.campaigns);
+  const nbShow = currentPeriod === 'monthly' && d.nonbrand && d.nonbrand.metrics && d.nonbrand.metrics.length;
+  document.getElementById('nonbrand').style.display = nbShow ? '' : 'none';
+  document.getElementById('nonbrandNav').style.display = nbShow ? '' : 'none';
+  if (nbShow) renderMetrics(d.nonbrand.metrics, 'nonbrandBody');
   renderChart(d.chart, d);
 }
 
@@ -609,8 +635,8 @@ function renderGoals(goals) {
   }).join('');
 }
 
-function renderMetrics(metrics) {
-  document.getElementById('metricsBody').innerHTML = metrics.map(m => {
+function renderMetrics(metrics, targetId = 'metricsBody') {
+  document.getElementById(targetId).innerHTML = metrics.map(m => {
     const delta = ((m.current - m.previous) / m.previous) * 100;
     const dt = deltaClass(delta, m.delta_inverted);
     return `

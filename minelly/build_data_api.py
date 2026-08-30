@@ -37,6 +37,11 @@ LAST_MONTH_END = _last_finished_month_end(_TODAY)  # monthly — только з
 # (сейчас активны: "Purchase (google ads)" + "Generate_lead (google ads)").
 # metrics.conversions без сегментации агрегирует их автоматически — не нужно перечислять.
 ATC_ACTION = 'Minelly (web) add_to_cart'
+BRAND_MARKER = 'brand'  # кампанія з 'brand' у назві = брендова
+
+
+def is_brand(name):
+    return BRAND_MARKER in (name or '').lower()
 EXCLUDE_CAMPAIGN_IDS = {23168314448}  # 'Lisskins' — не относится к Minelly
 
 # ────── период-функции ──────
@@ -196,7 +201,15 @@ def agg_period(metrics_daily, atc_daily, campaign_ids, date_from, date_to):
     derive(overall)
     for b in by_camp.values(): derive(b)
 
-    return {'overall': overall, 'by_camp': by_camp}
+    # nonbrand — сумма по всем кампаниям без бренда
+    nonbrand = {'cost': 0, 'imp': 0, 'clk': 0, 'purchases': 0, 'revenue': 0, 'atc': 0}
+    for b in by_camp.values():
+        if is_brand(b['name']):
+            continue
+        for k in nonbrand: nonbrand[k] += b[k]
+    derive(nonbrand)
+
+    return {'overall': overall, 'by_camp': by_camp, 'nonbrand': nonbrand}
 
 
 # ────── билд периодов ──────
@@ -377,6 +390,34 @@ def build_period(agg_cur, agg_prev, label, date_from, date_to, prev_range, all_l
         })
     camps.sort(key=lambda x: -x['summary']['spend'])
 
+    # небрендовий трафік — динаміка без бренд-кампанії
+    nb = agg_cur.get('nonbrand')
+    nbp = agg_prev.get('nonbrand') if agg_prev else None
+
+    def nbm(name, o_key, unit, inverted=False, as_int=False):
+        cur = nb.get(o_key, 0) if nb else 0
+        prv = nbp.get(o_key, 0) if nbp else 0
+        if as_int:
+            cur, prv = int(round(cur)), int(round(prv))
+        else:
+            cur, prv = round(cur, 2), round(prv, 2)
+        return {'name': name, 'current': cur, 'previous': prv, 'unit': unit,
+                **({'delta_inverted': True} if inverted else {})}
+
+    nonbrand_metrics = [
+        nbm('Витрати',          'cost',      'грн', True),
+        nbm('Виручка',          'revenue',   'грн'),
+        nbm('ROAS',             'roas',      '%'),
+        nbm('Покупок',          'purchases', '', as_int=True),
+        nbm('Вартість покупки', 'cpa',       'грн', True),
+        nbm('Ср. чек',          'avg_check', 'грн'),
+        nbm('Кф. конверсії',    'cr_pur',    '%'),
+        nbm('Покази',           'imp',       '', as_int=True),
+        nbm('Кліки',            'clk',       '', as_int=True),
+        nbm('CPC',              'cpc',       'грн', True),
+        nbm('CTR',              'ctr',       '%'),
+    ]
+
     return {
         'label': label,
         'period': {
@@ -387,6 +428,7 @@ def build_period(agg_cur, agg_prev, label, date_from, date_to, prev_range, all_l
         'kpi_secondary': kpi_sec,
         'chart': chart,
         'metrics': metrics,
+        'nonbrand': {'metrics': nonbrand_metrics},
         'campaigns': camps,
     }
 
