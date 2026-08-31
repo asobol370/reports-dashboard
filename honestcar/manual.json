@@ -58,27 +58,6 @@
         "revenue": 2373
       },
       {
-        "week": "01-08.08",
-        "service": "Двигун і турбіни",
-        "source": "maps",
-        "closed": 1,
-        "revenue": 1678
-      },
-      {
-        "week": "01-08.08",
-        "service": "Кондиціонер",
-        "source": "maps",
-        "closed": 1,
-        "revenue": 1678
-      },
-      {
-        "week": "01-08.08",
-        "service": "Сервіс і діагностика",
-        "source": "maps",
-        "closed": 1,
-        "revenue": 1678
-      },
-      {
         "week": "10-15.08",
         "service": "Кондиціонер",
         "source": "ads",
@@ -114,13 +93,6 @@
         "revenue": 2328
       },
       {
-        "week": "10-15.08",
-        "service": "Двигун і турбіни",
-        "source": "maps",
-        "closed": 1,
-        "revenue": 1215
-      },
-      {
         "week": "17-22.08",
         "service": "Сервіс і діагностика",
         "source": "ads",
@@ -133,6 +105,27 @@
         "source": "ads",
         "closed": 1,
         "revenue": 407
+      },
+      {
+        "week": "01-08.08",
+        "service": "Двигун і турбіни",
+        "source": "maps",
+        "closed": 2,
+        "revenue": 3356
+      },
+      {
+        "week": "01-08.08",
+        "service": "Кондиціонер",
+        "source": "maps",
+        "closed": 1,
+        "revenue": 1678
+      },
+      {
+        "week": "10-15.08",
+        "service": "Сервіс і діагностика",
+        "source": "maps",
+        "closed": 1,
+        "revenue": 1215
       }
     ]
   }

@@ -37,19 +37,22 @@ LOCAL_IDS = {6640719757, 6643534495, 6746953657, 6659996110}
 
 # Направления услуг: имя → slugs всех языковых версий (CONTAINS по URL)
 SERVICES = [
-    ('Кузов і фарбування',   ['blacharstwo-i-lakiernictwo', 'kuzovnoy-remont', 'kuzovni-roboti-ta-farbuvannya']),
-    ('Кондиціонер',          ['klimatyzacja-samochodowa', 'avtomobilnyy-konditsioner', 'avtomobilniy-konditsioner']),
-    ('Двигун і турбіни',     ['naprawa-silnika', 'remont-dvigatelya', 'remont-dviguna']),
-    ('АКПП і трансмісія',    ['uklad-napedowy-i-skrzynia-biegow', 'transmissiya-i-korobka-peredach', 'prividna-sistema-ta-korobka-peredach']),
-    ('Гальма',               ['uklad-hamulcowy', 'tormoznaya-sistema', '/galma']),
-    ('Ходова і підвіска',    ['zawieszenie-i-uklad-jezdny', 'podveska-i-khodovaya-chast', 'pidviska-i-khodova-chastina']),
-    ('Сервіс і діагностика', ['serwis-i-diagnostyka', 'servis-i-diagnostika']),
-    ('Рідини і фільтри',     ['wymiana-plynow-i-filtrow', 'zamena-zhidkostey-i-filtrov', 'zmina-ridin-i-filtriv']),
-    ('Кермове управління',   ['uklad-kierowniczy', 'rulevoe-upravlenie', 'rulove-keruvannya']),
-    ('Шини і шиномонтаж',    ['opony-i-wulkanizacja', 'shiny-i-shinomontazh', 'shini-ta-shinomontazh']),
-    ('Електроніка',          ['elektronika-samochodowa', 'avtomobilnaya-elektronika']),
-    ('Евакуатор і допомога', ['pomoc-drogowa-i-laweta', 'dorozhnaya-pomoshch-i-evakuator', 'dorozhnya-dopomoga-ta-evakuator']),
+    # (коротка назва, повна назва як на сайті, slugs усіх мовних версій)
+    ('Кузов і фарбування',   'Кузовні роботи та фарбування',               ['blacharstwo-i-lakiernictwo', 'kuzovnoy-remont', 'kuzovni-roboti-ta-farbuvannya']),
+    ('Кондиціонер',          'Обслуговування автомобільного кондиціонера', ['klimatyzacja-samochodowa', 'avtomobilnyy-konditsioner', 'avtomobilniy-konditsioner']),
+    ('Двигун і турбіни',     'Ремонт двигуна',                             ['naprawa-silnika', 'remont-dvigatelya', 'remont-dviguna']),
+    ('АКПП і трансмісія',    'Привідна система та коробка передач',        ['uklad-napedowy-i-skrzynia-biegow', 'transmissiya-i-korobka-peredach', 'prividna-sistema-ta-korobka-peredach']),
+    ('Гальма',               'Ремонт гальмівної системи',                  ['uklad-hamulcowy', 'tormoznaya-sistema', '/galma']),
+    ('Ходова і підвіска',    'Підвіска і ходова частина',                  ['zawieszenie-i-uklad-jezdny', 'podveska-i-khodovaya-chast', 'pidviska-i-khodova-chastina']),
+    ('Сервіс і діагностика', 'Сервіс і діагностика',                       ['serwis-i-diagnostyka', 'servis-i-diagnostika']),
+    ('Рідини і фільтри',     'Заміна рідин і фільтрів',                    ['wymiana-plynow-i-filtrow', 'zamena-zhidkostey-i-filtrov', 'zmina-ridin-i-filtriv']),
+    ('Кермове управління',   'Рульове керування',                          ['uklad-kierowniczy', 'rulevoe-upravlenie', 'rulove-keruvannya']),
+    ('Шини і шиномонтаж',    'Шини та шиномонтаж',                         ['opony-i-wulkanizacja', 'shiny-i-shinomontazh', 'shini-ta-shinomontazh']),
+    ('Електроніка',          'Автомобільна електроніка',                   ['elektronika-samochodowa', 'avtomobilnaya-elektronika', 'avtomobilna-elektronika']),
+    ('Евакуатор і допомога', 'Дорожня допомога та евакуатор',              ['pomoc-drogowa-i-laweta', 'dorozhnaya-pomoshch-i-evakuator', 'dorozhnya-dopomoga-ta-evakuator']),
 ]
+
+FULL_NAMES = {name: full for name, full, _s in SERVICES}
 
 MONTH_NAMES = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень',
                'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень']
@@ -183,7 +186,7 @@ def classify_url(url):
         return 'VIP-лендінги'
     if 'google.com/maps' in u:
         return 'Google Maps'
-    for name, slugs in SERVICES:
+    for name, _full, slugs in SERVICES:
         if any(s in u for s in slugs):
             return name
     return 'Не розподілено'
@@ -361,7 +364,7 @@ def build_services(landing_cur, manual_entries, month_totals=None):
         c[src] += rec.get('closed', 0) or 0
         c['revenue'] += rec.get('revenue', 0) or 0
 
-    service_order = [n for n, _ in SERVICES] + ['VIP-лендінги', 'Не розподілено']
+    service_order = [n for n, _f, _s in SERVICES] + ['VIP-лендінги', 'Не розподілено']
     all_names = [n for n in service_order if n in spend or n in closed]
     all_names += [n for n in closed if n not in service_order]
 
@@ -381,7 +384,7 @@ def build_services(landing_cur, manual_entries, month_totals=None):
             elif has_close and not has_spend:
                 flag = 'no_spend'
         rows.append({
-            'name': n,
+            'name': n, 'full': FULL_NAMES.get(n, n),
             'spend': round(sp['spend'], 2), 'clicks': int(sp['clicks']), 'conv': round(sp['conv'], 1),
             'closed_ads': cl['ads'], 'closed_maps': cl['maps'], 'revenue': round(cl['revenue'], 2),
             'avg_check': round(sdiv(cl['revenue'], total_closed), 2) if total_closed else None,

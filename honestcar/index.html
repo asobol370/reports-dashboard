@@ -690,7 +690,7 @@ window.toggleCamp = toggleCamp;
 function renderServices(services) {
   document.getElementById('servicesBody').innerHTML = services.map(s => `
     <tr${s.name === 'Не розподілено' ? ' class="svc-undist"' : ''}>
-      <td class="name">${escapeHtml(s.name)}${s.flag ? `<span class="svc-flag ${s.flag}">${s.flag === 'no_close' ? 'без закриттів' : 'без реклами'}</span>` : ''}</td>
+      <td class="name" title="${escapeHtml(s.full || s.name)}">${escapeHtml(s.name)}${s.flag ? `<span class="svc-flag ${s.flag}">${s.flag === 'no_close' ? 'без закриттів' : 'без реклами'}</span>` : ''}</td>
       <td class="right num">${s.spend ? fmtNum(s.spend) + ' ' + CUR() : '—'}</td>
       <td class="right num">${s.clicks ? fmtNum(s.clicks) : '—'}</td>
       <td class="right num">${s.conv ? fmtNum(s.conv) : '—'}</td>
