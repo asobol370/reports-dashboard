@@ -309,6 +309,8 @@
 
 <style>
   /* honestcar extras */
+  #kpiGrid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  @media (max-width: 1000px) { #kpiGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   .head-table td.name { max-width: 260px; }
   tr.manual-row td.name::after { content: ' ✎'; color: var(--text-soft); font-size: 11px; }
   tr.missing td { color: var(--text-soft); }
