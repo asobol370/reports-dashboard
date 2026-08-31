@@ -25,6 +25,9 @@ FIRST_MONTH_DAY = date(2026, 1, 1)
 _TODAY = datetime.now().date()
 LAST_DAY = _TODAY  # включаємо поточний місяць частково — фіналізується наступною пересборкою
 
+# Конверсии с другого сайта — не показываем в звіті
+EXCLUDE_CONV_IDS = {6657394267}  # 'honestcar.pro GA4 (web) Отправка форм Zapisatsja_PL'
+
 # Локальные конверсионные действия (карты, звонки из smart, визиты в СТО)
 LOCAL_IDS = {6640719757, 6643534495, 6746953657, 6660096857, 6660094739, 6660094949, 6659996110}
 
@@ -292,6 +295,8 @@ def conv_rows(cur_map, prev_map, names):
     ids = set(cur_map) | set(prev_map or {})
     web, local = [], []
     for aid in ids:
+        if aid in EXCLUDE_CONV_IDS:
+            continue
         cv = round(cur_map.get(aid, 0), 1)
         pv = round((prev_map or {}).get(aid, 0), 1)
         if cv == 0 and pv == 0:

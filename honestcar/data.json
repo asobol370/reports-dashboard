@@ -7,7 +7,7 @@
     "name": "Bohatyrov Marketing"
   },
   "currency": "zł",
-  "updated_at": "2026-08-31T13:44:20.369592Z",
+  "updated_at": "2026-08-31T13:50:23.129702Z",
   "source": "google_ads_api + manual.json",
   "monthly": [
     {
@@ -256,12 +256,6 @@
           {
             "id": 6634101357,
             "name": "honestcar.pro GA4 (web) click_wastapp",
-            "current": 4.0,
-            "previous": 0
-          },
-          {
-            "id": 6657394267,
-            "name": "honestcar.pro GA4 (web) Отправка форм Zapisatsja_PL",
             "current": 4.0,
             "previous": 0
           }
@@ -2216,12 +2210,6 @@
             "id": 6634101357,
             "name": "honestcar.pro GA4 (web) click_wastapp",
             "current": 10.0,
-            "previous": 4.0
-          },
-          {
-            "id": 6657394267,
-            "name": "honestcar.pro GA4 (web) Отправка форм Zapisatsja_PL",
-            "current": 4.0,
             "previous": 4.0
           },
           {
@@ -4448,12 +4436,6 @@
             "previous": 14.0
           },
           {
-            "id": 6657394267,
-            "name": "honestcar.pro GA4 (web) Отправка форм Zapisatsja_PL",
-            "current": 7.0,
-            "previous": 4.0
-          },
-          {
             "id": 7493998265,
             "name": "honestcar.pro GA4 (web) click_book_online",
             "current": 4.0,
@@ -6436,12 +6418,6 @@
             "previous": 29.0
           },
           {
-            "id": 6657394267,
-            "name": "honestcar.pro GA4 (web) Отправка форм Zapisatsja_PL",
-            "current": 14.0,
-            "previous": 7.0
-          },
-          {
             "id": 6634127279,
             "name": "honestcar.pro GA4 (web) click_instagram",
             "current": 13.9,
@@ -8313,12 +8289,6 @@
             "name": "honestcar.pro GA4 (web) click_instagram",
             "current": 11.0,
             "previous": 13.9
-          },
-          {
-            "id": 6657394267,
-            "name": "honestcar.pro GA4 (web) Отправка форм Zapisatsja_PL",
-            "current": 10.0,
-            "previous": 14.0
           },
           {
             "id": 6665748187,
@@ -10575,12 +10545,6 @@
             "previous": 9.0
           },
           {
-            "id": 6657394267,
-            "name": "honestcar.pro GA4 (web) Отправка форм Zapisatsja_PL",
-            "current": 7.0,
-            "previous": 10.0
-          },
-          {
             "id": 7493998265,
             "name": "honestcar.pro GA4 (web) click_book_online",
             "current": 5.0,
@@ -12327,12 +12291,6 @@
             "previous": 1.0
           },
           {
-            "id": 6657394267,
-            "name": "honestcar.pro GA4 (web) Отправка форм Zapisatsja_PL",
-            "current": 3.0,
-            "previous": 7.0
-          },
-          {
             "id": 6634127279,
             "name": "honestcar.pro GA4 (web) click_instagram",
             "current": 3.0,
@@ -13792,9 +13750,9 @@
         {
           "key": "cost",
           "label": "Бюджет",
-          "value": 9711.4,
+          "value": 9726.97,
           "prev": 10913.31,
-          "delta_pct": -11.01,
+          "delta_pct": -10.87,
           "unit": "zł",
           "manual": false,
           "delta_inverted": true
@@ -13864,7 +13822,7 @@
           "label": "CPC",
           "value": 4.9,
           "prev": 5.14,
-          "delta_pct": -4.78,
+          "delta_pct": -4.81,
           "unit": "zł",
           "manual": false,
           "delta_inverted": true
@@ -13873,7 +13831,7 @@
       "head": [
         {
           "name": "Бюджет",
-          "current": 9711.4,
+          "current": 9726.97,
           "previous": 10913.31,
           "unit": "zł",
           "manual": false,
@@ -13881,14 +13839,14 @@
         },
         {
           "name": "Покази",
-          "current": 27056,
+          "current": 27068,
           "previous": 29954,
           "unit": "",
           "manual": false
         },
         {
           "name": "Кліки",
-          "current": 1983,
+          "current": 1987,
           "previous": 2122,
           "unit": "",
           "manual": false
@@ -13903,7 +13861,7 @@
         },
         {
           "name": "CTR",
-          "current": 7.33,
+          "current": 7.34,
           "previous": 7.08,
           "unit": "%",
           "manual": false
@@ -13932,7 +13890,7 @@
         },
         {
           "name": "Ціна конверсії (усі)",
-          "current": 21.44,
+          "current": 21.47,
           "previous": 21.53,
           "unit": "zł",
           "manual": false,
@@ -13947,7 +13905,7 @@
         },
         {
           "name": "Ціна конверсії (основні)",
-          "current": 38.69,
+          "current": 38.75,
           "previous": 33.68,
           "unit": "zł",
           "manual": false,
@@ -13955,7 +13913,7 @@
         },
         {
           "name": "Конверсія сайту",
-          "current": 12.66,
+          "current": 12.63,
           "previous": 15.27,
           "unit": "%",
           "manual": false
@@ -14026,12 +13984,6 @@
             "name": "honestcar.pro GA4 (web) click_telegram",
             "current": 0,
             "previous": 1.0
-          },
-          {
-            "id": 6657394267,
-            "name": "honestcar.pro GA4 (web) Отправка форм Zapisatsja_PL",
-            "current": 0,
-            "previous": 3.0
           }
         ],
         "local": [
@@ -14059,29 +14011,29 @@
         {
           "name": "bv | search | kuzov - pl",
           "type": "Search",
-          "spend": 2580.55,
+          "spend": 2589.43,
           "prev_spend": 1594.98,
           "imp": 4247,
-          "clk": 611,
-          "ctr": 14.39,
+          "clk": 613,
+          "ctr": 14.43,
           "cpc": 4.22,
           "conv": 20.0,
           "prev_conv": 39.0,
           "conv_all": 98.0,
-          "cpa": 129.03,
+          "cpa": 129.47,
           "groups": [
             {
               "name": "naprawa blacharsko-lakiernicza warszawa",
-              "spend": 1541.48,
+              "spend": 1550.36,
               "prev_spend": 922.11,
               "imp": 2320,
-              "clk": 364,
-              "ctr": 15.69,
-              "cpc": 4.23,
+              "clk": 366,
+              "ctr": 15.78,
+              "cpc": 4.24,
               "conv": 13.0,
               "prev_conv": 29.0,
               "conv_all": 71.0,
-              "cpa": 118.58
+              "cpa": 119.26
             },
             {
               "name": "lakierowanie samochodu warszawa - pl",
@@ -14168,9 +14120,9 @@
           "type": "Search",
           "spend": 2494.73,
           "prev_spend": 4066.03,
-          "imp": 2852,
+          "imp": 2854,
           "clk": 304,
-          "ctr": 10.66,
+          "ctr": 10.65,
           "cpc": 8.21,
           "conv": 17.0,
           "prev_conv": 43.0,
@@ -14181,9 +14133,9 @@
               "name": "serwis klimatyzacji samochodowej",
               "spend": 1745.14,
               "prev_spend": 2918.89,
-              "imp": 1813,
+              "imp": 1815,
               "clk": 196,
-              "ctr": 10.81,
+              "ctr": 10.8,
               "cpc": 8.9,
               "conv": 10.0,
               "prev_conv": 36.5,
@@ -14223,7 +14175,7 @@
           "type": "Search",
           "spend": 1535.48,
           "prev_spend": 842.5,
-          "imp": 5783,
+          "imp": 5785,
           "clk": 405,
           "ctr": 7.0,
           "cpc": 3.79,
@@ -14236,9 +14188,9 @@
               "name": "naprawa automatycznych",
               "spend": 462.13,
               "prev_spend": 213.46,
-              "imp": 1758,
+              "imp": 1759,
               "clk": 126,
-              "ctr": 7.17,
+              "ctr": 7.16,
               "cpc": 3.67,
               "conv": 9.0,
               "prev_conv": 2.0,
@@ -14249,9 +14201,9 @@
               "name": "regeneracja turbosprężarki",
               "spend": 400.1,
               "prev_spend": null,
-              "imp": 1360,
+              "imp": 1362,
               "clk": 94,
-              "ctr": 6.91,
+              "ctr": 6.9,
               "cpc": 4.26,
               "conv": 13.0,
               "prev_conv": null,
@@ -14262,9 +14214,9 @@
               "name": "czyszczenie dpf",
               "spend": 273.9,
               "prev_spend": 92.77,
-              "imp": 820,
+              "imp": 819,
               "clk": 74,
-              "ctr": 9.02,
+              "ctr": 9.04,
               "cpc": 3.7,
               "conv": 3.0,
               "prev_conv": 2.0,
@@ -14512,9 +14464,9 @@
           "type": "Search",
           "spend": 1528.91,
           "prev_spend": 460.17,
-          "imp": 2119,
+          "imp": 2120,
           "clk": 235,
-          "ctr": 11.09,
+          "ctr": 11.08,
           "cpc": 6.51,
           "conv": 15.0,
           "prev_conv": 9.0,
@@ -14538,9 +14490,9 @@
               "name": "автосервіс варшава_ua",
               "spend": 450.05,
               "prev_spend": 193.85,
-              "imp": 450,
+              "imp": 451,
               "clk": 81,
-              "ctr": 18.0,
+              "ctr": 17.96,
               "cpc": 5.56,
               "conv": 5.5,
               "prev_conv": 3.0,
@@ -14617,16 +14569,16 @@
         {
           "name": "VB | LocalNotSite PMax UA&RU | 230626",
           "type": "PMax",
-          "spend": 1139.54,
+          "spend": 1146.23,
           "prev_spend": 1195.73,
-          "imp": 10940,
-          "clk": 319,
-          "ctr": 2.92,
+          "imp": 10946,
+          "clk": 321,
+          "ctr": 2.93,
           "cpc": 3.57,
           "conv": 171.0,
           "prev_conv": 210.0,
           "conv_all": 182.0,
-          "cpa": 6.66,
+          "cpa": 6.7,
           "groups": []
         },
         {
@@ -14634,9 +14586,9 @@
           "type": "Search",
           "spend": 393.27,
           "prev_spend": null,
-          "imp": 1011,
+          "imp": 1012,
           "clk": 103,
-          "ctr": 10.19,
+          "ctr": 10.18,
           "cpc": 3.82,
           "conv": 0.0,
           "prev_conv": null,
@@ -14699,9 +14651,9 @@
               "name": "wymiana klocków hamulcowych warszawa",
               "spend": 10.31,
               "prev_spend": null,
-              "imp": 12,
+              "imp": 13,
               "clk": 2,
-              "ctr": 16.67,
+              "ctr": 15.38,
               "cpc": 5.16,
               "conv": 0.0,
               "prev_conv": null,
@@ -14899,8 +14851,8 @@
       "services": [
         {
           "name": "Кузов і фарбування",
-          "spend": 2234.48,
-          "clicks": 533,
+          "spend": 2243.36,
+          "clicks": 535,
           "conv": 12.0,
           "closed": 0,
           "revenue": 0,
@@ -14932,8 +14884,8 @@
         },
         {
           "name": "Google Maps",
-          "spend": 1114.35,
-          "clicks": 312,
+          "spend": 1121.04,
+          "clicks": 314,
           "conv": 168.0,
           "closed": 0,
           "revenue": 0,
@@ -15062,7 +15014,7 @@
       13524.54,
       12873.43,
       10913.31,
-      9711.4
+      9726.97
     ],
     "clients": [
       null,
