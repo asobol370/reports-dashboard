@@ -7,7 +7,7 @@
     "name": "Bohatyrov Marketing"
   },
   "currency": "zł",
-  "updated_at": "2026-08-31T14:38:36.242842Z",
+  "updated_at": "2026-08-31T14:55:19.042215Z",
   "source": "google_ads_api + manual.json",
   "monthly": [
     {
@@ -293,6 +293,8 @@
         {
           "name": "bv | search | общие - ru+ua | 170226",
           "type": "Search",
+          "desc": "Російсько- та україномовний трафік, усі послуги",
+          "general": true,
           "spend": 2989.27,
           "prev_spend": null,
           "imp": 2468,
@@ -548,6 +550,8 @@
         {
           "name": "bv | search ru&au | high&mid-cost | 180226",
           "type": "Search",
+          "desc": null,
+          "general": false,
           "spend": 2218.84,
           "prev_spend": null,
           "imp": 2063,
@@ -1139,6 +1143,8 @@
         {
           "name": "bv | search | общие - pl | 170226",
           "type": "Search",
+          "desc": "Загальні запити польською",
+          "general": true,
           "spend": 1915.69,
           "prev_spend": null,
           "imp": 4045,
@@ -1310,6 +1316,8 @@
         {
           "name": "search-poslugi2-pl",
           "type": "Search",
+          "desc": "Складний ремонт: двигун, АКПП, турбіни, зчеплення",
+          "general": false,
           "spend": 1601.1,
           "prev_spend": null,
           "imp": 6456,
@@ -1579,6 +1587,8 @@
         {
           "name": "bv | search | kuzov - pl",
           "type": "Search",
+          "desc": "Кузовні роботи та фарбування",
+          "general": false,
           "spend": 1518.13,
           "prev_spend": null,
           "imp": 2259,
@@ -1694,6 +1704,8 @@
         {
           "name": "local-pmax-ru-ua-New",
           "type": "PMax",
+          "desc": null,
+          "general": false,
           "spend": 1468.6,
           "prev_spend": null,
           "imp": 11241,
@@ -1710,6 +1722,8 @@
         {
           "name": "bv | search | serwis_opon | 031025",
           "type": "Search",
+          "desc": null,
+          "general": false,
           "spend": 1277.03,
           "prev_spend": null,
           "imp": 5061,
@@ -1853,6 +1867,8 @@
         {
           "name": "bv | search ru&ua | low-cost | 1102226",
           "type": "Search",
+          "desc": null,
+          "general": false,
           "spend": 193.68,
           "prev_spend": null,
           "imp": 350,
@@ -2122,6 +2138,8 @@
         {
           "name": "bv | search | klima - pl | 27.05",
           "type": "Search",
+          "desc": "Обслуговування кондиціонера",
+          "general": false,
           "spend": 177.64,
           "prev_spend": null,
           "imp": 401,
@@ -2181,6 +2199,8 @@
         {
           "name": "bv | search | klima - ru-ua | 27.05",
           "type": "Search",
+          "desc": "Обслуговування кондиціонера",
+          "general": false,
           "spend": 117.35,
           "prev_spend": null,
           "imp": 154,
@@ -2282,6 +2302,8 @@
         {
           "name": "BV | Search | ШМ ru&ua | 200326",
           "type": "Search",
+          "desc": null,
+          "general": false,
           "spend": 47.21,
           "prev_spend": null,
           "imp": 117,
@@ -2355,6 +2377,8 @@
         {
           "name": "bv | local ru&ua | dgen test | 280526",
           "type": "DEMAND_GEN",
+          "desc": null,
+          "general": false,
           "spend": 0.0,
           "prev_spend": null,
           "imp": 49,
@@ -2396,7 +2420,24 @@
           "revenue": 0.0,
           "avg_check": null,
           "romi": null,
-          "flag": null
+          "flag": null,
+          "children": [
+            {
+              "name": "Інші сторінки (ціни, контакти тощо)",
+              "spend": 6203.34,
+              "clicks": 1456
+            },
+            {
+              "name": "Головна сторінка (загальні запити)",
+              "spend": 5773.21,
+              "clicks": 866
+            },
+            {
+              "name": "Дзвінки прямо з оголошень (без посадкової)",
+              "spend": 1547.98,
+              "clicks": 140
+            }
+          ]
         }
       ]
     },
@@ -2692,6 +2733,8 @@
         {
           "name": "bv | search | общие - ru+ua | 170226",
           "type": "Search",
+          "desc": "Російсько- та україномовний трафік, усі послуги",
+          "general": true,
           "spend": 2430.17,
           "prev_spend": 2989.27,
           "imp": 2550,
@@ -2877,6 +2920,8 @@
         {
           "name": "bv | search | общие - pl | 170226",
           "type": "Search",
+          "desc": "Загальні запити польською",
+          "general": true,
           "spend": 1769.54,
           "prev_spend": 1915.69,
           "imp": 4216,
@@ -3048,6 +3093,8 @@
         {
           "name": "search-poslugi2-pl",
           "type": "Search",
+          "desc": "Складний ремонт: двигун, АКПП, турбіни, зчеплення",
+          "general": false,
           "spend": 1732.82,
           "prev_spend": 1601.1,
           "imp": 8521,
@@ -3289,6 +3336,8 @@
         {
           "name": "bv | search | kuzov - pl",
           "type": "Search",
+          "desc": "Кузовні роботи та фарбування",
+          "general": false,
           "spend": 1488.32,
           "prev_spend": 1518.13,
           "imp": 2206,
@@ -3404,6 +3453,8 @@
         {
           "name": "bv | search | klima - pl | 27.05",
           "type": "Search",
+          "desc": "Обслуговування кондиціонера",
+          "general": false,
           "spend": 1348.5,
           "prev_spend": 177.64,
           "imp": 3133,
@@ -3463,6 +3514,8 @@
         {
           "name": "local-pmax-ru-ua-New",
           "type": "PMax",
+          "desc": null,
+          "general": false,
           "spend": 1327.87,
           "prev_spend": 1468.6,
           "imp": 9547,
@@ -3479,6 +3532,8 @@
         {
           "name": "bv | search | klima - ru-ua | 27.05",
           "type": "Search",
+          "desc": "Обслуговування кондиціонера",
+          "general": false,
           "spend": 1105.56,
           "prev_spend": 117.35,
           "imp": 1059,
@@ -3580,6 +3635,8 @@
         {
           "name": "VB | Local PMax RU | 090626",
           "type": "PMax",
+          "desc": null,
+          "general": false,
           "spend": 690.74,
           "prev_spend": null,
           "imp": 5859,
@@ -3596,6 +3653,8 @@
         {
           "name": "bv | search ru&au | high&mid-cost | 180226",
           "type": "Search",
+          "desc": null,
+          "general": false,
           "spend": 605.02,
           "prev_spend": 2218.84,
           "imp": 1072,
@@ -4187,6 +4246,8 @@
         {
           "name": "VB | LocalNotSite PMax UA&RU | 230626",
           "type": "PMax",
+          "desc": "Локальний трафік: карти, маршрути, дзвінки",
+          "general": true,
           "spend": 294.74,
           "prev_spend": null,
           "imp": 2856,
@@ -4203,6 +4264,8 @@
         {
           "name": "bv | local ru&ua | dgen test | 280526",
           "type": "DEMAND_GEN",
+          "desc": null,
+          "general": false,
           "spend": 80.16,
           "prev_spend": 0.0,
           "imp": 1952,
@@ -4257,7 +4320,29 @@
           "revenue": 0.0,
           "avg_check": null,
           "romi": null,
-          "flag": null
+          "flag": null,
+          "children": [
+            {
+              "name": "Інші сторінки (ціни, контакти тощо)",
+              "spend": 5899.07,
+              "clicks": 1405
+            },
+            {
+              "name": "Головна сторінка (загальні запити)",
+              "spend": 5076.6,
+              "clicks": 980
+            },
+            {
+              "name": "Дзвінки прямо з оголошень (без посадкової)",
+              "spend": 1570.61,
+              "clicks": 144
+            },
+            {
+              "name": "Кліки на карту Google",
+              "spend": 274.92,
+              "clicks": 99
+            }
+          ]
         }
       ]
     },
@@ -4553,6 +4638,8 @@
         {
           "name": "bv | search | klima - pl | 27.05",
           "type": "Search",
+          "desc": "Обслуговування кондиціонера",
+          "general": false,
           "spend": 4066.03,
           "prev_spend": 1348.5,
           "imp": 5756,
@@ -4612,6 +4699,8 @@
         {
           "name": "bv | search | общие - pl | 170226",
           "type": "Search",
+          "desc": "Загальні запити польською",
+          "general": true,
           "spend": 1884.0,
           "prev_spend": 1769.54,
           "imp": 4506,
@@ -4769,6 +4858,8 @@
         {
           "name": "bv | search | kuzov - pl",
           "type": "Search",
+          "desc": "Кузовні роботи та фарбування",
+          "general": false,
           "spend": 1594.98,
           "prev_spend": 1488.32,
           "imp": 2286,
@@ -4884,6 +4975,8 @@
         {
           "name": "VB | LocalNotSite PMax UA&RU | 230626",
           "type": "PMax",
+          "desc": "Локальний трафік: карти, маршрути, дзвінки",
+          "general": true,
           "spend": 1195.73,
           "prev_spend": 294.74,
           "imp": 12027,
@@ -4900,6 +4993,8 @@
         {
           "name": "search-poslugi2-pl",
           "type": "Search",
+          "desc": "Складний ремонт: двигун, АКПП, турбіни, зчеплення",
+          "general": false,
           "spend": 842.5,
           "prev_spend": 1732.82,
           "imp": 3167,
@@ -5127,6 +5222,8 @@
         {
           "name": "bv | search ru&au | high&mid-cost | 180226",
           "type": "Search",
+          "desc": null,
+          "general": false,
           "spend": 634.7,
           "prev_spend": 605.02,
           "imp": 925,
@@ -5662,6 +5759,8 @@
         {
           "name": "bv | search | общие - ru+ua | 170226",
           "type": "Search",
+          "desc": "Російсько- та україномовний трафік, усі послуги",
+          "general": true,
           "spend": 460.17,
           "prev_spend": 2430.17,
           "imp": 1019,
@@ -5791,6 +5890,8 @@
         {
           "name": "bv | search | klima - ru-ua | 27.05",
           "type": "Search",
+          "desc": "Обслуговування кондиціонера",
+          "general": false,
           "spend": 235.21,
           "prev_spend": 1105.56,
           "imp": 268,
@@ -6044,7 +6145,29 @@
           "revenue": 0.0,
           "avg_check": null,
           "romi": null,
-          "flag": null
+          "flag": null,
+          "children": [
+            {
+              "name": "Дзвінки прямо з оголошень (без посадкової)",
+              "spend": 1703.04,
+              "clicks": 105
+            },
+            {
+              "name": "Кліки на карту Google",
+              "spend": 1162.9,
+              "clicks": 385
+            },
+            {
+              "name": "Інші сторінки (ціни, контакти тощо)",
+              "spend": 816.7,
+              "clicks": 137
+            },
+            {
+              "name": "Головна сторінка (загальні запити)",
+              "spend": 339.97,
+              "clicks": 74
+            }
+          ]
         }
       ]
     },
@@ -6065,9 +6188,9 @@
         {
           "key": "cost",
           "label": "Бюджет",
-          "value": 9808.4,
+          "value": 9831.62,
           "prev": 10913.31,
-          "delta_pct": -10.12,
+          "delta_pct": -9.91,
           "unit": "zł",
           "manual": false,
           "delta_inverted": true
@@ -6085,9 +6208,9 @@
         {
           "key": "client_price",
           "label": "Ціна клієнта",
-          "value": 408.68,
+          "value": 409.65,
           "prev": 259.84,
-          "delta_pct": 57.28,
+          "delta_pct": 57.65,
           "unit": "zł",
           "manual": true,
           "delta_inverted": true
@@ -6125,9 +6248,9 @@
         {
           "key": "romi",
           "label": "ROMI",
-          "value": 383.32,
+          "value": 382.18,
           "prev": 429.32,
-          "delta_pct": -10.71,
+          "delta_pct": -10.98,
           "unit": "%",
           "manual": true,
           "delta_inverted": false
@@ -6137,7 +6260,7 @@
           "label": "CPC",
           "value": 4.89,
           "prev": 5.14,
-          "delta_pct": -4.83,
+          "delta_pct": -4.89,
           "unit": "zł",
           "manual": false,
           "delta_inverted": true
@@ -6146,7 +6269,7 @@
       "head": [
         {
           "name": "Бюджет",
-          "current": 9808.4,
+          "current": 9831.62,
           "previous": 10913.31,
           "unit": "zł",
           "manual": false,
@@ -6154,14 +6277,14 @@
         },
         {
           "name": "Покази",
-          "current": 27178,
+          "current": 27212,
           "previous": 29954,
           "unit": "",
           "manual": false
         },
         {
           "name": "Кліки",
-          "current": 2004,
+          "current": 2010,
           "previous": 2122,
           "unit": "",
           "manual": false
@@ -6176,7 +6299,7 @@
         },
         {
           "name": "CTR",
-          "current": 7.37,
+          "current": 7.39,
           "previous": 7.08,
           "unit": "%",
           "manual": false
@@ -6190,7 +6313,7 @@
         },
         {
           "name": "Ціна клієнта",
-          "current": 408.68,
+          "current": 409.65,
           "previous": 259.84,
           "unit": "zł",
           "manual": true,
@@ -6205,7 +6328,7 @@
         },
         {
           "name": "Ціна конверсії (усі)",
-          "current": 21.6,
+          "current": 21.66,
           "previous": 21.53,
           "unit": "zł",
           "manual": false,
@@ -6220,7 +6343,7 @@
         },
         {
           "name": "Ціна конверсії (основні)",
-          "current": 38.92,
+          "current": 39.01,
           "previous": 33.68,
           "unit": "zł",
           "manual": false,
@@ -6228,7 +6351,7 @@
         },
         {
           "name": "Конверсія сайту",
-          "current": 12.57,
+          "current": 12.54,
           "previous": 15.27,
           "unit": "%",
           "manual": false
@@ -6256,7 +6379,7 @@
         },
         {
           "name": "ROMI",
-          "current": 383.32,
+          "current": 382.18,
           "previous": 429.32,
           "unit": "%",
           "manual": true
@@ -6328,25 +6451,27 @@
         {
           "name": "bv | search | kuzov - pl",
           "type": "Search",
-          "spend": 2610.65,
+          "desc": "Кузовні роботи та фарбування",
+          "general": false,
+          "spend": 2615.52,
           "prev_spend": 1594.98,
-          "imp": 4262,
-          "clk": 618,
+          "imp": 4268,
+          "clk": 619,
           "ctr": 14.5,
-          "cpc": 4.22,
+          "cpc": 4.23,
           "conv": 20.0,
           "prev_conv": 39.0,
           "conv_all": 98.0,
-          "cpa": 130.53,
+          "cpa": 130.78,
           "prev_cpa": 40.9,
           "groups": [
             {
               "name": "naprawa blacharsko-lakiernicza warszawa",
               "spend": 1567.55,
               "prev_spend": 922.11,
-              "imp": 2332,
+              "imp": 2335,
               "clk": 370,
-              "ctr": 15.87,
+              "ctr": 15.85,
               "cpc": 4.24,
               "conv": 13.0,
               "prev_conv": 29.0,
@@ -6358,9 +6483,9 @@
               "name": "lakierowanie samochodu warszawa - pl",
               "spend": 634.2,
               "prev_spend": 385.21,
-              "imp": 1120,
+              "imp": 1122,
               "clk": 159,
-              "ctr": 14.2,
+              "ctr": 14.17,
               "cpc": 3.99,
               "conv": 4.0,
               "prev_conv": 7.0,
@@ -6370,16 +6495,16 @@
             },
             {
               "name": "naprawa powypadkowa warszawa",
-              "spend": 139.16,
+              "spend": 144.03,
               "prev_spend": 107.93,
-              "imp": 275,
-              "clk": 29,
-              "ctr": 10.55,
+              "imp": 276,
+              "clk": 30,
+              "ctr": 10.87,
               "cpc": 4.8,
               "conv": 1.0,
               "prev_conv": 1.0,
               "conv_all": 5.0,
-              "cpa": 139.16,
+              "cpa": 144.03,
               "prev_cpa": 107.93
             },
             {
@@ -6443,11 +6568,13 @@
         {
           "name": "bv | search | klima - pl | 27.05",
           "type": "Search",
+          "desc": "Обслуговування кондиціонера",
+          "general": false,
           "spend": 2518.7,
           "prev_spend": 4066.03,
-          "imp": 2860,
+          "imp": 2864,
           "clk": 307,
-          "ctr": 10.73,
+          "ctr": 10.72,
           "cpc": 8.2,
           "conv": 17.0,
           "prev_conv": 43.0,
@@ -6459,9 +6586,9 @@
               "name": "serwis klimatyzacji samochodowej",
               "spend": 1757.71,
               "prev_spend": 2918.89,
-              "imp": 1817,
+              "imp": 1820,
               "clk": 197,
-              "ctr": 10.84,
+              "ctr": 10.82,
               "cpc": 8.92,
               "conv": 10.0,
               "prev_conv": 36.5,
@@ -6473,9 +6600,9 @@
               "name": "nabijanie klimatyzacji samochodowe",
               "spend": 558.76,
               "prev_spend": 760.86,
-              "imp": 531,
+              "imp": 533,
               "clk": 74,
-              "ctr": 13.94,
+              "ctr": 13.88,
               "cpc": 7.55,
               "conv": 7.0,
               "prev_conv": 4.5,
@@ -6502,53 +6629,55 @@
         {
           "name": "search-poslugi2-pl",
           "type": "Search",
-          "spend": 1567.59,
+          "desc": "Складний ремонт: двигун, АКПП, турбіни, зчеплення",
+          "general": false,
+          "spend": 1581.94,
           "prev_spend": 842.5,
-          "imp": 5833,
-          "clk": 412,
-          "ctr": 7.06,
+          "imp": 5849,
+          "clk": 416,
+          "ctr": 7.11,
           "cpc": 3.8,
           "conv": 28.0,
           "prev_conv": 13.0,
           "conv_all": 64.0,
-          "cpa": 55.99,
+          "cpa": 56.5,
           "prev_cpa": 64.81,
           "groups": [
             {
               "name": "naprawa automatycznych",
-              "spend": 483.28,
+              "spend": 494.42,
               "prev_spend": 213.46,
-              "imp": 1782,
-              "clk": 128,
-              "ctr": 7.18,
-              "cpc": 3.78,
+              "imp": 1787,
+              "clk": 130,
+              "ctr": 7.27,
+              "cpc": 3.8,
               "conv": 9.0,
               "prev_conv": 2.0,
               "conv_all": 19.0,
-              "cpa": 53.7,
+              "cpa": 54.94,
               "prev_cpa": 106.73
             },
             {
               "name": "regeneracja turbosprężarki",
-              "spend": 400.1,
+              "spend": 403.31,
               "prev_spend": null,
-              "imp": 1373,
-              "clk": 94,
-              "ctr": 6.85,
-              "cpc": 4.26,
+              "imp": 1381,
+              "clk": 96,
+              "ctr": 6.95,
+              "cpc": 4.2,
               "conv": 13.0,
               "prev_conv": null,
               "conv_all": 20.0,
-              "cpa": 30.78,
+              "cpa": 31.02,
               "prev_cpa": null
             },
             {
               "name": "czyszczenie dpf",
               "spend": 273.9,
               "prev_spend": 92.77,
-              "imp": 826,
+              "imp": 829,
               "clk": 74,
-              "ctr": 8.96,
+              "ctr": 8.93,
               "cpc": 3.7,
               "conv": 3.0,
               "prev_conv": 2.0,
@@ -6813,11 +6942,13 @@
         {
           "name": "bv | search | общие - ru+ua | 170226",
           "type": "Search",
+          "desc": "Російсько- та україномовний трафік, усі послуги",
+          "general": true,
           "spend": 1528.91,
           "prev_spend": 460.17,
-          "imp": 2128,
+          "imp": 2130,
           "clk": 235,
-          "ctr": 11.04,
+          "ctr": 11.03,
           "cpc": 6.51,
           "conv": 15.0,
           "prev_conv": 9.0,
@@ -6829,9 +6960,9 @@
               "name": "автосервис варшава_ru",
               "spend": 520.05,
               "prev_spend": 103.73,
-              "imp": 858,
+              "imp": 859,
               "clk": 59,
-              "ctr": 6.88,
+              "ctr": 6.87,
               "cpc": 8.81,
               "conv": 4.0,
               "prev_conv": 2.0,
@@ -6857,9 +6988,9 @@
               "name": "шиномонтаж варшава_ru",
               "spend": 207.55,
               "prev_spend": 51.68,
-              "imp": 523,
+              "imp": 524,
               "clk": 49,
-              "ctr": 9.37,
+              "ctr": 9.35,
               "cpc": 4.24,
               "conv": 0.0,
               "prev_conv": 1.0,
@@ -6928,9 +7059,11 @@
         {
           "name": "VB | LocalNotSite PMax UA&RU | 230626",
           "type": "PMax",
-          "spend": 1150.36,
+          "desc": "Локальний трафік: карти, маршрути, дзвінки",
+          "general": true,
+          "spend": 1150.37,
           "prev_spend": 1195.73,
-          "imp": 10969,
+          "imp": 10973,
           "clk": 323,
           "ctr": 2.94,
           "cpc": 3.56,
@@ -6944,30 +7077,32 @@
         {
           "name": "bv | search | szybkie - pl",
           "type": "Search",
-          "spend": 393.27,
+          "desc": "Швидкі послуги: ТО, олива, гальма, діагностика, ходова",
+          "general": false,
+          "spend": 397.26,
           "prev_spend": null,
-          "imp": 1022,
-          "clk": 103,
-          "ctr": 10.08,
+          "imp": 1024,
+          "clk": 104,
+          "ctr": 10.16,
           "cpc": 3.82,
           "conv": 1.0,
           "prev_conv": null,
           "conv_all": 6.0,
-          "cpa": 393.27,
+          "cpa": 397.26,
           "prev_cpa": null,
           "groups": [
             {
               "name": "wymiana oleju warszawa",
-              "spend": 211.59,
+              "spend": 215.58,
               "prev_spend": null,
-              "imp": 527,
-              "clk": 56,
-              "ctr": 10.63,
+              "imp": 528,
+              "clk": 57,
+              "ctr": 10.8,
               "cpc": 3.78,
               "conv": 1.0,
               "prev_conv": null,
               "conv_all": 5.0,
-              "cpa": 211.59,
+              "cpa": 215.58,
               "prev_cpa": null
             },
             {
@@ -6988,9 +7123,9 @@
               "name": "wymiana amortyzatorów",
               "spend": 19.68,
               "prev_spend": null,
-              "imp": 47,
+              "imp": 48,
               "clk": 5,
-              "ctr": 10.64,
+              "ctr": 10.42,
               "cpc": 3.94,
               "conv": 0.0,
               "prev_conv": null,
@@ -7101,6 +7236,8 @@
         {
           "name": "bv | search | общие - pl | 170226",
           "type": "Search",
+          "desc": "Загальні запити польською",
+          "general": true,
           "spend": 38.92,
           "prev_spend": 1884.0,
           "imp": 104,
@@ -7258,14 +7395,14 @@
         {
           "name": "АКПП і трансмісія",
           "full": "Привідна система та коробка передач",
-          "spend": 512.78,
-          "clicks": 189,
+          "spend": 523.92,
+          "clicks": 191,
           "conv": 3.0,
           "closed_ads": 1,
           "closed_maps": 0,
           "revenue": 407.0,
           "avg_check": 407.0,
-          "romi": -20.6,
+          "romi": -22.3,
           "flag": null
         },
         {
@@ -7284,14 +7421,14 @@
         {
           "name": "Двигун і турбіни",
           "full": "Ремонт двигуна",
-          "spend": 233.58,
-          "clicks": 89,
+          "spend": 235.72,
+          "clicks": 90,
           "conv": 4.0,
           "closed_ads": 0,
           "closed_maps": 2,
           "revenue": 3356.0,
           "avg_check": 1678.0,
-          "romi": 1336.8,
+          "romi": 1323.7,
           "flag": null
         },
         {
@@ -7310,14 +7447,14 @@
         {
           "name": "Рідини і фільтри",
           "full": "Заміна рідин і фільтрів",
-          "spend": 208.43,
-          "clicks": 50,
+          "spend": 212.42,
+          "clicks": 51,
           "conv": 1.0,
           "closed_ads": 2,
           "closed_maps": 0,
           "revenue": 4656.0,
           "avg_check": 2328.0,
-          "romi": 2133.8,
+          "romi": 2091.9,
           "flag": null
         },
         {
@@ -7375,15 +7512,37 @@
         {
           "name": "Не розподілено",
           "full": "Не розподілено",
-          "spend": 4038.21,
-          "clicks": 647,
+          "spend": 4044.16,
+          "clicks": 649,
           "conv": 12.5,
           "closed_ads": 0,
           "closed_maps": 0,
           "revenue": 0.0,
           "avg_check": null,
           "romi": null,
-          "flag": null
+          "flag": null,
+          "children": [
+            {
+              "name": "Дзвінки прямо з оголошень (без посадкової)",
+              "spend": 1763.56,
+              "clicks": 109
+            },
+            {
+              "name": "Кліки на карту Google",
+              "spend": 1125.18,
+              "clicks": 316
+            },
+            {
+              "name": "Головна сторінка (загальні запити)",
+              "spend": 963.82,
+              "clicks": 161
+            },
+            {
+              "name": "Інші сторінки (ціни, контакти тощо)",
+              "spend": 191.6,
+              "clicks": 63
+            }
+          ]
         }
       ]
     }

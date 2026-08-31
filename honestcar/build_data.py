@@ -54,6 +54,26 @@ SERVICES = [
 
 FULL_NAMES = {name: full for name, full, _s in SERVICES}
 
+# Підписи кампаній для клієнта: призначення, а не перелік напрямків
+CAMP_DESCS = [
+    ('kuzov',          'Кузовні роботи та фарбування'),
+    ('klima',          'Обслуговування кондиціонера'),
+    ('poslugi2',       'Складний ремонт: двигун, АКПП, турбіни, зчеплення'),
+    ('szybkie',        'Швидкі послуги: ТО, олива, гальма, діагностика, ходова'),
+    ('общие - ru+ua',  'Російсько- та україномовний трафік, усі послуги'),
+    ('общие - pl',     'Загальні запити польською'),
+    ('LocalNotSite',   'Локальний трафік: карти, маршрути, дзвінки'),
+]
+# Загальні кампанії: закриття по напрямках не атрибутуються, оцінка за ціною конверсії
+GENERAL_MARKERS = ('общие', 'LocalNotSite')
+
+
+def camp_desc(name):
+    for marker, desc in CAMP_DESCS:
+        if marker.lower() in (name or '').lower():
+            return desc
+    return None
+
 MONTH_NAMES = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень',
                'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень']
 MONTH_SHORT = ['Січ', 'Лют', 'Бер', 'Кві', 'Тра', 'Чер', 'Лип', 'Сер', 'Вер', 'Жов', 'Лис', 'Гру']
@@ -335,6 +355,8 @@ def build_campaigns(cur, prev, groups_cur, groups_prev):
             continue
         pb = (prev or {}).get(cid)
         e = {'name': b['name'], 'type': b['type'].replace('PERFORMANCE_MAX', 'PMax').replace('SEARCH', 'Search'),
+             'desc': camp_desc(b['name']),
+             'general': any(m.lower() in b['name'].lower() for m in GENERAL_MARKERS),
              **camp_entry(b, pb), 'groups': []}
         gcur = (groups_cur or {}).get(cid, {})
         gprev = (groups_prev or {}).get(cid, {})
@@ -405,13 +427,38 @@ def build_services(landing_cur, manual_entries, month_totals=None):
         rest_clicks = max(0, int(month_totals.get('clk', 0) - dist_clicks))
         und = next((r for r in rows if r['name'] == 'Не розподілено'), None)
         if und is None and rest_spend > 0:
-            und = {'name': 'Не розподілено', 'spend': 0, 'clicks': 0, 'conv': 0,
+            und = {'name': 'Не розподілено', 'full': 'Не розподілено',
+                   'spend': 0, 'clicks': 0, 'conv': 0,
                    'closed_ads': 0, 'closed_maps': 0, 'revenue': 0,
                    'avg_check': None, 'romi': None, 'flag': None}
             rows.append(und)
         if und is not None:
             und['spend'] = rest_spend
             und['clicks'] = rest_clicks
+            # розбивка: карти / головна / інші сторінки / дзвінки без посадкової
+            maps = {'spend': 0.0, 'clk': 0}
+            home = {'spend': 0.0, 'clk': 0}
+            other = {'spend': 0.0, 'clk': 0}
+            for url, o in (landing_cur or {}).items():
+                k = classify_url(url)
+                if k == 'Google Maps':
+                    maps['spend'] += o['cost']; maps['clk'] += o['clk']
+                elif k == 'Не розподілено':
+                    path = '/' + (url.split('//', 1)[-1].split('/', 1)[1] if '/' in url.split('//', 1)[-1] else '')
+                    path = path.split('?')[0]
+                    if path in ('/', '/ru/', '/uk/', '/ru', '/uk'):
+                        home['spend'] += o['cost']; home['clk'] += o['clk']
+                    else:
+                        other['spend'] += o['cost']; other['clk'] += o['clk']
+            calls_spend = max(0.0, rest_spend - maps['spend'] - home['spend'] - other['spend'])
+            calls_clk = max(0, rest_clicks - maps['clk'] - home['clk'] - other['clk'])
+            children = [
+                {'name': 'Дзвінки прямо з оголошень (без посадкової)', 'spend': round(calls_spend, 2), 'clicks': calls_clk},
+                {'name': 'Кліки на карту Google', 'spend': round(maps['spend'], 2), 'clicks': int(maps['clk'])},
+                {'name': 'Головна сторінка (загальні запити)', 'spend': round(home['spend'], 2), 'clicks': int(home['clk'])},
+                {'name': 'Інші сторінки (ціни, контакти тощо)', 'spend': round(other['spend'], 2), 'clicks': int(other['clk'])},
+            ]
+            und['children'] = [c for c in sorted(children, key=lambda c: -c['spend']) if c['spend'] > 0]
     return rows
 
 

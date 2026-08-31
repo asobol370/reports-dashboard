@@ -322,6 +322,15 @@
   .svc-flag.no_close { background: #fef3c7; color: #b45309; }
   .svc-flag.no_spend { background: #dbeafe; color: #1d4ed8; }
   tr.svc-undist td { color: var(--text-soft); }
+  tr.svc-undist.expandable td.name { cursor: pointer; }
+  tr.svc-undist .und-arrow { display: inline-block; margin-right: 6px; transition: transform .2s; color: var(--text-soft); font-size: 10px; }
+  tr.svc-undist.open .und-arrow { transform: rotate(90deg); }
+  tr.und-child { display: none; }
+  tr.und-child.show { display: table-row; }
+  tr.und-child td { color: var(--text-soft); font-size: 12px; padding-top: 7px; padding-bottom: 7px; }
+  tr.und-child td.name { padding-left: 34px; font-weight: 400; }
+  .camp-desc { font-size: 11.5px; color: var(--text-muted); font-weight: 400; margin-top: 2px; white-space: normal; }
+  .camp-general { display: inline-block; margin-left: 8px; padding: 2px 8px; background: var(--neutral-bg); color: var(--text-soft); border-radius: 5px; font-size: 10px; font-weight: 600; text-transform: none; vertical-align: middle; }
   .manual-note { font-size: 12px; color: var(--text-muted); background: var(--neutral-bg); padding: 10px 14px; border-radius: 10px; margin-top: 12px; }
   .grp-note { font-size: 12.5px; color: var(--text-muted); padding: 12px 4px 4px; }
 </style>
@@ -438,7 +447,7 @@
     <div class="section" id="campaigns">
       <div class="section-header">
         <div class="section-title">Кампанії</div>
-        <div class="section-note">Клікніть на рядок — розкриються групи оголошень</div>
+        <div class="section-note">Клікніть на рядок — групи оголошень · «загальний трафік» оцінюємо за ціною конверсії, а не за закриттями напрямку</div>
       </div>
       <div id="campaignsList"></div>
     </div>
@@ -465,7 +474,7 @@
           </thead>
           <tbody id="servicesBody"></tbody>
         </table>
-        <div class="manual-note">Дохід напрямку ≈ кількість закриттів × середній чек тижня зі звіту клієнта. Чек єдиний на всі послуги тижня, тому цифри по напрямках приблизні. «Не розподілено» — витрати без привʼязки до посадкової сторінки послуги (дзвінки з оголошень, маршрути, частина PMax, кліки на карти). ROMI — від сумарного доходу напрямку (реклама + карти).</div>
+        <div class="manual-note">Дохід напрямку ≈ закриття × середній чек тижня, тому цифри приблизні. «Не розподілено» — витрати без привʼязки до послуги, вони теж приносять клієнтів.</div>
       </div>
     </div>
 
@@ -648,7 +657,7 @@ function renderCampaigns(campaigns) {
     <div class="camp-row" data-idx="${i}">
       <div class="camp-head" onclick="toggleCamp(${i})">
         <span class="camp-arrow">▶</span>
-        <div class="camp-name"><span class="camp-type">${c.type}</span>${escapeHtml(c.name)}</div>
+        <div class="camp-name"><span class="camp-type">${c.type}</span>${escapeHtml(c.name)}${c.general ? '<span class="camp-general">загальний трафік</span>' : ''}${c.desc ? `<div class="camp-desc">${escapeHtml(c.desc)}</div>` : ''}</div>
         <div class="camp-metric"><small>Витрати</small><b>${fmtNum(c.spend)} ${CUR()}</b></div>
         <div class="camp-metric"><small>Кліки</small><b>${fmtNum(c.clk)}</b></div>
         <div class="camp-metric"><small>CPC</small><b>${fmtNum(c.cpc)} ${CUR()}</b></div>
@@ -688,9 +697,20 @@ function toggleCamp(idx) {
 window.toggleCamp = toggleCamp;
 
 function renderServices(services) {
-  document.getElementById('servicesBody').innerHTML = services.map(s => `
-    <tr${s.name === 'Не розподілено' ? ' class="svc-undist"' : ''}>
-      <td class="name" title="${escapeHtml(s.full || s.name)}">${escapeHtml(s.name)}${s.flag ? `<span class="svc-flag ${s.flag}">${s.flag === 'no_close' ? 'без закриттів' : 'без реклами'}</span>` : ''}</td>
+  document.getElementById('servicesBody').innerHTML = services.map(s => {
+    const isUnd = s.name === 'Не розподілено';
+    const hasKids = isUnd && s.children && s.children.length;
+    const childRows = hasKids ? s.children.map(c => `
+      <tr class="und-child">
+        <td class="name">${escapeHtml(c.name)}</td>
+        <td class="right num">${fmtNum(c.spend)} ${CUR()}</td>
+        <td class="right num">${c.clicks ? fmtNum(c.clicks) : '—'}</td>
+        <td class="right num">—</td><td class="right num">—</td><td class="right num">—</td>
+        <td class="right num">—</td><td class="right num">—</td><td class="right num">—</td>
+      </tr>`).join('') : '';
+    return `
+    <tr${isUnd ? ` class="svc-undist${hasKids ? ' expandable' : ''}"${hasKids ? ' onclick="toggleUnd(this)"' : ''}` : ''}>
+      <td class="name" title="${escapeHtml(s.full || s.name)}">${hasKids ? '<span class="und-arrow">▶</span>' : ''}${escapeHtml(s.name)}${s.flag ? `<span class="svc-flag ${s.flag}">${s.flag === 'no_close' ? 'без закриттів' : 'без реклами'}</span>` : ''}</td>
       <td class="right num">${s.spend ? fmtNum(s.spend) + ' ' + CUR() : '—'}</td>
       <td class="right num">${s.clicks ? fmtNum(s.clicks) : '—'}</td>
       <td class="right num">${s.conv ? fmtNum(s.conv) : '—'}</td>
@@ -699,8 +719,19 @@ function renderServices(services) {
       <td class="right num">${s.revenue ? fmtNum(s.revenue) + ' ' + CUR() : '—'}</td>
       <td class="right num">${s.avg_check != null ? fmtNum(s.avg_check) + ' ' + CUR() : '—'}</td>
       <td class="right num">${s.romi != null ? `<span class="delta-cell ${s.romi >= 0 ? 'delta-pos' : 'delta-neg'}">${fmtNum(s.romi)}%</span>` : '—'}</td>
-    </tr>`).join('');
+    </tr>${childRows}`;
+  }).join('');
 }
+
+function toggleUnd(tr) {
+  tr.classList.toggle('open');
+  let next = tr.nextElementSibling;
+  while (next && next.classList.contains('und-child')) {
+    next.classList.toggle('show');
+    next = next.nextElementSibling;
+  }
+}
+window.toggleUnd = toggleUnd;
 
 // ============= TREND CHART =============
 const TREND_SERIES = [
