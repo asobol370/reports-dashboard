@@ -315,6 +315,8 @@
   tr.manual-row td.name::after { content: ' ✎'; color: var(--text-soft); font-size: 11px; }
   tr.missing td { color: var(--text-soft); }
   .conv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+  .conv-grid-3 { grid-template-columns: repeat(3, 1fr); }
+  @media (max-width: 1100px) { .conv-grid-3 { grid-template-columns: 1fr; } }
   @media (max-width: 900px) { .conv-grid { grid-template-columns: 1fr; } }
   .svc-flag { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 5px; margin-left: 8px; vertical-align: middle; }
   .svc-flag.no_close { background: #fef3c7; color: #b45309; }
@@ -407,7 +409,7 @@
         <div class="section-title">Конверсії за діями</div>
         <div class="section-note">all conversions · Δ vs попередній місяць</div>
       </div>
-      <div class="conv-grid">
+      <div class="conv-grid conv-grid-3">
         <div class="card">
           <div style="font-weight:700; font-size:14px; margin-bottom:10px;">Конверсії на сайті</div>
           <table>
@@ -416,7 +418,14 @@
           </table>
         </div>
         <div class="card">
-          <div style="font-weight:700; font-size:14px; margin-bottom:10px;">Локальні конверсії (карти, дзвінки, візити)</div>
+          <div style="font-weight:700; font-size:14px; margin-bottom:10px;">Дзвінки</div>
+          <table>
+            <thead><tr><th>Дія</th><th class="right">Поточний</th><th class="right">Δ</th><th class="right">Попер.</th></tr></thead>
+            <tbody id="convCallsBody"></tbody>
+          </table>
+        </div>
+        <div class="card">
+          <div style="font-weight:700; font-size:14px; margin-bottom:10px;">Локальні (карти)</div>
           <table>
             <thead><tr><th>Дія</th><th class="right">Поточний</th><th class="right">Δ</th><th class="right">Попер.</th></tr></thead>
             <tbody id="convLocalBody"></tbody>
@@ -448,7 +457,8 @@
               <th class="right">Витрати</th>
               <th class="right">Кліки</th>
               <th class="right">Конверсії</th>
-              <th class="right">Закрито</th>
+              <th class="right">Закрито (реклама)</th>
+              <th class="right">Закрито (карти)</th>
               <th class="right">Дохід</th>
               <th class="right">Сер. чек</th>
               <th class="right">ROMI</th>
@@ -456,6 +466,7 @@
           </thead>
           <tbody id="servicesBody"></tbody>
         </table>
+        <div class="manual-note">Дохід напрямку ≈ кількість закриттів × середній чек тижня зі звіту клієнта. Чек єдиний на всі послуги тижня, тому цифри по напрямках приблизні. «Не розподілено» — витрати без привʼязки до посадкової сторінки послуги (дзвінки з оголошень, маршрути, частина PMax, кліки на карти). ROMI — від сумарного доходу напрямку (реклама + карти).</div>
       </div>
     </div>
 
@@ -608,17 +619,28 @@ function renderHead(rows) {
 
 function convRows(list) {
   if (!list.length) return '<tr><td colspan="4" style="color:var(--text-soft)">Немає даних за період</td></tr>';
-  return list.map(r => `
+  return list.map(r => {
+    let dh;
+    if (r.previous != null && r.previous > 0 && r.previous < 5) {
+      const delta = ((r.current - r.previous) / r.previous) * 100;
+      const arrow = delta > 0 ? '\u2191' : (delta < 0 ? '\u2193' : '\u2192');
+      dh = `<span class="delta-cell delta-neutral" title="мала база — Δ не показова">${arrow} ${Math.abs(delta).toFixed(0)}%</span>`;
+    } else {
+      dh = deltaHtml(r.current, r.previous, false);
+    }
+    return `
     <tr>
       <td class="name">${escapeHtml(r.name)}</td>
       <td class="right num"><b>${fmtNum(r.current)}</b></td>
-      <td class="right">${deltaHtml(r.current, r.previous, false)}</td>
+      <td class="right">${dh}</td>
       <td class="right num" style="color:var(--text-muted)">${fmtNum(r.previous)}</td>
-    </tr>`).join('');
+    </tr>`;
+  }).join('');
 }
 
 function renderConv(conv) {
   document.getElementById('convWebBody').innerHTML = convRows(conv.web);
+  document.getElementById('convCallsBody').innerHTML = convRows(conv.calls || []);
   document.getElementById('convLocalBody').innerHTML = convRows(conv.local);
 }
 
@@ -673,7 +695,8 @@ function renderServices(services) {
       <td class="right num">${s.spend ? fmtNum(s.spend) + ' ' + CUR() : '—'}</td>
       <td class="right num">${s.clicks ? fmtNum(s.clicks) : '—'}</td>
       <td class="right num">${s.conv ? fmtNum(s.conv) : '—'}</td>
-      <td class="right num">${s.closed ? fmtNum(s.closed) : '—'}</td>
+      <td class="right num">${s.closed_ads ? fmtNum(s.closed_ads) : '—'}</td>
+      <td class="right num">${s.closed_maps ? fmtNum(s.closed_maps) : '—'}</td>
       <td class="right num">${s.revenue ? fmtNum(s.revenue) + ' ' + CUR() : '—'}</td>
       <td class="right num">${s.avg_check != null ? fmtNum(s.avg_check) + ' ' + CUR() : '—'}</td>
       <td class="right num">${s.romi != null ? `<span class="delta-cell ${s.romi >= 0 ? 'delta-pos' : 'delta-neg'}">${fmtNum(s.romi)}%</span>` : '—'}</td>

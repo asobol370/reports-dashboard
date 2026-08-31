@@ -30,8 +30,8 @@
       "margin": null
     },
     "2026-08": {
-      "clients": null,
-      "margin": null
+      "clients": 24,
+      "margin": 47406
     }
   },
   "services": {
@@ -42,6 +42,98 @@
     "2026-05": [],
     "2026-06": [],
     "2026-07": [],
-    "2026-08": []
+    "2026-08": [
+      {
+        "week": "01-08.08",
+        "service": "Кондиціонер",
+        "source": "ads",
+        "closed": 7,
+        "revenue": 16611
+      },
+      {
+        "week": "01-08.08",
+        "service": "Сервіс і діагностика",
+        "source": "ads",
+        "closed": 1,
+        "revenue": 2373
+      },
+      {
+        "week": "01-08.08",
+        "service": "Двигун і турбіни",
+        "source": "maps",
+        "closed": 1,
+        "revenue": 1678
+      },
+      {
+        "week": "01-08.08",
+        "service": "Кондиціонер",
+        "source": "maps",
+        "closed": 1,
+        "revenue": 1678
+      },
+      {
+        "week": "01-08.08",
+        "service": "Сервіс і діагностика",
+        "source": "maps",
+        "closed": 1,
+        "revenue": 1678
+      },
+      {
+        "week": "10-15.08",
+        "service": "Кондиціонер",
+        "source": "ads",
+        "closed": 3,
+        "revenue": 6984
+      },
+      {
+        "week": "10-15.08",
+        "service": "Рідини і фільтри",
+        "source": "ads",
+        "closed": 2,
+        "revenue": 4656
+      },
+      {
+        "week": "10-15.08",
+        "service": "Шини і шиномонтаж",
+        "source": "ads",
+        "closed": 2,
+        "revenue": 4656
+      },
+      {
+        "week": "10-15.08",
+        "service": "Кузов і фарбування",
+        "source": "ads",
+        "closed": 1,
+        "revenue": 2328
+      },
+      {
+        "week": "10-15.08",
+        "service": "Сервіс і діагностика",
+        "source": "ads",
+        "closed": 1,
+        "revenue": 2328
+      },
+      {
+        "week": "10-15.08",
+        "service": "Двигун і турбіни",
+        "source": "maps",
+        "closed": 1,
+        "revenue": 1215
+      },
+      {
+        "week": "17-22.08",
+        "service": "Сервіс і діагностика",
+        "source": "ads",
+        "closed": 2,
+        "revenue": 814
+      },
+      {
+        "week": "17-22.08",
+        "service": "АКПП і трансмісія",
+        "source": "ads",
+        "closed": 1,
+        "revenue": 407
+      }
+    ]
   }
 }

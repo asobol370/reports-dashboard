@@ -29,9 +29,11 @@ LAST_DAY = _TODAY  # включаємо поточний місяць частк
 EXCLUDE_CONV_IDS = {6657394267}  # 'honestcar.pro GA4 (web) Отправка форм Zapisatsja_PL'
 
 # Локальные конверсионные действия (карты, звонки из smart, визиты в СТО)
-# дзвінкові дії (Calls from Smart, виклики з карт/оголошень) показуємо разом з
-# click_on_phone у блоці сайту — всі дзвінки в одному місці
-LOCAL_IDS = {6640719757, 6643534495, 6746953657, 6659996110}
+# Дзвінки — окрема група: для автосервісу дзвінок = основний тип ліда
+# (Calls from Smart — історична назва, 88% дає звичайний Search)
+CALL_IDS = {6634101834, 6660096857, 7503919659, 7084543845, 6660094739, 6660094949}
+# Локальні = дії в картці Google Business (+ click_google_maps з сайту)
+LOCAL_IDS = {6640719757, 6643534495, 6746953657, 6659996110, 6634127723}
 
 # Направления услуг: имя → slugs всех языковых версий (CONTAINS по URL)
 SERVICES = [
@@ -295,7 +297,7 @@ def head_rows(cur, prev, man_cur, man_prev):
 
 def conv_rows(cur_map, prev_map, names):
     ids = set(cur_map) | set(prev_map or {})
-    web, local = [], []
+    web, calls, local = [], [], []
     for aid in ids:
         if aid in EXCLUDE_CONV_IDS:
             continue
@@ -304,10 +306,10 @@ def conv_rows(cur_map, prev_map, names):
         if cv == 0 and pv == 0:
             continue
         row = {'id': aid, 'name': names.get(aid, str(aid)), 'current': cv, 'previous': pv}
-        (local if aid in LOCAL_IDS else web).append(row)
-    web.sort(key=lambda r: -r['current'])
-    local.sort(key=lambda r: -r['current'])
-    return {'web': web, 'local': local}
+        (local if aid in LOCAL_IDS else calls if aid in CALL_IDS else web).append(row)
+    for lst in (web, calls, local):
+        lst.sort(key=lambda r: -r['current'])
+    return {'web': web, 'calls': calls, 'local': local}
 
 
 def camp_entry(b, pb):
@@ -342,7 +344,7 @@ def build_campaigns(cur, prev, groups_cur, groups_prev):
     return out
 
 
-def build_services(landing_cur, manual_entries):
+def build_services(landing_cur, manual_entries, month_totals=None):
     spend = defaultdict(lambda: {'spend': 0.0, 'clicks': 0, 'conv': 0.0})
     for url, o in (landing_cur or {}).items():
         k = classify_url(url)
@@ -352,10 +354,11 @@ def build_services(landing_cur, manual_entries):
         s['spend'] += o['cost']; s['clicks'] += o['clk']; s['conv'] += o['conv']
 
     has_manual = bool(manual_entries)
-    closed = defaultdict(lambda: {'closed': 0, 'revenue': 0.0})
+    closed = defaultdict(lambda: {'ads': 0, 'maps': 0, 'revenue': 0.0})
     for rec in manual_entries or []:
         c = closed[rec.get('service', '?')]
-        c['closed'] += rec.get('closed', 0) or 0
+        src = 'maps' if rec.get('source') == 'maps' else 'ads'
+        c[src] += rec.get('closed', 0) or 0
         c['revenue'] += rec.get('revenue', 0) or 0
 
     service_order = [n for n, _ in SERVICES] + ['VIP-лендінги', 'Не розподілено']
@@ -365,9 +368,10 @@ def build_services(landing_cur, manual_entries):
     rows = []
     for n in all_names:
         sp = spend.get(n, {'spend': 0, 'clicks': 0, 'conv': 0})
-        cl = closed.get(n, {'closed': 0, 'revenue': 0})
+        cl = closed.get(n, {'ads': 0, 'maps': 0, 'revenue': 0.0})
+        total_closed = cl['ads'] + cl['maps']
         has_spend = sp['spend'] > 0
-        has_close = cl['closed'] > 0
+        has_close = total_closed > 0
         if not has_spend and not has_close:
             continue
         flag = None
@@ -379,14 +383,32 @@ def build_services(landing_cur, manual_entries):
         rows.append({
             'name': n,
             'spend': round(sp['spend'], 2), 'clicks': int(sp['clicks']), 'conv': round(sp['conv'], 1),
-            'closed': cl['closed'], 'revenue': round(cl['revenue'], 2),
-            'avg_check': round(sdiv(cl['revenue'], cl['closed']), 2) if cl['closed'] else None,
+            'closed_ads': cl['ads'], 'closed_maps': cl['maps'], 'revenue': round(cl['revenue'], 2),
+            'avg_check': round(sdiv(cl['revenue'], total_closed), 2) if total_closed else None,
             'romi': (round(sdiv(cl['revenue'] - sp['spend'], sp['spend']) * 100, 1) if has_spend and cl['revenue'] else None),
             'flag': flag,
         })
     rows.sort(key=lambda r: -r['spend'])
     rows = [r for r in rows if r['name'] != 'Не розподілено'] + \
            [r for r in rows if r['name'] == 'Не розподілено']
+
+    # «Не розподілено» добираем до бюджету месяца: кліки без посадкової
+    # (дзвінки з оголошень, маршрути, частина PMax) + Maps-URL — інакше
+    # таблиця не сходиться з шапкою
+    if month_totals:
+        dist_spend = sum(r['spend'] for r in rows if r['name'] != 'Не розподілено')
+        dist_clicks = sum(r['clicks'] for r in rows if r['name'] != 'Не розподілено')
+        rest_spend = max(0, round(month_totals.get('cost', 0) - dist_spend, 2))
+        rest_clicks = max(0, int(month_totals.get('clk', 0) - dist_clicks))
+        und = next((r for r in rows if r['name'] == 'Не розподілено'), None)
+        if und is None and rest_spend > 0:
+            und = {'name': 'Не розподілено', 'spend': 0, 'clicks': 0, 'conv': 0,
+                   'closed_ads': 0, 'closed_maps': 0, 'revenue': 0,
+                   'avg_check': None, 'romi': None, 'flag': None}
+            rows.append(und)
+        if und is not None:
+            und['spend'] = rest_spend
+            und['clicks'] = rest_clicks
     return rows
 
 
@@ -429,7 +451,7 @@ def main():
             'conversions': conv_rows(convs.get(mk, {}), convs.get(pk, {}) if pk else None, conv_names),
             'campaigns': build_campaigns(camps.get(mk, {}), camps.get(pk, {}) if pk else None,
                                          groups.get(mk, {}), groups.get(pk, {}) if pk else None),
-            'services': build_services(landing.get(mk, {}), manual['services'].get(mk, [])),
+            'services': build_services(landing.get(mk, {}), manual['services'].get(mk, []), cur_tot),
         })
 
     # тренд по всем месяцам
