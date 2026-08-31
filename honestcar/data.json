@@ -7,7 +7,7 @@
     "name": "Bohatyrov Marketing"
   },
   "currency": "zł",
-  "updated_at": "2026-08-31T13:30:00.807403Z",
+  "updated_at": "2026-08-31T13:44:20.369592Z",
   "source": "google_ads_api + manual.json",
   "monthly": [
     {
@@ -20,6 +20,88 @@
         },
         "previous": null
       },
+      "kpi": [
+        {
+          "key": "cost",
+          "label": "Бюджет",
+          "value": 14758.49,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        },
+        {
+          "key": "clients",
+          "label": "Всього клієнтів",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "client_price",
+          "label": "Ціна клієнта",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": true
+        },
+        {
+          "key": "margin",
+          "label": "Маржа",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "margin_per_client",
+          "label": "Сер. чек",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "client_cr",
+          "label": "Конверсія в клієнта",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "%",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "romi",
+          "label": "ROMI",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "%",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "cpc",
+          "label": "CPC",
+          "value": 5.85,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        }
+      ],
       "head": [
         {
           "name": "Бюджет",
@@ -1897,6 +1979,88 @@
           "to": "2026-01-31"
         }
       },
+      "kpi": [
+        {
+          "key": "cost",
+          "label": "Бюджет",
+          "value": 14124.28,
+          "prev": 14758.49,
+          "delta_pct": -4.3,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        },
+        {
+          "key": "clients",
+          "label": "Всього клієнтів",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "client_price",
+          "label": "Ціна клієнта",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": true
+        },
+        {
+          "key": "margin",
+          "label": "Маржа",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "margin_per_client",
+          "label": "Сер. чек",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "client_cr",
+          "label": "Конверсія в клієнта",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "%",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "romi",
+          "label": "ROMI",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "%",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "cpc",
+          "label": "CPC",
+          "value": 6.59,
+          "prev": 5.85,
+          "delta_pct": 12.64,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        }
+      ],
       "head": [
         {
           "name": "Бюджет",
@@ -4050,6 +4214,88 @@
           "to": "2026-02-28"
         }
       },
+      "kpi": [
+        {
+          "key": "cost",
+          "label": "Бюджет",
+          "value": 11806.14,
+          "prev": 14124.28,
+          "delta_pct": -16.41,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        },
+        {
+          "key": "clients",
+          "label": "Всього клієнтів",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "client_price",
+          "label": "Ціна клієнта",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": true
+        },
+        {
+          "key": "margin",
+          "label": "Маржа",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "margin_per_client",
+          "label": "Сер. чек",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "client_cr",
+          "label": "Конверсія в клієнта",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "%",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "romi",
+          "label": "ROMI",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "%",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "cpc",
+          "label": "CPC",
+          "value": 6.21,
+          "prev": 6.59,
+          "delta_pct": -5.77,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        }
+      ],
       "head": [
         {
           "name": "Бюджет",
@@ -5974,6 +6220,88 @@
           "to": "2026-03-31"
         }
       },
+      "kpi": [
+        {
+          "key": "cost",
+          "label": "Бюджет",
+          "value": 16485.08,
+          "prev": 11806.14,
+          "delta_pct": 39.63,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        },
+        {
+          "key": "clients",
+          "label": "Всього клієнтів",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "client_price",
+          "label": "Ціна клієнта",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": true
+        },
+        {
+          "key": "margin",
+          "label": "Маржа",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "margin_per_client",
+          "label": "Сер. чек",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "client_cr",
+          "label": "Конверсія в клієнта",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "%",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "romi",
+          "label": "ROMI",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "%",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "cpc",
+          "label": "CPC",
+          "value": 5.53,
+          "prev": 6.21,
+          "delta_pct": -11.0,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        }
+      ],
       "head": [
         {
           "name": "Бюджет",
@@ -7765,6 +8093,88 @@
           "to": "2026-04-30"
         }
       },
+      "kpi": [
+        {
+          "key": "cost",
+          "label": "Бюджет",
+          "value": 13524.54,
+          "prev": 16485.08,
+          "delta_pct": -17.96,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        },
+        {
+          "key": "clients",
+          "label": "Всього клієнтів",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "client_price",
+          "label": "Ціна клієнта",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": true
+        },
+        {
+          "key": "margin",
+          "label": "Маржа",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "margin_per_client",
+          "label": "Сер. чек",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "client_cr",
+          "label": "Конверсія в клієнта",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "%",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "romi",
+          "label": "ROMI",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "%",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "cpc",
+          "label": "CPC",
+          "value": 5.49,
+          "prev": 5.53,
+          "delta_pct": -0.66,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        }
+      ],
       "head": [
         {
           "name": "Бюджет",
@@ -9931,6 +10341,88 @@
           "to": "2026-05-31"
         }
       },
+      "kpi": [
+        {
+          "key": "cost",
+          "label": "Бюджет",
+          "value": 12873.43,
+          "prev": 13524.54,
+          "delta_pct": -4.81,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        },
+        {
+          "key": "clients",
+          "label": "Всього клієнтів",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "client_price",
+          "label": "Ціна клієнта",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": true
+        },
+        {
+          "key": "margin",
+          "label": "Маржа",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "margin_per_client",
+          "label": "Сер. чек",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "client_cr",
+          "label": "Конверсія в клієнта",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "%",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "romi",
+          "label": "ROMI",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "%",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "cpc",
+          "label": "CPC",
+          "value": 4.88,
+          "prev": 5.49,
+          "delta_pct": -11.2,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        }
+      ],
       "head": [
         {
           "name": "Бюджет",
@@ -11613,6 +12105,88 @@
           "to": "2026-06-30"
         }
       },
+      "kpi": [
+        {
+          "key": "cost",
+          "label": "Бюджет",
+          "value": 10913.31,
+          "prev": 12873.43,
+          "delta_pct": -15.23,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        },
+        {
+          "key": "clients",
+          "label": "Всього клієнтів",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "client_price",
+          "label": "Ціна клієнта",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": true
+        },
+        {
+          "key": "margin",
+          "label": "Маржа",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "margin_per_client",
+          "label": "Сер. чек",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "client_cr",
+          "label": "Конверсія в клієнта",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "%",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "romi",
+          "label": "ROMI",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "%",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "cpc",
+          "label": "CPC",
+          "value": 5.14,
+          "prev": 4.88,
+          "delta_pct": 5.43,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        }
+      ],
       "head": [
         {
           "name": "Бюджет",
@@ -13200,6 +13774,1273 @@
           "flag": "no_close"
         }
       ]
+    },
+    {
+      "label": "Серпень 2026",
+      "month": "2026-08",
+      "period": {
+        "current": {
+          "from": "2026-08-01",
+          "to": "2026-08-31"
+        },
+        "previous": {
+          "from": "2026-07-01",
+          "to": "2026-07-31"
+        }
+      },
+      "kpi": [
+        {
+          "key": "cost",
+          "label": "Бюджет",
+          "value": 9711.4,
+          "prev": 10913.31,
+          "delta_pct": -11.01,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        },
+        {
+          "key": "clients",
+          "label": "Всього клієнтів",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "client_price",
+          "label": "Ціна клієнта",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": true
+        },
+        {
+          "key": "margin",
+          "label": "Маржа",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "margin_per_client",
+          "label": "Сер. чек",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "client_cr",
+          "label": "Конверсія в клієнта",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "%",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "romi",
+          "label": "ROMI",
+          "value": null,
+          "prev": null,
+          "delta_pct": null,
+          "unit": "%",
+          "manual": true,
+          "delta_inverted": false
+        },
+        {
+          "key": "cpc",
+          "label": "CPC",
+          "value": 4.9,
+          "prev": 5.14,
+          "delta_pct": -4.78,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        }
+      ],
+      "head": [
+        {
+          "name": "Бюджет",
+          "current": 9711.4,
+          "previous": 10913.31,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        },
+        {
+          "name": "Покази",
+          "current": 27056,
+          "previous": 29954,
+          "unit": "",
+          "manual": false
+        },
+        {
+          "name": "Кліки",
+          "current": 1983,
+          "previous": 2122,
+          "unit": "",
+          "manual": false
+        },
+        {
+          "name": "CPC",
+          "current": 4.9,
+          "previous": 5.14,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        },
+        {
+          "name": "CTR",
+          "current": 7.33,
+          "previous": 7.08,
+          "unit": "%",
+          "manual": false
+        },
+        {
+          "name": "Клієнтів",
+          "current": null,
+          "previous": null,
+          "unit": "",
+          "manual": true
+        },
+        {
+          "name": "Ціна клієнта",
+          "current": null,
+          "previous": null,
+          "unit": "zł",
+          "manual": true,
+          "delta_inverted": true
+        },
+        {
+          "name": "Конверсії (усі)",
+          "current": 453,
+          "previous": 507,
+          "unit": "",
+          "manual": false
+        },
+        {
+          "name": "Ціна конверсії (усі)",
+          "current": 21.44,
+          "previous": 21.53,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        },
+        {
+          "name": "Конверсії (основні)",
+          "current": 251,
+          "previous": 324,
+          "unit": "",
+          "manual": false
+        },
+        {
+          "name": "Ціна конверсії (основні)",
+          "current": 38.69,
+          "previous": 33.68,
+          "unit": "zł",
+          "manual": false,
+          "delta_inverted": true
+        },
+        {
+          "name": "Конверсія сайту",
+          "current": 12.66,
+          "previous": 15.27,
+          "unit": "%",
+          "manual": false
+        },
+        {
+          "name": "Маржа",
+          "current": null,
+          "previous": null,
+          "unit": "zł",
+          "manual": true
+        },
+        {
+          "name": "Маржа 1 клієнта (сер. чек)",
+          "current": null,
+          "previous": null,
+          "unit": "zł",
+          "manual": true
+        },
+        {
+          "name": "Конверсія в клієнта",
+          "current": null,
+          "previous": null,
+          "unit": "%",
+          "manual": true
+        },
+        {
+          "name": "ROMI",
+          "current": null,
+          "previous": null,
+          "unit": "%",
+          "manual": true
+        }
+      ],
+      "conversions": {
+        "web": [
+          {
+            "id": 6634101834,
+            "name": "honestcar.pro GA4 (web) click_on_phone",
+            "current": 27.0,
+            "previous": 31.0
+          },
+          {
+            "id": 6634127723,
+            "name": "honestcar.pro GA4 (web) click_google_maps",
+            "current": 23.0,
+            "previous": 15.0
+          },
+          {
+            "id": 7669954920,
+            "name": "form_submit",
+            "current": 17.0,
+            "previous": 12.0
+          },
+          {
+            "id": 6634101357,
+            "name": "honestcar.pro GA4 (web) click_wastapp",
+            "current": 3.0,
+            "previous": 1.0
+          },
+          {
+            "id": 6634127279,
+            "name": "honestcar.pro GA4 (web) click_instagram",
+            "current": 2.0,
+            "previous": 3.0
+          },
+          {
+            "id": 6634127477,
+            "name": "honestcar.pro GA4 (web) click_telegram",
+            "current": 0,
+            "previous": 1.0
+          },
+          {
+            "id": 6657394267,
+            "name": "honestcar.pro GA4 (web) Отправка форм Zapisatsja_PL",
+            "current": 0,
+            "previous": 3.0
+          }
+        ],
+        "local": [
+          {
+            "id": 6640719757,
+            "name": "Local actions - Directions",
+            "current": 314.0,
+            "previous": 363.0
+          },
+          {
+            "id": 6660096857,
+            "name": "Calls from Smart Campaign Ads",
+            "current": 41.0,
+            "previous": 56.0
+          },
+          {
+            "id": 6643534495,
+            "name": "Local actions - Website visits",
+            "current": 26.0,
+            "previous": 22.0
+          }
+        ]
+      },
+      "campaigns": [
+        {
+          "name": "bv | search | kuzov - pl",
+          "type": "Search",
+          "spend": 2580.55,
+          "prev_spend": 1594.98,
+          "imp": 4247,
+          "clk": 611,
+          "ctr": 14.39,
+          "cpc": 4.22,
+          "conv": 20.0,
+          "prev_conv": 39.0,
+          "conv_all": 98.0,
+          "cpa": 129.03,
+          "groups": [
+            {
+              "name": "naprawa blacharsko-lakiernicza warszawa",
+              "spend": 1541.48,
+              "prev_spend": 922.11,
+              "imp": 2320,
+              "clk": 364,
+              "ctr": 15.69,
+              "cpc": 4.23,
+              "conv": 13.0,
+              "prev_conv": 29.0,
+              "conv_all": 71.0,
+              "cpa": 118.58
+            },
+            {
+              "name": "lakierowanie samochodu warszawa - pl",
+              "spend": 630.17,
+              "prev_spend": 385.21,
+              "imp": 1118,
+              "clk": 158,
+              "ctr": 14.13,
+              "cpc": 3.99,
+              "conv": 4.0,
+              "prev_conv": 7.0,
+              "conv_all": 16.0,
+              "cpa": 157.54
+            },
+            {
+              "name": "naprawa powypadkowa warszawa",
+              "spend": 139.16,
+              "prev_spend": 107.93,
+              "imp": 274,
+              "clk": 29,
+              "ctr": 10.58,
+              "cpc": 4.8,
+              "conv": 1.0,
+              "prev_conv": 1.0,
+              "conv_all": 5.0,
+              "cpa": 139.16
+            },
+            {
+              "name": "wymiana klocków hamulcowych warszawa",
+              "spend": 102.43,
+              "prev_spend": 69.19,
+              "imp": 265,
+              "clk": 24,
+              "ctr": 9.06,
+              "cpc": 4.27,
+              "conv": 2.0,
+              "prev_conv": 2.0,
+              "conv_all": 5.0,
+              "cpa": 51.22
+            },
+            {
+              "name": "naprawa hamulców warszawa",
+              "spend": 89.42,
+              "prev_spend": 54.82,
+              "imp": 177,
+              "clk": 21,
+              "ctr": 11.86,
+              "cpc": 4.26,
+              "conv": 0.0,
+              "prev_conv": 0.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "wymiana płynu hamulcowego warszawa - pl",
+              "spend": 41.28,
+              "prev_spend": 31.8,
+              "imp": 44,
+              "clk": 5,
+              "ctr": 11.36,
+              "cpc": 8.26,
+              "conv": 0.0,
+              "prev_conv": 0.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "wymiana tarcz hamulcowych warszawa",
+              "spend": 36.6,
+              "prev_spend": 23.91,
+              "imp": 49,
+              "clk": 10,
+              "ctr": 20.41,
+              "cpc": 3.66,
+              "conv": 0.0,
+              "prev_conv": 0.0,
+              "conv_all": 1.0,
+              "cpa": 0
+            }
+          ]
+        },
+        {
+          "name": "bv | search | klima - pl | 27.05",
+          "type": "Search",
+          "spend": 2494.73,
+          "prev_spend": 4066.03,
+          "imp": 2852,
+          "clk": 304,
+          "ctr": 10.66,
+          "cpc": 8.21,
+          "conv": 17.0,
+          "prev_conv": 43.0,
+          "conv_all": 45.0,
+          "cpa": 146.75,
+          "groups": [
+            {
+              "name": "serwis klimatyzacji samochodowej",
+              "spend": 1745.14,
+              "prev_spend": 2918.89,
+              "imp": 1813,
+              "clk": 196,
+              "ctr": 10.81,
+              "cpc": 8.9,
+              "conv": 10.0,
+              "prev_conv": 36.5,
+              "conv_all": 27.0,
+              "cpa": 174.51
+            },
+            {
+              "name": "nabijanie klimatyzacji samochodowe",
+              "spend": 547.36,
+              "prev_spend": 760.86,
+              "imp": 528,
+              "clk": 72,
+              "ctr": 13.64,
+              "cpc": 7.6,
+              "conv": 7.0,
+              "prev_conv": 4.5,
+              "conv_all": 17.0,
+              "cpa": 78.19
+            },
+            {
+              "name": "czyszczenie klimatyzacji samochodowej",
+              "spend": 202.22,
+              "prev_spend": 386.28,
+              "imp": 511,
+              "clk": 36,
+              "ctr": 7.05,
+              "cpc": 5.62,
+              "conv": 0.0,
+              "prev_conv": 2.0,
+              "conv_all": 1.0,
+              "cpa": 0
+            }
+          ]
+        },
+        {
+          "name": "search-poslugi2-pl",
+          "type": "Search",
+          "spend": 1535.48,
+          "prev_spend": 842.5,
+          "imp": 5783,
+          "clk": 405,
+          "ctr": 7.0,
+          "cpc": 3.79,
+          "conv": 28.0,
+          "prev_conv": 13.0,
+          "conv_all": 64.0,
+          "cpa": 54.84,
+          "groups": [
+            {
+              "name": "naprawa automatycznych",
+              "spend": 462.13,
+              "prev_spend": 213.46,
+              "imp": 1758,
+              "clk": 126,
+              "ctr": 7.17,
+              "cpc": 3.67,
+              "conv": 9.0,
+              "prev_conv": 2.0,
+              "conv_all": 19.0,
+              "cpa": 51.35
+            },
+            {
+              "name": "regeneracja turbosprężarki",
+              "spend": 400.1,
+              "prev_spend": null,
+              "imp": 1360,
+              "clk": 94,
+              "ctr": 6.91,
+              "cpc": 4.26,
+              "conv": 13.0,
+              "prev_conv": null,
+              "conv_all": 20.0,
+              "cpa": 30.78
+            },
+            {
+              "name": "czyszczenie dpf",
+              "spend": 273.9,
+              "prev_spend": 92.77,
+              "imp": 820,
+              "clk": 74,
+              "ctr": 9.02,
+              "cpc": 3.7,
+              "conv": 3.0,
+              "prev_conv": 2.0,
+              "conv_all": 12.0,
+              "cpa": 91.3
+            },
+            {
+              "name": "wymiana oleju w skrzyni biegów automatycznej",
+              "spend": 155.2,
+              "prev_spend": 112.61,
+              "imp": 558,
+              "clk": 46,
+              "ctr": 8.24,
+              "cpc": 3.37,
+              "conv": 2.0,
+              "prev_conv": 3.0,
+              "conv_all": 9.0,
+              "cpa": 77.6
+            },
+            {
+              "name": "wymiana sprzęgła",
+              "spend": 86.98,
+              "prev_spend": 38.97,
+              "imp": 339,
+              "clk": 27,
+              "ctr": 7.96,
+              "cpc": 3.22,
+              "conv": 1.0,
+              "prev_conv": 1.0,
+              "conv_all": 2.0,
+              "cpa": 86.98
+            },
+            {
+              "name": "remont silnika warszawa",
+              "spend": 63.97,
+              "prev_spend": null,
+              "imp": 159,
+              "clk": 11,
+              "ctr": 6.92,
+              "cpc": 5.82,
+              "conv": 0.0,
+              "prev_conv": null,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "naprawa zawieszenia warszawa - pl",
+              "spend": 20.12,
+              "prev_spend": null,
+              "imp": 35,
+              "clk": 5,
+              "ctr": 14.29,
+              "cpc": 4.02,
+              "conv": 0.0,
+              "prev_conv": null,
+              "conv_all": 1.0,
+              "cpa": 0
+            },
+            {
+              "name": "wulkanizacja rajony - pl",
+              "spend": 15.55,
+              "prev_spend": 47.66,
+              "imp": 15,
+              "clk": 1,
+              "ctr": 6.67,
+              "cpc": 15.55,
+              "conv": 0.0,
+              "prev_conv": 0.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "diagnostyka samochodowa",
+              "spend": 11.24,
+              "prev_spend": null,
+              "imp": 37,
+              "clk": 3,
+              "ctr": 8.11,
+              "cpc": 3.75,
+              "conv": 0.0,
+              "prev_conv": null,
+              "conv_all": 1.0,
+              "cpa": 0
+            },
+            {
+              "name": "wymiana opon - pl (not geo)",
+              "spend": 11.16,
+              "prev_spend": 42.83,
+              "imp": 77,
+              "clk": 7,
+              "ctr": 9.09,
+              "cpc": 1.59,
+              "conv": 0.0,
+              "prev_conv": 0.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "wymiana oleju warszawa",
+              "spend": 9.95,
+              "prev_spend": null,
+              "imp": 292,
+              "clk": 3,
+              "ctr": 1.03,
+              "cpc": 3.32,
+              "conv": 0.0,
+              "prev_conv": null,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "wulkanizacja warszawa  - pl",
+              "spend": 9.65,
+              "prev_spend": 19.86,
+              "imp": 74,
+              "clk": 2,
+              "ctr": 2.7,
+              "cpc": 4.82,
+              "conv": 0.0,
+              "prev_conv": 0.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "przegląd samochodowy",
+              "spend": 5.23,
+              "prev_spend": 45.59,
+              "imp": 85,
+              "clk": 2,
+              "ctr": 2.35,
+              "cpc": 2.62,
+              "conv": 0.0,
+              "prev_conv": 1.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "diagnostyka silnika warszawa",
+              "spend": 4.81,
+              "prev_spend": null,
+              "imp": 5,
+              "clk": 1,
+              "ctr": 20.0,
+              "cpc": 4.81,
+              "conv": 0.0,
+              "prev_conv": null,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "regeneracja turbin",
+              "spend": 3.51,
+              "prev_spend": 16.41,
+              "imp": 72,
+              "clk": 2,
+              "ctr": 2.78,
+              "cpc": 1.75,
+              "conv": 0.0,
+              "prev_conv": 0.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "serwis opon warszawa  - pl",
+              "spend": 1.99,
+              "prev_spend": 82.96,
+              "imp": 5,
+              "clk": 1,
+              "ctr": 20.0,
+              "cpc": 1.99,
+              "conv": 0.0,
+              "prev_conv": 2.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "wymiana amortyzatorów",
+              "spend": 0.0,
+              "prev_spend": 5.28,
+              "imp": 2,
+              "clk": 0,
+              "ctr": 0.0,
+              "cpc": 0,
+              "conv": 0.0,
+              "prev_conv": 0.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "wymiana opon warszawa  - pl",
+              "spend": 0.0,
+              "prev_spend": 95.82,
+              "imp": 74,
+              "clk": 0,
+              "ctr": 0.0,
+              "cpc": 0,
+              "conv": 0.0,
+              "prev_conv": 1.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "przechowywanie opon - pl (not geo)",
+              "spend": 0.0,
+              "prev_spend": 3.85,
+              "imp": 12,
+              "clk": 0,
+              "ctr": 0.0,
+              "cpc": 0,
+              "conv": 0.0,
+              "prev_conv": 0.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "przechowywanie opon warszawa - pl",
+              "spend": 0.0,
+              "prev_spend": 4.6,
+              "imp": 1,
+              "clk": 0,
+              "ctr": 0.0,
+              "cpc": 0,
+              "conv": 0.0,
+              "prev_conv": 0.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "wymiana opon rajony - pl",
+              "spend": 0.0,
+              "prev_spend": 19.81,
+              "imp": 3,
+              "clk": 0,
+              "ctr": 0.0,
+              "cpc": 0,
+              "conv": 0.0,
+              "prev_conv": 1.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            }
+          ]
+        },
+        {
+          "name": "bv | search | общие - ru+ua | 170226",
+          "type": "Search",
+          "spend": 1528.91,
+          "prev_spend": 460.17,
+          "imp": 2119,
+          "clk": 235,
+          "ctr": 11.09,
+          "cpc": 6.51,
+          "conv": 15.0,
+          "prev_conv": 9.0,
+          "conv_all": 58.0,
+          "cpa": 101.93,
+          "groups": [
+            {
+              "name": "автосервис варшава_ru",
+              "spend": 520.05,
+              "prev_spend": 103.73,
+              "imp": 853,
+              "clk": 59,
+              "ctr": 6.92,
+              "cpc": 8.81,
+              "conv": 4.0,
+              "prev_conv": 2.0,
+              "conv_all": 13.0,
+              "cpa": 130.01
+            },
+            {
+              "name": "автосервіс варшава_ua",
+              "spend": 450.05,
+              "prev_spend": 193.85,
+              "imp": 450,
+              "clk": 81,
+              "ctr": 18.0,
+              "cpc": 5.56,
+              "conv": 5.5,
+              "prev_conv": 3.0,
+              "conv_all": 15.5,
+              "cpa": 81.83
+            },
+            {
+              "name": "шиномонтаж варшава_ru",
+              "spend": 207.55,
+              "prev_spend": 51.68,
+              "imp": 523,
+              "clk": 49,
+              "ctr": 9.37,
+              "cpc": 4.24,
+              "conv": 0.0,
+              "prev_conv": 1.0,
+              "conv_all": 14.0,
+              "cpa": 0
+            },
+            {
+              "name": "автоэлектрик варшава_ru",
+              "spend": 133.97,
+              "prev_spend": 40.38,
+              "imp": 134,
+              "clk": 13,
+              "ctr": 9.7,
+              "cpc": 10.31,
+              "conv": 1.0,
+              "prev_conv": 1.0,
+              "conv_all": 3.0,
+              "cpa": 133.97
+            },
+            {
+              "name": "русскоязычный автосервис варшава_ru",
+              "spend": 89.27,
+              "prev_spend": 45.96,
+              "imp": 76,
+              "clk": 13,
+              "ctr": 17.11,
+              "cpc": 6.87,
+              "conv": 1.0,
+              "prev_conv": 1.0,
+              "conv_all": 5.0,
+              "cpa": 89.27
+            },
+            {
+              "name": "украинское сто варшава_ru",
+              "spend": 86.71,
+              "prev_spend": 6.72,
+              "imp": 53,
+              "clk": 13,
+              "ctr": 24.53,
+              "cpc": 6.67,
+              "conv": 3.5,
+              "prev_conv": 0.0,
+              "conv_all": 6.5,
+              "cpa": 24.78
+            },
+            {
+              "name": "mercedes",
+              "spend": 41.3,
+              "prev_spend": 7.7,
+              "imp": 30,
+              "clk": 7,
+              "ctr": 23.33,
+              "cpc": 5.9,
+              "conv": 0.0,
+              "prev_conv": 1.0,
+              "conv_all": 1.0,
+              "cpa": 0
+            }
+          ]
+        },
+        {
+          "name": "VB | LocalNotSite PMax UA&RU | 230626",
+          "type": "PMax",
+          "spend": 1139.54,
+          "prev_spend": 1195.73,
+          "imp": 10940,
+          "clk": 319,
+          "ctr": 2.92,
+          "cpc": 3.57,
+          "conv": 171.0,
+          "prev_conv": 210.0,
+          "conv_all": 182.0,
+          "cpa": 6.66,
+          "groups": []
+        },
+        {
+          "name": "bv | search | szybkie - pl",
+          "type": "Search",
+          "spend": 393.27,
+          "prev_spend": null,
+          "imp": 1011,
+          "clk": 103,
+          "ctr": 10.19,
+          "cpc": 3.82,
+          "conv": 0.0,
+          "prev_conv": null,
+          "conv_all": 5.0,
+          "cpa": 0,
+          "groups": [
+            {
+              "name": "wymiana oleju warszawa",
+              "spend": 211.59,
+              "prev_spend": null,
+              "imp": 523,
+              "clk": 56,
+              "ctr": 10.71,
+              "cpc": 3.78,
+              "conv": 0.0,
+              "prev_conv": null,
+              "conv_all": 4.0,
+              "cpa": 0
+            },
+            {
+              "name": "wymiana oleju w skrzyni biegów automatycznej",
+              "spend": 123.63,
+              "prev_spend": null,
+              "imp": 336,
+              "clk": 33,
+              "ctr": 9.82,
+              "cpc": 3.75,
+              "conv": 0.0,
+              "prev_conv": null,
+              "conv_all": 1.0,
+              "cpa": 0
+            },
+            {
+              "name": "wymiana amortyzatorów",
+              "spend": 19.68,
+              "prev_spend": null,
+              "imp": 47,
+              "clk": 5,
+              "ctr": 10.64,
+              "cpc": 3.94,
+              "conv": 0.0,
+              "prev_conv": null,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "przegląd samochodowy",
+              "spend": 10.68,
+              "prev_spend": null,
+              "imp": 10,
+              "clk": 3,
+              "ctr": 30.0,
+              "cpc": 3.56,
+              "conv": 0.0,
+              "prev_conv": null,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "wymiana klocków hamulcowych warszawa",
+              "spend": 10.31,
+              "prev_spend": null,
+              "imp": 12,
+              "clk": 2,
+              "ctr": 16.67,
+              "cpc": 5.16,
+              "conv": 0.0,
+              "prev_conv": null,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "naprawa zawieszenia warszawa - pl",
+              "spend": 7.93,
+              "prev_spend": null,
+              "imp": 38,
+              "clk": 2,
+              "ctr": 5.26,
+              "cpc": 3.96,
+              "conv": 0.0,
+              "prev_conv": null,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "naprawa hamulców warszawa",
+              "spend": 4.97,
+              "prev_spend": null,
+              "imp": 7,
+              "clk": 1,
+              "ctr": 14.29,
+              "cpc": 4.97,
+              "conv": 0.0,
+              "prev_conv": null,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "diagnostyka samochodowa",
+              "spend": 4.48,
+              "prev_spend": null,
+              "imp": 32,
+              "clk": 1,
+              "ctr": 3.12,
+              "cpc": 4.48,
+              "conv": 0.0,
+              "prev_conv": null,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "wymiana płynu hamulcowego warszawa - pl",
+              "spend": 0.0,
+              "prev_spend": null,
+              "imp": 1,
+              "clk": 0,
+              "ctr": 0.0,
+              "cpc": 0,
+              "conv": 0.0,
+              "prev_conv": null,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "wymiana tarcz hamulcowych warszawa",
+              "spend": 0.0,
+              "prev_spend": null,
+              "imp": 5,
+              "clk": 0,
+              "ctr": 0.0,
+              "cpc": 0,
+              "conv": 0.0,
+              "prev_conv": null,
+              "conv_all": 0.0,
+              "cpa": 0
+            }
+          ]
+        },
+        {
+          "name": "bv | search | общие - pl | 170226",
+          "type": "Search",
+          "spend": 38.92,
+          "prev_spend": 1884.0,
+          "imp": 104,
+          "clk": 6,
+          "ctr": 5.77,
+          "cpc": 6.49,
+          "conv": 0.0,
+          "prev_conv": 7.0,
+          "conv_all": 1.0,
+          "cpa": 0,
+          "groups": [
+            {
+              "name": "serwis samochodowy warszawa - pl",
+              "spend": 25.41,
+              "prev_spend": 224.89,
+              "imp": 19,
+              "clk": 4,
+              "ctr": 21.05,
+              "cpc": 6.35,
+              "conv": 0.0,
+              "prev_conv": 2.0,
+              "conv_all": 1.0,
+              "cpa": 0
+            },
+            {
+              "name": "regeneracja maglownicy warszawa - pl",
+              "spend": 7.96,
+              "prev_spend": 359.78,
+              "imp": 8,
+              "clk": 1,
+              "ctr": 12.5,
+              "cpc": 7.96,
+              "conv": 0.0,
+              "prev_conv": 2.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "wymiana klockow hamulcowych warszawa - pl",
+              "spend": 5.55,
+              "prev_spend": 215.55,
+              "imp": 10,
+              "clk": 1,
+              "ctr": 10.0,
+              "cpc": 5.55,
+              "conv": 0.0,
+              "prev_conv": 1.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "wymiana filtrów warszawa - pl",
+              "spend": 0.0,
+              "prev_spend": 29.7,
+              "imp": 2,
+              "clk": 0,
+              "ctr": 0.0,
+              "cpc": 0,
+              "conv": 0.0,
+              "prev_conv": 0.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "warsztat samochodowy warszawa - pl",
+              "spend": 0.0,
+              "prev_spend": 595.84,
+              "imp": 45,
+              "clk": 0,
+              "ctr": 0.0,
+              "cpc": 0,
+              "conv": 0.0,
+              "prev_conv": 2.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "elektryk samochodowy warszawa - pl",
+              "spend": 0.0,
+              "prev_spend": 239.9,
+              "imp": 1,
+              "clk": 0,
+              "ctr": 0.0,
+              "cpc": 0,
+              "conv": 0.0,
+              "prev_conv": 0.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "diagnostyka samochodowa",
+              "spend": 0.0,
+              "prev_spend": 106.63,
+              "imp": 17,
+              "clk": 0,
+              "ctr": 0.0,
+              "cpc": 0,
+              "conv": 0.0,
+              "prev_conv": 0.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            },
+            {
+              "name": "naprawa układów hamulcowych warszawa - pl",
+              "spend": 0.0,
+              "prev_spend": 90.24,
+              "imp": 2,
+              "clk": 0,
+              "ctr": 0.0,
+              "cpc": 0,
+              "conv": 0.0,
+              "prev_conv": 0.0,
+              "conv_all": 0.0,
+              "cpa": 0
+            }
+          ]
+        }
+      ],
+      "services": [
+        {
+          "name": "Кузов і фарбування",
+          "spend": 2234.48,
+          "clicks": 533,
+          "conv": 12.0,
+          "closed": 0,
+          "revenue": 0,
+          "avg_check": null,
+          "romi": null,
+          "flag": "no_close"
+        },
+        {
+          "name": "Кондиціонер",
+          "spend": 1775.29,
+          "clicks": 286,
+          "conv": 12.0,
+          "closed": 0,
+          "revenue": 0,
+          "avg_check": null,
+          "romi": null,
+          "flag": "no_close"
+        },
+        {
+          "name": "Головна та інше",
+          "spend": 1154.35,
+          "clicks": 223,
+          "conv": 12.5,
+          "closed": 0,
+          "revenue": 0,
+          "avg_check": null,
+          "romi": null,
+          "flag": "no_close"
+        },
+        {
+          "name": "Google Maps",
+          "spend": 1114.35,
+          "clicks": 312,
+          "conv": 168.0,
+          "closed": 0,
+          "revenue": 0,
+          "avg_check": null,
+          "romi": null,
+          "flag": "no_close"
+        },
+        {
+          "name": "АКПП і трансмісія",
+          "spend": 504.56,
+          "clicks": 185,
+          "conv": 3.0,
+          "closed": 0,
+          "revenue": 0,
+          "avg_check": null,
+          "romi": null,
+          "flag": "no_close"
+        },
+        {
+          "name": "Гальма",
+          "spend": 248.71,
+          "clicks": 59,
+          "conv": 2.0,
+          "closed": 0,
+          "revenue": 0,
+          "avg_check": null,
+          "romi": null,
+          "flag": "no_close"
+        },
+        {
+          "name": "Двигун і турбіни",
+          "spend": 230.84,
+          "clicks": 88,
+          "conv": 4.0,
+          "closed": 0,
+          "revenue": 0,
+          "avg_check": null,
+          "romi": null,
+          "flag": "no_close"
+        },
+        {
+          "name": "Шини і шиномонтаж",
+          "spend": 222.75,
+          "clicks": 58,
+          "conv": 0.0,
+          "closed": 0,
+          "revenue": 0,
+          "avg_check": null,
+          "romi": null,
+          "flag": "no_close"
+        },
+        {
+          "name": "Рідини і фільтри",
+          "spend": 208.43,
+          "clicks": 50,
+          "conv": 0.0,
+          "closed": 0,
+          "revenue": 0,
+          "avg_check": null,
+          "romi": null,
+          "flag": "no_close"
+        },
+        {
+          "name": "Сервіс і діагностика",
+          "spend": 149.56,
+          "clicks": 62,
+          "conv": 0.5,
+          "closed": 0,
+          "revenue": 0,
+          "avg_check": null,
+          "romi": null,
+          "flag": "no_close"
+        },
+        {
+          "name": "Електроніка",
+          "spend": 82.75,
+          "clicks": 10,
+          "conv": 0.0,
+          "closed": 0,
+          "revenue": 0,
+          "avg_check": null,
+          "romi": null,
+          "flag": "no_close"
+        },
+        {
+          "name": "Ходова і підвіска",
+          "spend": 39.83,
+          "clicks": 10,
+          "conv": 0.0,
+          "closed": 0,
+          "revenue": 0,
+          "avg_check": null,
+          "romi": null,
+          "flag": "no_close"
+        },
+        {
+          "name": "Кермове управління",
+          "spend": 7.96,
+          "clicks": 1,
+          "conv": 0.0,
+          "closed": 0,
+          "revenue": 0,
+          "avg_check": null,
+          "romi": null,
+          "flag": "no_close"
+        }
+      ]
     }
   ],
   "trend": {
@@ -13210,7 +15051,8 @@
       "Кві 26",
       "Тра 26",
       "Чер 26",
-      "Лип 26"
+      "Лип 26",
+      "Сер 26"
     ],
     "budget": [
       14758.49,
@@ -13219,9 +15061,11 @@
       16485.08,
       13524.54,
       12873.43,
-      10913.31
+      10913.31,
+      9711.4
     ],
     "clients": [
+      null,
       null,
       null,
       null,
@@ -13231,6 +15075,7 @@
       null
     ],
     "romi": [
+      null,
       null,
       null,
       null,

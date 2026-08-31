@@ -372,6 +372,9 @@
       </div>
     </div>
 
+    <!-- KPI -->
+    <div class="kpi-grid" id="kpiGrid" style="margin-bottom:24px;"></div>
+
     <!-- HEAD TABLE -->
     <div class="section" id="overview">
       <div class="section-header">
@@ -554,6 +557,7 @@ function render() {
   document.getElementById('periodMeta').textContent = d.period.previous
     ? `${meta} · порівняння з ${formatDate(d.period.previous.from)} — ${formatDate(d.period.previous.to)}`
     : `${meta} · перший період (немає з чим порівнювати)`;
+  renderKpi(d.kpi);
   renderHead(d.head);
   renderConv(d.conversions);
   renderCampaigns(d.campaigns);
@@ -566,6 +570,26 @@ function deltaHtml(cur, prev, inverted) {
   const delta = ((cur - prev) / prev) * 100;
   const dt = deltaClass(delta, inverted);
   return `<span class="delta-cell ${dt.cls}">${dt.arrow} ${Math.abs(delta).toFixed(1)}%</span>`;
+}
+
+function renderKpi(kpis) {
+  document.getElementById('kpiGrid').innerHTML = (kpis || []).map(k => {
+    const missing = k.value == null;
+    let deltaHtml;
+    if (missing || k.delta_pct == null) {
+      deltaHtml = '<span class="kpi-delta delta-neutral">—</span>';
+    } else {
+      const dt = deltaClass(k.delta_pct, k.delta_inverted);
+      deltaHtml = `<span class="kpi-delta ${dt.cls}">${dt.arrow} ${Math.abs(k.delta_pct).toFixed(2)}%</span>`;
+    }
+    return `
+      <div class="kpi" style="cursor:default;">
+        <div class="kpi-label">${k.label}${k.manual ? ' ✎' : ''}</div>
+        <div class="kpi-value num"${missing ? ' style="color:var(--text-soft)"' : ''}>${missing ? '—' : fmtNum(k.value)}<small>${missing ? '' : (k.unit || '')}</small></div>
+        ${deltaHtml}
+        <div class="kpi-prev">Попередній: ${k.prev == null ? '—' : fmtNum(k.prev) + ' ' + (k.unit || '')}</div>
+      </div>`;
+  }).join('');
 }
 
 function renderHead(rows) {

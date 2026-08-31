@@ -23,7 +23,7 @@ GS = CLIENT.get_service('GoogleAdsService')
 
 FIRST_MONTH_DAY = date(2026, 1, 1)
 _TODAY = datetime.now().date()
-LAST_MONTH_END = _TODAY.replace(day=1) - timedelta(days=1)
+LAST_DAY = _TODAY  # включаємо поточний місяць частково — фіналізується наступною пересборкою
 
 # Локальные конверсионные действия (карты, звонки из smart, визиты в СТО)
 LOCAL_IDS = {6640719757, 6643534495, 6746953657, 6660096857, 6660094739, 6660094949, 6659996110}
@@ -65,9 +65,8 @@ def month_ranges(first_day, last_day):
         if start > last_day:
             break
         nxt = date(y + 1, 1, 1) if m == 12 else date(y, m + 1, 1)
-        end = nxt - timedelta(days=1)
-        if end <= last_day:
-            out.append((start, end))
+        end = min(nxt - timedelta(days=1), last_day)
+        out.append((start, end))
         y, m = nxt.year, nxt.month
     return out
 
@@ -210,28 +209,54 @@ def load_manual(month_keys):
 
 # ────── сборка месяца ──────
 
+def derive_all(tot, man):
+    cost, clk, imp = tot['cost'], tot['clk'], tot['imp']
+    conv, conv_all = tot['conv'], tot['conv_all']
+    clients = man.get('clients')
+    margin = man.get('margin')
+    return {
+        'cost': cost, 'imp': imp, 'clk': clk,
+        'cpc': sdiv(cost, clk), 'ctr': sdiv(clk, imp) * 100,
+        'clients': clients,
+        'client_price': (sdiv(cost, clients) if clients else None),
+        'conv_all': conv_all, 'cpa_all': sdiv(cost, conv_all),
+        'conv': conv, 'cpa': sdiv(cost, conv),
+        'site_cr': sdiv(conv, clk) * 100,
+        'margin': margin,
+        'margin_per_client': (sdiv(margin, clients) if (margin is not None and clients) else None),
+        'client_cr': (sdiv(clients, conv) * 100 if (clients is not None and conv) else None),
+        'romi': (sdiv(margin - cost, cost) * 100 if (margin is not None and cost) else None),
+    }
+
+
+def kpi_rows(c, p):
+    """KPI-карточки верхнего дашборда."""
+    def card(key, label, unit='', inverted=False, manual=False, integer=False):
+        cv = c[key]
+        pv = p[key] if p else None
+        rnd = (lambda v: int(round(v))) if integer else (lambda v: round(v, 2))
+        return {'key': key, 'label': label,
+                'value': rnd(cv) if cv is not None else None,
+                'prev': rnd(pv) if pv is not None else None,
+                'delta_pct': calc_delta(cv, pv),
+                'unit': unit, 'manual': manual,
+                'delta_inverted': inverted}
+    return [
+        card('cost', 'Бюджет', 'zł', inverted=True),
+        card('clients', 'Всього клієнтів', '', manual=True, integer=True),
+        card('client_price', 'Ціна клієнта', 'zł', inverted=True, manual=True),
+        card('margin', 'Маржа', 'zł', manual=True),
+        card('margin_per_client', 'Сер. чек', 'zł', manual=True),
+        card('client_cr', 'Конверсія в клієнта', '%', manual=True),
+        card('romi', 'ROMI', '%', manual=True),
+        card('cpc', 'CPC', 'zł', inverted=True),
+    ]
+
+
 def head_rows(cur, prev, man_cur, man_prev):
     """Блок 1: строки (name, current, previous, unit, manual, delta_inverted)."""
-    def der(tot, man):
-        cost, clk, imp = tot['cost'], tot['clk'], tot['imp']
-        conv, conv_all = tot['conv'], tot['conv_all']
-        clients = man.get('clients')
-        margin = man.get('margin')
-        return {
-            'cost': cost, 'imp': imp, 'clk': clk,
-            'cpc': sdiv(cost, clk), 'ctr': sdiv(clk, imp) * 100,
-            'clients': clients,
-            'client_price': (sdiv(cost, clients) if clients else None),
-            'conv_all': conv_all, 'cpa_all': sdiv(cost, conv_all),
-            'conv': conv, 'cpa': sdiv(cost, conv),
-            'site_cr': sdiv(conv, clk) * 100,
-            'margin': margin,
-            'margin_per_client': (sdiv(margin, clients) if (margin is not None and clients) else None),
-            'client_cr': (sdiv(clients, conv) * 100 if (clients is not None and conv) else None),
-            'romi': (sdiv(margin - cost, cost) * 100 if (margin is not None and cost) else None),
-        }
-    c = der(cur, man_cur)
-    p = der(prev, man_prev) if prev is not None else None
+    c = derive_all(cur, man_cur)
+    p = derive_all(prev, man_prev) if prev is not None else None
 
     def row(name, key, unit='', manual=False, inverted=False, integer=False):
         cv = c[key]
@@ -352,7 +377,7 @@ def build_services(landing_cur, manual_entries):
 
 
 def main():
-    months = month_ranges(FIRST_MONTH_DAY, LAST_MONTH_END)
+    months = month_ranges(FIRST_MONTH_DAY, LAST_DAY)
     if not months:
         print('Немає завершених місяців'); return
     full_a, full_b = months[0][0], months[-1][1]
@@ -384,6 +409,8 @@ def main():
                 'current': {'from': fmt(a), 'to': fmt(b)},
                 'previous': ({'from': fmt(months[i-1][0]), 'to': fmt(months[i-1][1])} if i > 0 else None),
             },
+            'kpi': kpi_rows(derive_all(cur_tot, man_cur),
+                            derive_all(prev_tot, man_prev) if prev_tot is not None else None),
             'head': head_rows(cur_tot, prev_tot, man_cur, man_prev),
             'conversions': conv_rows(convs.get(mk, {}), convs.get(pk, {}) if pk else None, conv_names),
             'campaigns': build_campaigns(camps.get(mk, {}), camps.get(pk, {}) if pk else None,
