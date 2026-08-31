@@ -7,7 +7,7 @@
     "name": "Bohatyrov Marketing"
   },
   "currency": "zł",
-  "updated_at": "2026-08-31T14:02:59.265235Z",
+  "updated_at": "2026-08-31T14:04:17.735590Z",
   "source": "google_ads_api + manual.json",
   "monthly": [
     {
@@ -12790,10 +12790,10 @@
       ],
       "services": [
         {
-          "name": "Не розподілено",
-          "spend": 10975.67,
-          "clicks": 2385,
-          "conv": 379.5,
+          "name": "VIP-лендінги",
+          "spend": 52.23,
+          "clicks": 11,
+          "conv": 0.0,
           "closed": 0,
           "revenue": 0,
           "avg_check": null,
@@ -12801,10 +12801,10 @@
           "flag": null
         },
         {
-          "name": "VIP-лендінги",
-          "spend": 52.23,
-          "clicks": 11,
-          "conv": 0.0,
+          "name": "Не розподілено",
+          "spend": 10975.67,
+          "clicks": 2385,
+          "conv": 379.5,
           "closed": 0,
           "revenue": 0,
           "avg_check": null,
@@ -14450,17 +14450,6 @@
           "flag": null
         },
         {
-          "name": "Не розподілено",
-          "spend": 1156.67,
-          "clicks": 211,
-          "conv": 7.0,
-          "closed": 0,
-          "revenue": 0,
-          "avg_check": null,
-          "romi": null,
-          "flag": null
-        },
-        {
           "name": "Кузов і фарбування",
           "spend": 504.5,
           "clicks": 125,
@@ -14569,6 +14558,17 @@
           "avg_check": null,
           "romi": null,
           "flag": null
+        },
+        {
+          "name": "Не розподілено",
+          "spend": 1156.67,
+          "clicks": 211,
+          "conv": 7.0,
+          "closed": 0,
+          "revenue": 0,
+          "avg_check": null,
+          "romi": null,
+          "flag": null
         }
       ]
     },
@@ -14589,9 +14589,9 @@
         {
           "key": "cost",
           "label": "Бюджет",
-          "value": 9742.49,
+          "value": 9745.17,
           "prev": 10913.31,
-          "delta_pct": -10.73,
+          "delta_pct": -10.7,
           "unit": "zł",
           "manual": false,
           "delta_inverted": true
@@ -14659,9 +14659,9 @@
         {
           "key": "cpc",
           "label": "CPC",
-          "value": 4.9,
+          "value": 4.89,
           "prev": 5.14,
-          "delta_pct": -4.81,
+          "delta_pct": -4.83,
           "unit": "zł",
           "manual": false,
           "delta_inverted": true
@@ -14670,7 +14670,7 @@
       "head": [
         {
           "name": "Бюджет",
-          "current": 9742.49,
+          "current": 9745.17,
           "previous": 10913.31,
           "unit": "zł",
           "manual": false,
@@ -14678,21 +14678,21 @@
         },
         {
           "name": "Покази",
-          "current": 27101,
+          "current": 27111,
           "previous": 29954,
           "unit": "",
           "manual": false
         },
         {
           "name": "Кліки",
-          "current": 1990,
+          "current": 1991,
           "previous": 2122,
           "unit": "",
           "manual": false
         },
         {
           "name": "CPC",
-          "current": 4.9,
+          "current": 4.89,
           "previous": 5.14,
           "unit": "zł",
           "manual": false,
@@ -14744,7 +14744,7 @@
         },
         {
           "name": "Ціна конверсії (основні)",
-          "current": 38.81,
+          "current": 38.83,
           "previous": 33.68,
           "unit": "zł",
           "manual": false,
@@ -14866,9 +14866,9 @@
               "name": "naprawa blacharsko-lakiernicza warszawa",
               "spend": 1550.36,
               "prev_spend": 922.11,
-              "imp": 2321,
+              "imp": 2323,
               "clk": 366,
-              "ctr": 15.77,
+              "ctr": 15.76,
               "cpc": 4.24,
               "conv": 13.0,
               "prev_conv": 29.0,
@@ -15040,9 +15040,9 @@
               "name": "naprawa automatycznych",
               "spend": 473.46,
               "prev_spend": 213.46,
-              "imp": 1767,
+              "imp": 1771,
               "clk": 127,
-              "ctr": 7.19,
+              "ctr": 7.17,
               "cpc": 3.73,
               "conv": 9.0,
               "prev_conv": 2.0,
@@ -15110,9 +15110,9 @@
               "name": "remont silnika warszawa",
               "spend": 66.71,
               "prev_spend": null,
-              "imp": 159,
+              "imp": 161,
               "clk": 12,
-              "ctr": 7.55,
+              "ctr": 7.45,
               "cpc": 5.56,
               "conv": 0.0,
               "prev_conv": null,
@@ -15774,17 +15774,6 @@
           "flag": null
         },
         {
-          "name": "Не розподілено",
-          "spend": 1154.35,
-          "clicks": 223,
-          "conv": 12.5,
-          "closed": 0,
-          "revenue": 0,
-          "avg_check": null,
-          "romi": null,
-          "flag": null
-        },
-        {
           "name": "АКПП і трансмісія",
           "spend": 504.56,
           "clicks": 185,
@@ -15882,6 +15871,17 @@
           "avg_check": null,
           "romi": null,
           "flag": null
+        },
+        {
+          "name": "Не розподілено",
+          "spend": 1154.35,
+          "clicks": 223,
+          "conv": 12.5,
+          "closed": 0,
+          "revenue": 0,
+          "avg_check": null,
+          "romi": null,
+          "flag": null
         }
       ]
     }
@@ -15905,7 +15905,7 @@
       13524.54,
       12873.43,
       10913.31,
-      9742.49
+      9745.17
     ],
     "clients": [
       null,

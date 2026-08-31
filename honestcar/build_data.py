@@ -385,6 +385,8 @@ def build_services(landing_cur, manual_entries):
             'flag': flag,
         })
     rows.sort(key=lambda r: -r['spend'])
+    rows = [r for r in rows if r['name'] != 'Не розподілено'] + \
+           [r for r in rows if r['name'] == 'Не розподілено']
     return rows
 
 

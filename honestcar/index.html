@@ -319,7 +319,7 @@
   .svc-flag { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 5px; margin-left: 8px; vertical-align: middle; }
   .svc-flag.no_close { background: #fef3c7; color: #b45309; }
   .svc-flag.no_spend { background: #dbeafe; color: #1d4ed8; }
-  .svc-legend { font-size: 12px; color: var(--text-muted); margin-top: 10px; display: flex; gap: 18px; flex-wrap: wrap; }
+  tr.svc-undist td { color: var(--text-soft); }
   .manual-note { font-size: 12px; color: var(--text-muted); background: var(--neutral-bg); padding: 10px 14px; border-radius: 10px; margin-top: 12px; }
   .grp-note { font-size: 12.5px; color: var(--text-muted); padding: 12px 4px 4px; }
 </style>
@@ -456,10 +456,6 @@
           </thead>
           <tbody id="servicesBody"></tbody>
         </table>
-        <div class="svc-legend">
-          <span><span class="svc-flag no_close">є витрати, немає закриттів</span></span>
-          <span><span class="svc-flag no_spend">закриття без реклами</span></span>
-        </div>
       </div>
     </div>
 
@@ -672,7 +668,7 @@ window.toggleCamp = toggleCamp;
 
 function renderServices(services) {
   document.getElementById('servicesBody').innerHTML = services.map(s => `
-    <tr>
+    <tr${s.name === 'Не розподілено' ? ' class="svc-undist"' : ''}>
       <td class="name">${escapeHtml(s.name)}${s.flag ? `<span class="svc-flag ${s.flag}">${s.flag === 'no_close' ? 'без закриттів' : 'без реклами'}</span>` : ''}</td>
       <td class="right num">${s.spend ? fmtNum(s.spend) + ' ' + CUR() : '—'}</td>
       <td class="right num">${s.clicks ? fmtNum(s.clicks) : '—'}</td>
