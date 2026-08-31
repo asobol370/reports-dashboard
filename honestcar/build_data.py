@@ -21,7 +21,7 @@ CID = '3978684249'
 CLIENT = GoogleAdsClient.load_from_storage('/Users/vlad/claude_gads/api mcc/google-ads.yaml')
 GS = CLIENT.get_service('GoogleAdsService')
 
-FIRST_MONTH_DAY = date(2026, 1, 1)
+FIRST_MONTH_DAY = date(2026, 5, 1)
 _TODAY = datetime.now().date()
 LAST_DAY = _TODAY  # включаємо поточний місяць частково — фіналізується наступною пересборкою
 
@@ -33,7 +33,7 @@ EXCLUDE_CONV_IDS = {6657394267}  # 'honestcar.pro GA4 (web) Отправка ф�
 # (Calls from Smart — історична назва, 88% дає звичайний Search)
 CALL_IDS = {6634101834, 6660096857, 7503919659, 7084543845, 6660094739, 6660094949}
 # Локальні = дії в картці Google Business (+ click_google_maps з сайту)
-LOCAL_IDS = {6640719757, 6643534495, 6746953657, 6659996110, 6634127723}
+LOCAL_IDS = {6640719757, 6643534495, 6746953657, 6659996110}
 
 # Направления услуг: имя → slugs всех языковых версий (CONTAINS по URL)
 SERVICES = [
@@ -455,13 +455,11 @@ def main():
         })
 
     # тренд по всем месяцам
-    trend = {'labels': [], 'budget': [], 'clients': [], 'romi': []}
+    trend = {'labels': [], 'margin': []}
     for (a, _), entry in zip(months, monthly):
         trend['labels'].append(f'{MONTH_SHORT[a.month - 1]} {str(a.year)[2:]}')
         h = {r['name']: r for r in entry['head']}
-        trend['budget'].append(h['Бюджет']['current'])
-        trend['clients'].append(h['Клієнтів']['current'])
-        trend['romi'].append(h['ROMI']['current'])
+        trend['margin'].append(h['Маржа']['current'])
 
     out = {
         'client': {'name': 'HonestCar', 'logo': 'logo-honestcar.png'},

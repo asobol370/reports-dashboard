@@ -473,7 +473,7 @@
     <!-- TREND -->
     <div class="section" id="trendSec">
       <div class="section-header">
-        <div class="section-title">Динаміка за місяцями</div>
+        <div class="section-title">Динаміка доходу за місяцями</div>
         <div class="chart-legend" id="chartLegend"></div>
       </div>
       <div class="card">
@@ -705,9 +705,7 @@ function renderServices(services) {
 
 // ============= TREND CHART =============
 const TREND_SERIES = [
-  {key: 'budget', label: 'Бюджет', unit: () => CUR(), color: '#3b82f6'},
-  {key: 'clients', label: 'Клієнти', unit: () => '', color: '#16a34a'},
-  {key: 'romi', label: 'ROMI', unit: () => '%', color: '#f59e0b'},
+  {key: 'margin', label: 'Маржа (дохід з клієнтів)', unit: () => CUR(), color: '#16a34a'},
 ];
 
 function renderTrend() {
@@ -723,8 +721,7 @@ function renderTrend() {
 
   const active = TREND_SERIES.filter(s => (t[s.key] || []).some(v => v != null));
   document.getElementById('chartLegend').innerHTML =
-    active.map(s => `<span><i style="background:${s.color}"></i>${s.label}</span>`).join('') +
-    (active.length < 3 ? '<span style="color:var(--text-soft)">клієнти/ROMI зʼявляться після внесення ручних даних</span>' : '');
+    active.map(s => `<span><i style="background:${s.color}"></i>${s.label}</span>`).join('');
 
   const padL = 70, padR = active.length > 1 ? 70 : 20, padT = 20, padB = 40;
   const chartW = W - padL - padR, chartH = H - padT - padB;
