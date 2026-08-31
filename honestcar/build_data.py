@@ -37,19 +37,24 @@ LOCAL_IDS = {6640719757, 6643534495, 6746953657, 6659996110}
 
 # Направления услуг: имя → slugs всех языковых версий (CONTAINS по URL)
 SERVICES = [
-    # (коротка назва, повна назва як на сайті, slugs усіх мовних версій)
-    ('Кузов і фарбування',   'Кузовні роботи та фарбування',               ['blacharstwo-i-lakiernictwo', 'kuzovnoy-remont', 'kuzovni-roboti-ta-farbuvannya']),
-    ('Кондиціонер',          'Обслуговування автомобільного кондиціонера', ['klimatyzacja-samochodowa', 'avtomobilnyy-konditsioner', 'avtomobilniy-konditsioner']),
-    ('Двигун і турбіни',     'Ремонт двигуна',                             ['naprawa-silnika', 'remont-dvigatelya', 'remont-dviguna']),
-    ('АКПП і трансмісія',    'Привідна система та коробка передач',        ['uklad-napedowy-i-skrzynia-biegow', 'transmissiya-i-korobka-peredach', 'prividna-sistema-ta-korobka-peredach']),
-    ('Гальма',               'Ремонт гальмівної системи',                  ['uklad-hamulcowy', 'tormoznaya-sistema', '/galma']),
-    ('Ходова і підвіска',    'Підвіска і ходова частина',                  ['zawieszenie-i-uklad-jezdny', 'podveska-i-khodovaya-chast', 'pidviska-i-khodova-chastina']),
-    ('Сервіс і діагностика', 'Сервіс і діагностика',                       ['serwis-i-diagnostyka', 'servis-i-diagnostika']),
-    ('Рідини і фільтри',     'Заміна рідин і фільтрів',                    ['wymiana-plynow-i-filtrow', 'zamena-zhidkostey-i-filtrov', 'zmina-ridin-i-filtriv']),
-    ('Кермове управління',   'Рульове керування',                          ['uklad-kierowniczy', 'rulevoe-upravlenie', 'rulove-keruvannya']),
-    ('Шини і шиномонтаж',    'Шини та шиномонтаж',                         ['opony-i-wulkanizacja', 'shiny-i-shinomontazh', 'shini-ta-shinomontazh']),
-    ('Електроніка',          'Автомобільна електроніка',                   ['elektronika-samochodowa', 'avtomobilnaya-elektronika', 'avtomobilna-elektronika']),
-    ('Евакуатор і допомога', 'Дорожня допомога та евакуатор',              ['pomoc-drogowa-i-laweta', 'dorozhnaya-pomoshch-i-evakuator', 'dorozhnya-dopomoga-ta-evakuator']),
+    # (назва як у меню сайту, повна назва, slugs усіх мовних версій)
+    # Словник рознесення ручних закриттів: тип роботи важливіший за систему.
+    # Генератор, стартер, ремінь ГРМ, ремені допоміжного обладнання → «Ремонт двигуна»
+    # (так стоїть у підменю сайту). «Автомобільна електроніка» — тільки контрольні
+    # лампи, помилки, акумулятор, проводка, датчики, електрик.
+    ('Кузовні роботи та фарбування',        'Кузовні роботи та фарбування',        ['blacharstwo-i-lakiernictwo', 'kuzovnoy-remont', 'kuzovni-roboti-ta-farbuvannya']),
+    ('Автомобільний кондиціонер',           'Автомобільний кондиціонер',           ['klimatyzacja-samochodowa', 'avtomobilnyy-konditsioner', 'avtomobilniy-konditsioner']),
+    ('Ремонт двигуна',                      'Ремонт двигуна',                      ['naprawa-silnika', 'remont-dvigatelya', 'remont-dviguna']),
+    ('Привідна система та коробка передач', 'Привідна система та коробка передач', ['uklad-napedowy-i-skrzynia-biegow', 'transmissiya-i-korobka-peredach', 'prividna-sistema-ta-korobka-peredach']),
+    ('Гальма',                              'Гальма',                              ['uklad-hamulcowy', 'tormoznaya-sistema', '/galma']),
+    ('Підвіска і ходова частина',           'Підвіска і ходова частина',           ['zawieszenie-i-uklad-jezdny', 'podveska-i-khodovaya-chast', 'pidviska-i-khodova-chastina']),
+    ('Сервіс і діагностика',                'Сервіс і діагностика',                ['serwis-i-diagnostyka', 'servis-i-diagnostika']),
+    ('Заміна рідин і фільтрів',             'Заміна рідин і фільтрів',             ['wymiana-plynow-i-filtrow', 'zamena-zhidkostey-i-filtrov', 'zmina-ridin-i-filtriv']),
+    ('Рульове керування',                   'Рульове керування',                   ['uklad-kierowniczy', 'rulevoe-upravlenie', 'rulove-keruvannya']),
+    ('Шини та шиномонтаж',                  'Шини та шиномонтаж',                  ['opony-i-wulkanizacja', 'shiny-i-shinomontazh', 'shini-ta-shinomontazh']),
+    ('Автомобільна електроніка',            'Автомобільна електроніка',            ['elektronika-samochodowa', 'avtomobilnaya-elektronika', 'avtomobilna-elektronika']),
+    ('Дорожня допомога та евакуатор',       'Дорожня допомога та евакуатор',       ['pomoc-drogowa-i-laweta', 'dorozhnaya-pomoshch-i-evakuator', 'dorozhnya-dopomoga-ta-evakuator']),
+    ('Додаткові послуги',                   'Додаткові послуги',                   ['dodatkovi-poslugi', 'uslugi-dodatkowe']),
 ]
 
 FULL_NAMES = {name: full for name, full, _s in SERVICES}

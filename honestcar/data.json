@@ -7,7 +7,7 @@
     "name": "Bohatyrov Marketing"
   },
   "currency": "zł",
-  "updated_at": "2026-08-31T14:55:19.042215Z",
+  "updated_at": "2026-08-31T15:34:26.154845Z",
   "source": "google_ads_api + manual.json",
   "monthly": [
     {
@@ -5979,8 +5979,8 @@
       ],
       "services": [
         {
-          "name": "Кондиціонер",
-          "full": "Обслуговування автомобільного кондиціонера",
+          "name": "Автомобільний кондиціонер",
+          "full": "Автомобільний кондиціонер",
           "spend": 2952.55,
           "clicks": 576,
           "conv": 24.0,
@@ -6005,7 +6005,7 @@
           "flag": null
         },
         {
-          "name": "Кузов і фарбування",
+          "name": "Кузовні роботи та фарбування",
           "full": "Кузовні роботи та фарбування",
           "spend": 504.5,
           "clicks": 125,
@@ -6018,7 +6018,7 @@
           "flag": null
         },
         {
-          "name": "Кермове управління",
+          "name": "Рульове керування",
           "full": "Рульове керування",
           "spend": 392.54,
           "clicks": 61,
@@ -6032,7 +6032,7 @@
         },
         {
           "name": "Гальма",
-          "full": "Ремонт гальмівної системи",
+          "full": "Гальма",
           "spend": 278.21,
           "clicks": 51,
           "conv": 0.0,
@@ -6044,7 +6044,7 @@
           "flag": null
         },
         {
-          "name": "Електроніка",
+          "name": "Автомобільна електроніка",
           "full": "Автомобільна електроніка",
           "spend": 258.32,
           "clicks": 45,
@@ -6057,7 +6057,7 @@
           "flag": null
         },
         {
-          "name": "АКПП і трансмісія",
+          "name": "Привідна система та коробка передач",
           "full": "Привідна система та коробка передач",
           "spend": 255.72,
           "clicks": 96,
@@ -6083,7 +6083,7 @@
           "flag": null
         },
         {
-          "name": "Шини і шиномонтаж",
+          "name": "Шини та шиномонтаж",
           "full": "Шини та шиномонтаж",
           "spend": 189.51,
           "clicks": 77,
@@ -6096,7 +6096,7 @@
           "flag": null
         },
         {
-          "name": "Рідини і фільтри",
+          "name": "Заміна рідин і фільтрів",
           "full": "Заміна рідин і фільтрів",
           "spend": 56.65,
           "clicks": 10,
@@ -6109,7 +6109,7 @@
           "flag": null
         },
         {
-          "name": "Двигун і турбіни",
+          "name": "Ремонт двигуна",
           "full": "Ремонт двигуна",
           "spend": 14.93,
           "clicks": 6,
@@ -6122,7 +6122,7 @@
           "flag": null
         },
         {
-          "name": "Ходова і підвіска",
+          "name": "Підвіска і ходова частина",
           "full": "Підвіска і ходова частина",
           "spend": 10.67,
           "clicks": 3,
@@ -6135,10 +6135,23 @@
           "flag": null
         },
         {
+          "name": "Додаткові послуги",
+          "full": "Додаткові послуги",
+          "spend": 5.96,
+          "clicks": 1,
+          "conv": 0.0,
+          "closed_ads": 0,
+          "closed_maps": 0,
+          "revenue": 0.0,
+          "avg_check": null,
+          "romi": null,
+          "flag": null
+        },
+        {
           "name": "Не розподілено",
           "full": "Не розподілено",
-          "spend": 4022.6,
-          "clicks": 701,
+          "spend": 4016.64,
+          "clicks": 700,
           "conv": 7.0,
           "closed_ads": 0,
           "closed_maps": 0,
@@ -6159,8 +6172,8 @@
             },
             {
               "name": "Інші сторінки (ціни, контакти тощо)",
-              "spend": 816.7,
-              "clicks": 137
+              "spend": 810.74,
+              "clicks": 136
             },
             {
               "name": "Головна сторінка (загальні запити)",
@@ -6188,9 +6201,9 @@
         {
           "key": "cost",
           "label": "Бюджет",
-          "value": 9831.62,
+          "value": 9859.74,
           "prev": 10913.31,
-          "delta_pct": -9.91,
+          "delta_pct": -9.65,
           "unit": "zł",
           "manual": false,
           "delta_inverted": true
@@ -6208,9 +6221,9 @@
         {
           "key": "client_price",
           "label": "Ціна клієнта",
-          "value": 409.65,
+          "value": 410.82,
           "prev": 259.84,
-          "delta_pct": 57.65,
+          "delta_pct": 58.11,
           "unit": "zł",
           "manual": true,
           "delta_inverted": true
@@ -6248,9 +6261,9 @@
         {
           "key": "romi",
           "label": "ROMI",
-          "value": 382.18,
+          "value": 380.8,
           "prev": 429.32,
-          "delta_pct": -10.98,
+          "delta_pct": -11.3,
           "unit": "%",
           "manual": true,
           "delta_inverted": false
@@ -6260,7 +6273,7 @@
           "label": "CPC",
           "value": 4.89,
           "prev": 5.14,
-          "delta_pct": -4.89,
+          "delta_pct": -4.9,
           "unit": "zł",
           "manual": false,
           "delta_inverted": true
@@ -6269,7 +6282,7 @@
       "head": [
         {
           "name": "Бюджет",
-          "current": 9831.62,
+          "current": 9859.74,
           "previous": 10913.31,
           "unit": "zł",
           "manual": false,
@@ -6277,14 +6290,14 @@
         },
         {
           "name": "Покази",
-          "current": 27212,
+          "current": 27301,
           "previous": 29954,
           "unit": "",
           "manual": false
         },
         {
           "name": "Кліки",
-          "current": 2010,
+          "current": 2016,
           "previous": 2122,
           "unit": "",
           "manual": false
@@ -6299,7 +6312,7 @@
         },
         {
           "name": "CTR",
-          "current": 7.39,
+          "current": 7.38,
           "previous": 7.08,
           "unit": "%",
           "manual": false
@@ -6313,7 +6326,7 @@
         },
         {
           "name": "Ціна клієнта",
-          "current": 409.65,
+          "current": 410.82,
           "previous": 259.84,
           "unit": "zł",
           "manual": true,
@@ -6328,7 +6341,7 @@
         },
         {
           "name": "Ціна конверсії (усі)",
-          "current": 21.66,
+          "current": 21.72,
           "previous": 21.53,
           "unit": "zł",
           "manual": false,
@@ -6343,7 +6356,7 @@
         },
         {
           "name": "Ціна конверсії (основні)",
-          "current": 39.01,
+          "current": 39.13,
           "previous": 33.68,
           "unit": "zł",
           "manual": false,
@@ -6351,7 +6364,7 @@
         },
         {
           "name": "Конверсія сайту",
-          "current": 12.54,
+          "current": 12.5,
           "previous": 15.27,
           "unit": "%",
           "manual": false
@@ -6379,7 +6392,7 @@
         },
         {
           "name": "ROMI",
-          "current": 382.18,
+          "current": 380.8,
           "previous": 429.32,
           "unit": "%",
           "manual": true
@@ -6453,44 +6466,44 @@
           "type": "Search",
           "desc": "Кузовні роботи та фарбування",
           "general": false,
-          "spend": 2615.52,
+          "spend": 2614.76,
           "prev_spend": 1594.98,
-          "imp": 4268,
+          "imp": 4272,
           "clk": 619,
-          "ctr": 14.5,
-          "cpc": 4.23,
+          "ctr": 14.49,
+          "cpc": 4.22,
           "conv": 20.0,
           "prev_conv": 39.0,
           "conv_all": 98.0,
-          "cpa": 130.78,
+          "cpa": 130.74,
           "prev_cpa": 40.9,
           "groups": [
             {
               "name": "naprawa blacharsko-lakiernicza warszawa",
-              "spend": 1567.55,
+              "spend": 1562.85,
               "prev_spend": 922.11,
-              "imp": 2335,
-              "clk": 370,
-              "ctr": 15.85,
+              "imp": 2337,
+              "clk": 369,
+              "ctr": 15.79,
               "cpc": 4.24,
               "conv": 13.0,
               "prev_conv": 29.0,
               "conv_all": 71.0,
-              "cpa": 120.58,
+              "cpa": 120.22,
               "prev_cpa": 31.8
             },
             {
               "name": "lakierowanie samochodu warszawa - pl",
-              "spend": 634.2,
+              "spend": 638.14,
               "prev_spend": 385.21,
-              "imp": 1122,
-              "clk": 159,
-              "ctr": 14.17,
+              "imp": 1124,
+              "clk": 160,
+              "ctr": 14.23,
               "cpc": 3.99,
               "conv": 4.0,
               "prev_conv": 7.0,
               "conv_all": 16.0,
-              "cpa": 158.55,
+              "cpa": 159.54,
               "prev_cpa": 55.03
             },
             {
@@ -6570,39 +6583,39 @@
           "type": "Search",
           "desc": "Обслуговування кондиціонера",
           "general": false,
-          "spend": 2518.7,
+          "spend": 2529.95,
           "prev_spend": 4066.03,
-          "imp": 2864,
-          "clk": 307,
+          "imp": 2872,
+          "clk": 308,
           "ctr": 10.72,
-          "cpc": 8.2,
+          "cpc": 8.21,
           "conv": 17.0,
           "prev_conv": 43.0,
           "conv_all": 45.0,
-          "cpa": 148.16,
+          "cpa": 148.82,
           "prev_cpa": 94.56,
           "groups": [
             {
               "name": "serwis klimatyzacji samochodowej",
-              "spend": 1757.71,
+              "spend": 1768.96,
               "prev_spend": 2918.89,
-              "imp": 1820,
-              "clk": 197,
-              "ctr": 10.82,
-              "cpc": 8.92,
+              "imp": 1827,
+              "clk": 198,
+              "ctr": 10.84,
+              "cpc": 8.93,
               "conv": 10.0,
               "prev_conv": 36.5,
               "conv_all": 27.0,
-              "cpa": 175.77,
+              "cpa": 176.9,
               "prev_cpa": 79.97
             },
             {
               "name": "nabijanie klimatyzacji samochodowe",
               "spend": 558.76,
               "prev_spend": 760.86,
-              "imp": 533,
+              "imp": 534,
               "clk": 74,
-              "ctr": 13.88,
+              "ctr": 13.86,
               "cpc": 7.55,
               "conv": 7.0,
               "prev_conv": 4.5,
@@ -6631,39 +6644,39 @@
           "type": "Search",
           "desc": "Складний ремонт: двигун, АКПП, турбіни, зчеплення",
           "general": false,
-          "spend": 1581.94,
+          "spend": 1576.27,
           "prev_spend": 842.5,
-          "imp": 5849,
-          "clk": 416,
-          "ctr": 7.11,
+          "imp": 5868,
+          "clk": 415,
+          "ctr": 7.07,
           "cpc": 3.8,
           "conv": 28.0,
           "prev_conv": 13.0,
           "conv_all": 64.0,
-          "cpa": 56.5,
+          "cpa": 56.3,
           "prev_cpa": 64.81,
           "groups": [
             {
               "name": "naprawa automatycznych",
-              "spend": 494.42,
+              "spend": 491.63,
               "prev_spend": 213.46,
-              "imp": 1787,
+              "imp": 1792,
               "clk": 130,
-              "ctr": 7.27,
-              "cpc": 3.8,
+              "ctr": 7.25,
+              "cpc": 3.78,
               "conv": 9.0,
               "prev_conv": 2.0,
               "conv_all": 19.0,
-              "cpa": 54.94,
+              "cpa": 54.63,
               "prev_cpa": 106.73
             },
             {
               "name": "regeneracja turbosprężarki",
               "spend": 403.31,
               "prev_spend": null,
-              "imp": 1381,
+              "imp": 1392,
               "clk": 96,
-              "ctr": 6.95,
+              "ctr": 6.9,
               "cpc": 4.2,
               "conv": 13.0,
               "prev_conv": null,
@@ -6675,9 +6688,9 @@
               "name": "czyszczenie dpf",
               "spend": 273.9,
               "prev_spend": 92.77,
-              "imp": 829,
+              "imp": 832,
               "clk": 74,
-              "ctr": 8.93,
+              "ctr": 8.89,
               "cpc": 3.7,
               "conv": 3.0,
               "prev_conv": 2.0,
@@ -6701,16 +6714,16 @@
             },
             {
               "name": "wymiana sprzęgła",
-              "spend": 95.2,
+              "spend": 92.32,
               "prev_spend": 38.97,
               "imp": 344,
-              "clk": 31,
-              "ctr": 9.01,
-              "cpc": 3.07,
+              "clk": 30,
+              "ctr": 8.72,
+              "cpc": 3.08,
               "conv": 1.0,
               "prev_conv": 1.0,
               "conv_all": 2.0,
-              "cpa": 95.2,
+              "cpa": 92.32,
               "prev_cpa": 38.97
             },
             {
@@ -6946,9 +6959,9 @@
           "general": true,
           "spend": 1528.91,
           "prev_spend": 460.17,
-          "imp": 2130,
+          "imp": 2138,
           "clk": 235,
-          "ctr": 11.03,
+          "ctr": 10.99,
           "cpc": 6.51,
           "conv": 15.0,
           "prev_conv": 9.0,
@@ -6960,9 +6973,9 @@
               "name": "автосервис варшава_ru",
               "spend": 520.05,
               "prev_spend": 103.73,
-              "imp": 859,
+              "imp": 861,
               "clk": 59,
-              "ctr": 6.87,
+              "ctr": 6.85,
               "cpc": 8.81,
               "conv": 4.0,
               "prev_conv": 2.0,
@@ -6974,9 +6987,9 @@
               "name": "автосервіс варшава_ua",
               "spend": 450.05,
               "prev_spend": 193.85,
-              "imp": 453,
+              "imp": 454,
               "clk": 81,
-              "ctr": 17.88,
+              "ctr": 17.84,
               "cpc": 5.56,
               "conv": 5.5,
               "prev_conv": 3.0,
@@ -6988,9 +7001,9 @@
               "name": "шиномонтаж варшава_ru",
               "spend": 207.55,
               "prev_spend": 51.68,
-              "imp": 524,
+              "imp": 526,
               "clk": 49,
-              "ctr": 9.35,
+              "ctr": 9.32,
               "cpc": 4.24,
               "conv": 0.0,
               "prev_conv": 1.0,
@@ -7002,9 +7015,9 @@
               "name": "автоэлектрик варшава_ru",
               "spend": 133.97,
               "prev_spend": 40.38,
-              "imp": 134,
+              "imp": 137,
               "clk": 13,
-              "ctr": 9.7,
+              "ctr": 9.49,
               "cpc": 10.31,
               "conv": 1.0,
               "prev_conv": 1.0,
@@ -7061,16 +7074,16 @@
           "type": "PMax",
           "desc": "Локальний трафік: карти, маршрути, дзвінки",
           "general": true,
-          "spend": 1150.37,
+          "spend": 1154.42,
           "prev_spend": 1195.73,
-          "imp": 10973,
-          "clk": 323,
+          "imp": 11010,
+          "clk": 324,
           "ctr": 2.94,
           "cpc": 3.56,
           "conv": 171.0,
           "prev_conv": 210.0,
           "conv_all": 182.0,
-          "cpa": 6.73,
+          "cpa": 6.75,
           "prev_cpa": 5.69,
           "groups": []
         },
@@ -7079,39 +7092,39 @@
           "type": "Search",
           "desc": "Швидкі послуги: ТО, олива, гальма, діагностика, ходова",
           "general": false,
-          "spend": 397.26,
+          "spend": 416.51,
           "prev_spend": null,
-          "imp": 1024,
-          "clk": 104,
-          "ctr": 10.16,
+          "imp": 1037,
+          "clk": 109,
+          "ctr": 10.51,
           "cpc": 3.82,
           "conv": 1.0,
           "prev_conv": null,
           "conv_all": 6.0,
-          "cpa": 397.26,
+          "cpa": 416.51,
           "prev_cpa": null,
           "groups": [
             {
               "name": "wymiana oleju warszawa",
-              "spend": 215.58,
+              "spend": 234.83,
               "prev_spend": null,
-              "imp": 528,
-              "clk": 57,
-              "ctr": 10.8,
-              "cpc": 3.78,
+              "imp": 536,
+              "clk": 62,
+              "ctr": 11.57,
+              "cpc": 3.79,
               "conv": 1.0,
               "prev_conv": null,
               "conv_all": 5.0,
-              "cpa": 215.58,
+              "cpa": 234.83,
               "prev_cpa": null
             },
             {
               "name": "wymiana oleju w skrzyni biegów automatycznej",
               "spend": 123.63,
               "prev_spend": null,
-              "imp": 341,
+              "imp": 346,
               "clk": 33,
-              "ctr": 9.68,
+              "ctr": 9.54,
               "cpc": 3.75,
               "conv": 0.0,
               "prev_conv": null,
@@ -7367,9 +7380,9 @@
       ],
       "services": [
         {
-          "name": "Кузов і фарбування",
+          "name": "Кузовні роботи та фарбування",
           "full": "Кузовні роботи та фарбування",
-          "spend": 2264.58,
+          "spend": 2263.82,
           "clicks": 540,
           "conv": 12.0,
           "closed_ads": 1,
@@ -7380,34 +7393,34 @@
           "flag": null
         },
         {
-          "name": "Кондиціонер",
-          "full": "Обслуговування автомобільного кондиціонера",
-          "spend": 1799.26,
-          "clicks": 289,
+          "name": "Автомобільний кондиціонер",
+          "full": "Автомобільний кондиціонер",
+          "spend": 1810.51,
+          "clicks": 290,
           "conv": 12.0,
           "closed_ads": 10,
           "closed_maps": 1,
           "revenue": 25273.0,
           "avg_check": 2297.55,
-          "romi": 1304.6,
+          "romi": 1295.9,
           "flag": null
         },
         {
-          "name": "АКПП і трансмісія",
+          "name": "Привідна система та коробка передач",
           "full": "Привідна система та коробка передач",
-          "spend": 523.92,
-          "clicks": 191,
+          "spend": 518.25,
+          "clicks": 190,
           "conv": 3.0,
           "closed_ads": 1,
           "closed_maps": 0,
           "revenue": 407.0,
           "avg_check": 407.0,
-          "romi": -22.3,
+          "romi": -21.5,
           "flag": null
         },
         {
           "name": "Гальма",
-          "full": "Ремонт гальмівної системи",
+          "full": "Гальма",
           "spend": 248.71,
           "clicks": 59,
           "conv": 2.0,
@@ -7419,7 +7432,7 @@
           "flag": "no_close"
         },
         {
-          "name": "Двигун і турбіни",
+          "name": "Ремонт двигуна",
           "full": "Ремонт двигуна",
           "spend": 235.72,
           "clicks": 90,
@@ -7432,7 +7445,7 @@
           "flag": null
         },
         {
-          "name": "Шини і шиномонтаж",
+          "name": "Шини та шиномонтаж",
           "full": "Шини та шиномонтаж",
           "spend": 222.75,
           "clicks": 58,
@@ -7445,7 +7458,7 @@
           "flag": null
         },
         {
-          "name": "Рідини і фільтри",
+          "name": "Заміна рідин і фільтрів",
           "full": "Заміна рідин і фільтрів",
           "spend": 212.42,
           "clicks": 51,
@@ -7471,7 +7484,7 @@
           "flag": null
         },
         {
-          "name": "Електроніка",
+          "name": "Автомобільна електроніка",
           "full": "Автомобільна електроніка",
           "spend": 82.75,
           "clicks": 10,
@@ -7484,7 +7497,7 @@
           "flag": "no_close"
         },
         {
-          "name": "Ходова і підвіска",
+          "name": "Підвіска і ходова частина",
           "full": "Підвіска і ходова частина",
           "spend": 39.83,
           "clicks": 10,
@@ -7497,7 +7510,7 @@
           "flag": "no_close"
         },
         {
-          "name": "Кермове управління",
+          "name": "Рульове керування",
           "full": "Рульове керування",
           "spend": 7.96,
           "clicks": 1,
@@ -7512,8 +7525,8 @@
         {
           "name": "Не розподілено",
           "full": "Не розподілено",
-          "spend": 4044.16,
-          "clicks": 649,
+          "spend": 4067.46,
+          "clicks": 655,
           "conv": 12.5,
           "closed_ads": 0,
           "closed_maps": 0,
@@ -7524,13 +7537,13 @@
           "children": [
             {
               "name": "Дзвінки прямо з оголошень (без посадкової)",
-              "spend": 1763.56,
-              "clicks": 109
+              "spend": 1782.81,
+              "clicks": 114
             },
             {
               "name": "Кліки на карту Google",
-              "spend": 1125.18,
-              "clicks": 316
+              "spend": 1129.23,
+              "clicks": 317
             },
             {
               "name": "Головна сторінка (загальні запити)",

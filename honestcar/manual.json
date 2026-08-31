@@ -45,7 +45,7 @@
     "2026-08": [
       {
         "week": "01-08.08",
-        "service": "Кондиціонер",
+        "service": "Автомобільний кондиціонер",
         "source": "ads",
         "closed": 7,
         "revenue": 16611
@@ -59,28 +59,28 @@
       },
       {
         "week": "10-15.08",
-        "service": "Кондиціонер",
+        "service": "Автомобільний кондиціонер",
         "source": "ads",
         "closed": 3,
         "revenue": 6984
       },
       {
         "week": "10-15.08",
-        "service": "Рідини і фільтри",
+        "service": "Заміна рідин і фільтрів",
         "source": "ads",
         "closed": 2,
         "revenue": 4656
       },
       {
         "week": "10-15.08",
-        "service": "Шини і шиномонтаж",
+        "service": "Шини та шиномонтаж",
         "source": "ads",
         "closed": 2,
         "revenue": 4656
       },
       {
         "week": "10-15.08",
-        "service": "Кузов і фарбування",
+        "service": "Кузовні роботи та фарбування",
         "source": "ads",
         "closed": 1,
         "revenue": 2328
@@ -101,21 +101,21 @@
       },
       {
         "week": "17-22.08",
-        "service": "АКПП і трансмісія",
+        "service": "Привідна система та коробка передач",
         "source": "ads",
         "closed": 1,
         "revenue": 407
       },
       {
         "week": "01-08.08",
-        "service": "Двигун і турбіни",
+        "service": "Ремонт двигуна",
         "source": "maps",
         "closed": 2,
         "revenue": 3356
       },
       {
         "week": "01-08.08",
-        "service": "Кондиціонер",
+        "service": "Автомобільний кондиціонер",
         "source": "maps",
         "closed": 1,
         "revenue": 1678
