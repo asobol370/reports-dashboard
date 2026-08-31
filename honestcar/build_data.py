@@ -319,6 +319,7 @@ def camp_entry(b, pb):
         'conv': round(b['conv'], 1), 'prev_conv': round(pb['conv'], 1) if pb else None,
         'conv_all': round(b['conv_all'], 1),
         'cpa': round(sdiv(b['cost'], b['conv']), 2),
+        'prev_cpa': round(sdiv(pb['cost'], pb['conv']), 2) if pb else None,
     }
 
 

@@ -637,13 +637,13 @@ function renderCampaigns(campaigns) {
         <div class="camp-metric"><small>CPC</small><b>${fmtNum(c.cpc)} ${CUR()}</b></div>
         <div class="camp-metric"><small>Конв. осн</small><b>${fmtNum(c.conv)}</b></div>
         <div class="camp-metric"><small>Ціна конв.</small><b>${fmtNum(c.cpa)} ${CUR()}</b></div>
-        <div class="camp-metric" style="text-align:right;"><small>Δ витрат</small>${deltaHtml(c.spend, c.prev_spend, false).replace('delta-pos','delta-neutral').replace('delta-neg','delta-neutral')}</div>
+        <div class="camp-metric" style="text-align:right;"><small>Δ ціни конв.</small>${deltaHtml(c.conv > 0 ? c.cpa : null, c.prev_conv > 0 ? c.prev_cpa : null, true)}</div>
       </div>
       <div class="camp-details">
         ${c.groups.length ? `
         <table>
           <thead>
-            <tr><th>Група оголошень</th><th class="right">Витрати</th><th class="right">Покази</th><th class="right">Кліки</th><th class="right">CTR</th><th class="right">CPC</th><th class="right">Конв. осн</th><th class="right">Конв. усі</th><th class="right">Ціна конв.</th><th class="right">Δ витрат</th></tr>
+            <tr><th>Група оголошень</th><th class="right">Витрати</th><th class="right">Покази</th><th class="right">Кліки</th><th class="right">CTR</th><th class="right">CPC</th><th class="right">Конв. осн</th><th class="right">Конв. усі</th><th class="right">Ціна конв.</th><th class="right">Δ ціни конв.</th></tr>
           </thead>
           <tbody>
             ${c.groups.map(g => `
@@ -657,7 +657,7 @@ function renderCampaigns(campaigns) {
                 <td class="right num">${fmtNum(g.conv)}</td>
                 <td class="right num">${fmtNum(g.conv_all)}</td>
                 <td class="right num">${fmtNum(g.cpa)} ${CUR()}</td>
-                <td class="right">${deltaHtml(g.spend, g.prev_spend, false).replace('delta-pos','delta-neutral').replace('delta-neg','delta-neutral')}</td>
+                <td class="right">${deltaHtml(g.conv > 0 ? g.cpa : null, g.prev_conv > 0 ? g.prev_cpa : null, true)}</td>
               </tr>`).join('')}
           </tbody>
         </table>` : '<div class="grp-note">Performance Max — asset groups замість груп оголошень, деталізація недоступна на цьому рівні.</div>'}
