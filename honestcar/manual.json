@@ -1,0 +1,42 @@
+{
+  "_readme": "Ручні дані. months: clients = закриті клієнти за місяць, margin = маржа (zł). services: список записів {week, service, closed, revenue} — з тижневих скрінів клієнта; service має збігатися з назвою напрямку у звіті.",
+  "months": {
+    "2026-01": {
+      "clients": null,
+      "margin": null
+    },
+    "2026-02": {
+      "clients": null,
+      "margin": null
+    },
+    "2026-03": {
+      "clients": null,
+      "margin": null
+    },
+    "2026-04": {
+      "clients": null,
+      "margin": null
+    },
+    "2026-05": {
+      "clients": null,
+      "margin": null
+    },
+    "2026-06": {
+      "clients": null,
+      "margin": null
+    },
+    "2026-07": {
+      "clients": null,
+      "margin": null
+    }
+  },
+  "services": {
+    "2026-01": [],
+    "2026-02": [],
+    "2026-03": [],
+    "2026-04": [],
+    "2026-05": [],
+    "2026-06": [],
+    "2026-07": []
+  }
+}
