@@ -7,7 +7,7 @@
     "name": "Bohatyrov Marketing"
   },
   "currency": "zł",
-  "updated_at": "2026-08-31T13:50:23.129702Z",
+  "updated_at": "2026-08-31T13:56:17.658553Z",
   "source": "google_ads_api + manual.json",
   "monthly": [
     {
@@ -1948,7 +1948,7 @@
       ],
       "services": [
         {
-          "name": "Головна та інше",
+          "name": "Не розподілено",
           "spend": 12261.15,
           "clicks": 2354,
           "conv": 120.9,
@@ -1956,7 +1956,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         }
       ]
     },
@@ -4177,7 +4177,7 @@
       ],
       "services": [
         {
-          "name": "Головна та інше",
+          "name": "Не розподілено",
           "spend": 12224.15,
           "clicks": 2044,
           "conv": 86.7,
@@ -4185,7 +4185,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         }
       ]
     },
@@ -6177,7 +6177,7 @@
       ],
       "services": [
         {
-          "name": "Головна та інше",
+          "name": "Не розподілено",
           "spend": 10094.77,
           "clicks": 1769,
           "conv": 63.2,
@@ -6185,7 +6185,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         }
       ]
     },
@@ -8044,7 +8044,7 @@
       ],
       "services": [
         {
-          "name": "Головна та інше",
+          "name": "Не розподілено",
           "spend": 14538.32,
           "clicks": 2815,
           "conv": 194.2,
@@ -8052,7 +8052,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         }
       ]
     },
@@ -10286,7 +10286,7 @@
       ],
       "services": [
         {
-          "name": "Головна та інше",
+          "name": "Не розподілено",
           "spend": 11976.56,
           "clicks": 2322,
           "conv": 332.9,
@@ -10294,7 +10294,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         }
       ]
     },
@@ -12022,7 +12022,7 @@
       ],
       "services": [
         {
-          "name": "Головна та інше",
+          "name": "Не розподілено",
           "spend": 10975.67,
           "clicks": 2385,
           "conv": 379.5,
@@ -12030,18 +12030,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
-        },
-        {
-          "name": "Google Maps",
-          "spend": 274.92,
-          "clicks": 99,
-          "conv": 42.0,
-          "closed": 0,
-          "revenue": 0,
-          "avg_check": null,
-          "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "VIP-лендінги",
@@ -12052,7 +12041,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         }
       ]
     },
@@ -13586,7 +13575,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "VIP-лендінги",
@@ -13597,21 +13586,10 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
-          "name": "Google Maps",
-          "spend": 1162.9,
-          "clicks": 385,
-          "conv": 200.0,
-          "closed": 0,
-          "revenue": 0,
-          "avg_check": null,
-          "romi": null,
-          "flag": "no_close"
-        },
-        {
-          "name": "Головна та інше",
+          "name": "Не розподілено",
           "spend": 1156.67,
           "clicks": 211,
           "conv": 7.0,
@@ -13619,7 +13597,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "Кузов і фарбування",
@@ -13630,7 +13608,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "Кермове управління",
@@ -13641,7 +13619,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "Гальма",
@@ -13652,7 +13630,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "Електроніка",
@@ -13663,7 +13641,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "АКПП і трансмісія",
@@ -13674,7 +13652,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "Сервіс і діагностика",
@@ -13685,7 +13663,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "Шини і шиномонтаж",
@@ -13696,7 +13674,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "Рідини і фільтри",
@@ -13707,7 +13685,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "Двигун і турбіни",
@@ -13718,7 +13696,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "Ходова і підвіска",
@@ -13729,7 +13707,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         }
       ]
     },
@@ -13750,9 +13728,9 @@
         {
           "key": "cost",
           "label": "Бюджет",
-          "value": 9726.97,
+          "value": 9739.75,
           "prev": 10913.31,
-          "delta_pct": -10.87,
+          "delta_pct": -10.75,
           "unit": "zł",
           "manual": false,
           "delta_inverted": true
@@ -13822,7 +13800,7 @@
           "label": "CPC",
           "value": 4.9,
           "prev": 5.14,
-          "delta_pct": -4.81,
+          "delta_pct": -4.79,
           "unit": "zł",
           "manual": false,
           "delta_inverted": true
@@ -13831,7 +13809,7 @@
       "head": [
         {
           "name": "Бюджет",
-          "current": 9726.97,
+          "current": 9739.75,
           "previous": 10913.31,
           "unit": "zł",
           "manual": false,
@@ -13839,14 +13817,14 @@
         },
         {
           "name": "Покази",
-          "current": 27068,
+          "current": 27079,
           "previous": 29954,
           "unit": "",
           "manual": false
         },
         {
           "name": "Кліки",
-          "current": 1987,
+          "current": 1989,
           "previous": 2122,
           "unit": "",
           "manual": false
@@ -13861,7 +13839,7 @@
         },
         {
           "name": "CTR",
-          "current": 7.34,
+          "current": 7.35,
           "previous": 7.08,
           "unit": "%",
           "manual": false
@@ -13890,7 +13868,7 @@
         },
         {
           "name": "Ціна конверсії (усі)",
-          "current": 21.47,
+          "current": 21.5,
           "previous": 21.53,
           "unit": "zł",
           "manual": false,
@@ -13905,7 +13883,7 @@
         },
         {
           "name": "Ціна конверсії (основні)",
-          "current": 38.75,
+          "current": 38.8,
           "previous": 33.68,
           "unit": "zł",
           "manual": false,
@@ -13913,7 +13891,7 @@
         },
         {
           "name": "Конверсія сайту",
-          "current": 12.63,
+          "current": 12.62,
           "previous": 15.27,
           "unit": "%",
           "manual": false
@@ -14013,7 +13991,7 @@
           "type": "Search",
           "spend": 2589.43,
           "prev_spend": 1594.98,
-          "imp": 4247,
+          "imp": 4248,
           "clk": 613,
           "ctr": 14.43,
           "cpc": 4.22,
@@ -14026,9 +14004,9 @@
               "name": "naprawa blacharsko-lakiernicza warszawa",
               "spend": 1550.36,
               "prev_spend": 922.11,
-              "imp": 2320,
+              "imp": 2321,
               "clk": 366,
-              "ctr": 15.78,
+              "ctr": 15.77,
               "cpc": 4.24,
               "conv": 13.0,
               "prev_conv": 29.0,
@@ -14173,35 +14151,35 @@
         {
           "name": "search-poslugi2-pl",
           "type": "Search",
-          "spend": 1535.48,
+          "spend": 1546.82,
           "prev_spend": 842.5,
-          "imp": 5785,
-          "clk": 405,
-          "ctr": 7.0,
-          "cpc": 3.79,
+          "imp": 5787,
+          "clk": 406,
+          "ctr": 7.02,
+          "cpc": 3.81,
           "conv": 28.0,
           "prev_conv": 13.0,
           "conv_all": 64.0,
-          "cpa": 54.84,
+          "cpa": 55.24,
           "groups": [
             {
               "name": "naprawa automatycznych",
-              "spend": 462.13,
+              "spend": 473.46,
               "prev_spend": 213.46,
-              "imp": 1759,
-              "clk": 126,
-              "ctr": 7.16,
-              "cpc": 3.67,
+              "imp": 1760,
+              "clk": 127,
+              "ctr": 7.22,
+              "cpc": 3.73,
               "conv": 9.0,
               "prev_conv": 2.0,
               "conv_all": 19.0,
-              "cpa": 51.35
+              "cpa": 52.61
             },
             {
               "name": "regeneracja turbosprężarki",
               "spend": 400.1,
               "prev_spend": null,
-              "imp": 1362,
+              "imp": 1363,
               "clk": 94,
               "ctr": 6.9,
               "cpc": 4.26,
@@ -14464,7 +14442,7 @@
           "type": "Search",
           "spend": 1528.91,
           "prev_spend": 460.17,
-          "imp": 2120,
+          "imp": 2121,
           "clk": 235,
           "ctr": 11.08,
           "cpc": 6.51,
@@ -14477,9 +14455,9 @@
               "name": "автосервис варшава_ru",
               "spend": 520.05,
               "prev_spend": 103.73,
-              "imp": 853,
+              "imp": 854,
               "clk": 59,
-              "ctr": 6.92,
+              "ctr": 6.91,
               "cpc": 8.81,
               "conv": 4.0,
               "prev_conv": 2.0,
@@ -14569,16 +14547,16 @@
         {
           "name": "VB | LocalNotSite PMax UA&RU | 230626",
           "type": "PMax",
-          "spend": 1146.23,
+          "spend": 1147.68,
           "prev_spend": 1195.73,
-          "imp": 10946,
-          "clk": 321,
-          "ctr": 2.93,
-          "cpc": 3.57,
+          "imp": 10952,
+          "clk": 322,
+          "ctr": 2.94,
+          "cpc": 3.56,
           "conv": 171.0,
           "prev_conv": 210.0,
           "conv_all": 182.0,
-          "cpa": 6.7,
+          "cpa": 6.71,
           "groups": []
         },
         {
@@ -14586,9 +14564,9 @@
           "type": "Search",
           "spend": 393.27,
           "prev_spend": null,
-          "imp": 1012,
+          "imp": 1013,
           "clk": 103,
-          "ctr": 10.18,
+          "ctr": 10.17,
           "cpc": 3.82,
           "conv": 0.0,
           "prev_conv": null,
@@ -14599,9 +14577,9 @@
               "name": "wymiana oleju warszawa",
               "spend": 211.59,
               "prev_spend": null,
-              "imp": 523,
+              "imp": 524,
               "clk": 56,
-              "ctr": 10.71,
+              "ctr": 10.69,
               "cpc": 3.78,
               "conv": 0.0,
               "prev_conv": null,
@@ -14858,7 +14836,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "Кондиціонер",
@@ -14869,10 +14847,10 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
-          "name": "Головна та інше",
+          "name": "Не розподілено",
           "spend": 1154.35,
           "clicks": 223,
           "conv": 12.5,
@@ -14880,18 +14858,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
-        },
-        {
-          "name": "Google Maps",
-          "spend": 1121.04,
-          "clicks": 314,
-          "conv": 168.0,
-          "closed": 0,
-          "revenue": 0,
-          "avg_check": null,
-          "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "АКПП і трансмісія",
@@ -14902,7 +14869,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "Гальма",
@@ -14913,7 +14880,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "Двигун і турбіни",
@@ -14924,7 +14891,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "Шини і шиномонтаж",
@@ -14935,7 +14902,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "Рідини і фільтри",
@@ -14946,7 +14913,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "Сервіс і діагностика",
@@ -14957,7 +14924,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "Електроніка",
@@ -14968,7 +14935,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "Ходова і підвіска",
@@ -14979,7 +14946,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         },
         {
           "name": "Кермове управління",
@@ -14990,7 +14957,7 @@
           "revenue": 0,
           "avg_check": null,
           "romi": null,
-          "flag": "no_close"
+          "flag": null
         }
       ]
     }
@@ -15014,7 +14981,7 @@
       13524.54,
       12873.43,
       10913.31,
-      9726.97
+      9739.75
     ],
     "clients": [
       null,

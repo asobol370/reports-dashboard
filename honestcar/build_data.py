@@ -182,7 +182,7 @@ def classify_url(url):
     for name, slugs in SERVICES:
         if any(s in u for s in slugs):
             return name
-    return 'Головна та інше'
+    return 'Не розподілено'
 
 
 # ────── manual.json ──────
@@ -343,16 +343,19 @@ def build_services(landing_cur, manual_entries):
     spend = defaultdict(lambda: {'spend': 0.0, 'clicks': 0, 'conv': 0.0})
     for url, o in (landing_cur or {}).items():
         k = classify_url(url)
+        if k == 'Google Maps':
+            continue  # живе в блоці локальних конверсій, у послугах не дублюємо
         s = spend[k]
         s['spend'] += o['cost']; s['clicks'] += o['clk']; s['conv'] += o['conv']
 
+    has_manual = bool(manual_entries)
     closed = defaultdict(lambda: {'closed': 0, 'revenue': 0.0})
     for rec in manual_entries or []:
         c = closed[rec.get('service', '?')]
         c['closed'] += rec.get('closed', 0) or 0
         c['revenue'] += rec.get('revenue', 0) or 0
 
-    service_order = [n for n, _ in SERVICES] + ['VIP-лендінги', 'Google Maps', 'Головна та інше']
+    service_order = [n for n, _ in SERVICES] + ['VIP-лендінги', 'Не розподілено']
     all_names = [n for n in service_order if n in spend or n in closed]
     all_names += [n for n in closed if n not in service_order]
 
@@ -365,10 +368,11 @@ def build_services(landing_cur, manual_entries):
         if not has_spend and not has_close:
             continue
         flag = None
-        if has_spend and not has_close:
-            flag = 'no_close'
-        elif has_close and not has_spend:
-            flag = 'no_spend'
+        if has_manual and n != 'Не розподілено':
+            if has_spend and not has_close:
+                flag = 'no_close'
+            elif has_close and not has_spend:
+                flag = 'no_spend'
         rows.append({
             'name': n,
             'spend': round(sp['spend'], 2), 'clicks': int(sp['clicks']), 'conv': round(sp['conv'], 1),
