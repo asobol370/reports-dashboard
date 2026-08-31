@@ -388,9 +388,9 @@
           <thead>
             <tr>
               <th>Показник</th>
-              <th class="right">Попередній місяць</th>
-              <th class="right">Δ</th>
               <th class="right">Поточний місяць</th>
+              <th class="right">Δ</th>
+              <th class="right">Попередній місяць</th>
             </tr>
           </thead>
           <tbody id="headBody"></tbody>
@@ -602,9 +602,9 @@ function renderHead(rows) {
     return `
       <tr class="${r.manual ? 'manual-row' : ''} ${missing ? 'missing' : ''}">
         <td class="name">${r.name}</td>
-        <td class="right num" style="color:var(--text-muted)">${r.previous == null ? '—' : fmtNum(r.previous) + (r.unit ? ' ' + r.unit : '')}</td>
-        <td class="right">${deltaHtml(r.current, r.previous, r.delta_inverted)}</td>
         <td class="right num"><b>${missing ? '—' : fmtNum(r.current) + (r.unit ? ' ' + r.unit : '')}</b></td>
+        <td class="right">${deltaHtml(r.current, r.previous, r.delta_inverted)}</td>
+        <td class="right num" style="color:var(--text-muted)">${r.previous == null ? '—' : fmtNum(r.previous) + (r.unit ? ' ' + r.unit : '')}</td>
       </tr>`;
   }).join('');
   document.getElementById('manualNote').style.display = anyMissing ? '' : 'none';
