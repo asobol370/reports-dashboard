@@ -7,7 +7,7 @@
     "name": "Bohatyrov Marketing"
   },
   "currency": "zł",
-  "updated_at": "2026-08-31T13:56:17.658553Z",
+  "updated_at": "2026-08-31T14:01:39.221141Z",
   "source": "google_ads_api + manual.json",
   "monthly": [
     {
@@ -230,6 +230,12 @@
             "previous": 0
           },
           {
+            "id": 6660096857,
+            "name": "Calls from Smart Campaign Ads",
+            "current": 46.0,
+            "previous": 0
+          },
+          {
             "id": 6634127723,
             "name": "honestcar.pro GA4 (web) click_google_maps",
             "current": 30.0,
@@ -260,14 +266,7 @@
             "previous": 0
           }
         ],
-        "local": [
-          {
-            "id": 6660096857,
-            "name": "Calls from Smart Campaign Ads",
-            "current": 46.0,
-            "previous": 0
-          }
-        ]
+        "local": []
       },
       "campaigns": [
         {
@@ -2183,6 +2182,12 @@
             "previous": 57.9
           },
           {
+            "id": 6660096857,
+            "name": "Calls from Smart Campaign Ads",
+            "current": 40.0,
+            "previous": 46.0
+          },
+          {
             "id": 6634127723,
             "name": "honestcar.pro GA4 (web) click_google_maps",
             "current": 33.0,
@@ -2225,14 +2230,7 @@
             "previous": 0
           }
         ],
-        "local": [
-          {
-            "id": 6660096857,
-            "name": "Calls from Smart Campaign Ads",
-            "current": 40.0,
-            "previous": 46.0
-          }
-        ]
+        "local": []
       },
       "campaigns": [
         {
@@ -4412,6 +4410,12 @@
             "previous": 41.0
           },
           {
+            "id": 6660096857,
+            "name": "Calls from Smart Campaign Ads",
+            "current": 39.0,
+            "previous": 40.0
+          },
+          {
             "id": 6634127723,
             "name": "honestcar.pro GA4 (web) click_google_maps",
             "current": 29.0,
@@ -4460,14 +4464,7 @@
             "previous": 0
           }
         ],
-        "local": [
-          {
-            "id": 6660096857,
-            "name": "Calls from Smart Campaign Ads",
-            "current": 39.0,
-            "previous": 40.0
-          }
-        ]
+        "local": []
       },
       "campaigns": [
         {
@@ -6412,6 +6409,12 @@
             "previous": 48.0
           },
           {
+            "id": 6660096857,
+            "name": "Calls from Smart Campaign Ads",
+            "current": 41.0,
+            "previous": 39.0
+          },
+          {
             "id": 6634127723,
             "name": "honestcar.pro GA4 (web) click_google_maps",
             "current": 24.0,
@@ -6466,12 +6469,6 @@
             "name": "Local actions - Directions",
             "current": 194.0,
             "previous": 0
-          },
-          {
-            "id": 6660096857,
-            "name": "Calls from Smart Campaign Ads",
-            "current": 41.0,
-            "previous": 39.0
           },
           {
             "id": 6643534495,
@@ -8273,6 +8270,12 @@
       "conversions": {
         "web": [
           {
+            "id": 6660096857,
+            "name": "Calls from Smart Campaign Ads",
+            "current": 43.0,
+            "previous": 41.0
+          },
+          {
             "id": 6634101834,
             "name": "honestcar.pro GA4 (web) click_on_phone",
             "current": 38.0,
@@ -8321,12 +8324,6 @@
             "name": "Local actions - Directions",
             "current": 374.0,
             "previous": 194.0
-          },
-          {
-            "id": 6660096857,
-            "name": "Calls from Smart Campaign Ads",
-            "current": 43.0,
-            "previous": 41.0
           },
           {
             "id": 6643534495,
@@ -10515,6 +10512,12 @@
       "conversions": {
         "web": [
           {
+            "id": 6660096857,
+            "name": "Calls from Smart Campaign Ads",
+            "current": 47.0,
+            "previous": 43.0
+          },
+          {
             "id": 6634101834,
             "name": "honestcar.pro GA4 (web) click_on_phone",
             "current": 37.0,
@@ -10575,12 +10578,6 @@
             "name": "Local actions - Website visits",
             "current": 49.0,
             "previous": 23.0
-          },
-          {
-            "id": 6660096857,
-            "name": "Calls from Smart Campaign Ads",
-            "current": 47.0,
-            "previous": 43.0
           }
         ]
       },
@@ -12262,6 +12259,12 @@
       "conversions": {
         "web": [
           {
+            "id": 6660096857,
+            "name": "Calls from Smart Campaign Ads",
+            "current": 56.0,
+            "previous": 47.0
+          },
+          {
             "id": 6634101834,
             "name": "honestcar.pro GA4 (web) click_on_phone",
             "current": 31.0,
@@ -12316,12 +12319,6 @@
             "name": "Local actions - Directions",
             "current": 363.0,
             "previous": 487.0
-          },
-          {
-            "id": 6660096857,
-            "name": "Calls from Smart Campaign Ads",
-            "current": 56.0,
-            "previous": 47.0
           },
           {
             "id": 6643534495,
@@ -13728,9 +13725,9 @@
         {
           "key": "cost",
           "label": "Бюджет",
-          "value": 9739.75,
+          "value": 9742.49,
           "prev": 10913.31,
-          "delta_pct": -10.75,
+          "delta_pct": -10.73,
           "unit": "zł",
           "manual": false,
           "delta_inverted": true
@@ -13800,7 +13797,7 @@
           "label": "CPC",
           "value": 4.9,
           "prev": 5.14,
-          "delta_pct": -4.79,
+          "delta_pct": -4.81,
           "unit": "zł",
           "manual": false,
           "delta_inverted": true
@@ -13809,7 +13806,7 @@
       "head": [
         {
           "name": "Бюджет",
-          "current": 9739.75,
+          "current": 9742.49,
           "previous": 10913.31,
           "unit": "zł",
           "manual": false,
@@ -13817,14 +13814,14 @@
         },
         {
           "name": "Покази",
-          "current": 27079,
+          "current": 27101,
           "previous": 29954,
           "unit": "",
           "manual": false
         },
         {
           "name": "Кліки",
-          "current": 1989,
+          "current": 1990,
           "previous": 2122,
           "unit": "",
           "manual": false
@@ -13839,7 +13836,7 @@
         },
         {
           "name": "CTR",
-          "current": 7.35,
+          "current": 7.34,
           "previous": 7.08,
           "unit": "%",
           "manual": false
@@ -13868,7 +13865,7 @@
         },
         {
           "name": "Ціна конверсії (усі)",
-          "current": 21.5,
+          "current": 21.51,
           "previous": 21.53,
           "unit": "zł",
           "manual": false,
@@ -13883,7 +13880,7 @@
         },
         {
           "name": "Ціна конверсії (основні)",
-          "current": 38.8,
+          "current": 38.81,
           "previous": 33.68,
           "unit": "zł",
           "manual": false,
@@ -13891,7 +13888,7 @@
         },
         {
           "name": "Конверсія сайту",
-          "current": 12.62,
+          "current": 12.61,
           "previous": 15.27,
           "unit": "%",
           "manual": false
@@ -13927,6 +13924,12 @@
       ],
       "conversions": {
         "web": [
+          {
+            "id": 6660096857,
+            "name": "Calls from Smart Campaign Ads",
+            "current": 41.0,
+            "previous": 56.0
+          },
           {
             "id": 6634101834,
             "name": "honestcar.pro GA4 (web) click_on_phone",
@@ -13970,12 +13973,6 @@
             "name": "Local actions - Directions",
             "current": 314.0,
             "previous": 363.0
-          },
-          {
-            "id": 6660096857,
-            "name": "Calls from Smart Campaign Ads",
-            "current": 41.0,
-            "previous": 56.0
           },
           {
             "id": 6643534495,
@@ -14151,24 +14148,24 @@
         {
           "name": "search-poslugi2-pl",
           "type": "Search",
-          "spend": 1546.82,
+          "spend": 1549.56,
           "prev_spend": 842.5,
-          "imp": 5787,
-          "clk": 406,
+          "imp": 5797,
+          "clk": 407,
           "ctr": 7.02,
           "cpc": 3.81,
           "conv": 28.0,
           "prev_conv": 13.0,
           "conv_all": 64.0,
-          "cpa": 55.24,
+          "cpa": 55.34,
           "groups": [
             {
               "name": "naprawa automatycznych",
               "spend": 473.46,
               "prev_spend": 213.46,
-              "imp": 1760,
+              "imp": 1767,
               "clk": 127,
-              "ctr": 7.22,
+              "ctr": 7.19,
               "cpc": 3.73,
               "conv": 9.0,
               "prev_conv": 2.0,
@@ -14179,9 +14176,9 @@
               "name": "regeneracja turbosprężarki",
               "spend": 400.1,
               "prev_spend": null,
-              "imp": 1363,
+              "imp": 1364,
               "clk": 94,
-              "ctr": 6.9,
+              "ctr": 6.89,
               "cpc": 4.26,
               "conv": 13.0,
               "prev_conv": null,
@@ -14218,9 +14215,9 @@
               "name": "wymiana sprzęgła",
               "spend": 86.98,
               "prev_spend": 38.97,
-              "imp": 339,
+              "imp": 341,
               "clk": 27,
-              "ctr": 7.96,
+              "ctr": 7.92,
               "cpc": 3.22,
               "conv": 1.0,
               "prev_conv": 1.0,
@@ -14229,12 +14226,12 @@
             },
             {
               "name": "remont silnika warszawa",
-              "spend": 63.97,
+              "spend": 66.71,
               "prev_spend": null,
               "imp": 159,
-              "clk": 11,
-              "ctr": 6.92,
-              "cpc": 5.82,
+              "clk": 12,
+              "ctr": 7.55,
+              "cpc": 5.56,
               "conv": 0.0,
               "prev_conv": null,
               "conv_all": 0.0,
@@ -14442,9 +14439,9 @@
           "type": "Search",
           "spend": 1528.91,
           "prev_spend": 460.17,
-          "imp": 2121,
+          "imp": 2125,
           "clk": 235,
-          "ctr": 11.08,
+          "ctr": 11.06,
           "cpc": 6.51,
           "conv": 15.0,
           "prev_conv": 9.0,
@@ -14455,9 +14452,9 @@
               "name": "автосервис варшава_ru",
               "spend": 520.05,
               "prev_spend": 103.73,
-              "imp": 854,
+              "imp": 856,
               "clk": 59,
-              "ctr": 6.91,
+              "ctr": 6.89,
               "cpc": 8.81,
               "conv": 4.0,
               "prev_conv": 2.0,
@@ -14468,9 +14465,9 @@
               "name": "автосервіс варшава_ua",
               "spend": 450.05,
               "prev_spend": 193.85,
-              "imp": 451,
+              "imp": 453,
               "clk": 81,
-              "ctr": 17.96,
+              "ctr": 17.88,
               "cpc": 5.56,
               "conv": 5.5,
               "prev_conv": 3.0,
@@ -14549,7 +14546,7 @@
           "type": "PMax",
           "spend": 1147.68,
           "prev_spend": 1195.73,
-          "imp": 10952,
+          "imp": 10959,
           "clk": 322,
           "ctr": 2.94,
           "cpc": 3.56,
@@ -14564,9 +14561,9 @@
           "type": "Search",
           "spend": 393.27,
           "prev_spend": null,
-          "imp": 1013,
+          "imp": 1014,
           "clk": 103,
-          "ctr": 10.17,
+          "ctr": 10.16,
           "cpc": 3.82,
           "conv": 0.0,
           "prev_conv": null,
@@ -14577,9 +14574,9 @@
               "name": "wymiana oleju warszawa",
               "spend": 211.59,
               "prev_spend": null,
-              "imp": 524,
+              "imp": 525,
               "clk": 56,
-              "ctr": 10.69,
+              "ctr": 10.67,
               "cpc": 3.78,
               "conv": 0.0,
               "prev_conv": null,
@@ -14884,8 +14881,8 @@
         },
         {
           "name": "Двигун і турбіни",
-          "spend": 230.84,
-          "clicks": 88,
+          "spend": 233.58,
+          "clicks": 89,
           "conv": 4.0,
           "closed": 0,
           "revenue": 0,
@@ -14981,7 +14978,7 @@
       13524.54,
       12873.43,
       10913.31,
-      9739.75
+      9742.49
     ],
     "clients": [
       null,
