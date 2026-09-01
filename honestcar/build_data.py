@@ -23,7 +23,7 @@ GS = CLIENT.get_service('GoogleAdsService')
 
 FIRST_MONTH_DAY = date(2026, 5, 1)
 _TODAY = datetime.now().date()
-LAST_DAY = _TODAY  # включаємо поточний місяць частково — фіналізується наступною пересборкою
+LAST_DAY = _TODAY - timedelta(days=1)  # по вчора: поточний місяць частково, без одноденних хвостів
 
 # Конверсии с другого сайта — не показываем в звіті
 EXCLUDE_CONV_IDS = {6657394267}  # 'honestcar.pro GA4 (web) Отправка форм Zapisatsja_PL'
