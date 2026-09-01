@@ -7,7 +7,7 @@
     "name": "Bohatyrov Marketing"
   },
   "currency": "zł",
-  "updated_at": "2026-09-01T10:06:58.000659Z",
+  "updated_at": "2026-09-01T13:28:39.189005Z",
   "source": "google_ads_api + manual.json",
   "monthly": [
     {
@@ -6211,9 +6211,9 @@
         {
           "key": "clients",
           "label": "Всього клієнтів",
-          "value": 24,
+          "value": 33,
           "prev": 42,
-          "delta_pct": -42.86,
+          "delta_pct": -21.43,
           "unit": "",
           "manual": true,
           "delta_inverted": false
@@ -6221,9 +6221,9 @@
         {
           "key": "client_price",
           "label": "Ціна клієнта",
-          "value": 415.48,
+          "value": 302.17,
           "prev": 259.84,
-          "delta_pct": 59.9,
+          "delta_pct": 16.29,
           "unit": "zł",
           "manual": true,
           "delta_inverted": true
@@ -6231,9 +6231,9 @@
         {
           "key": "margin",
           "label": "Маржа",
-          "value": 47406,
+          "value": 54309,
           "prev": 57766,
-          "delta_pct": -17.93,
+          "delta_pct": -5.98,
           "unit": "zł",
           "manual": true,
           "delta_inverted": false
@@ -6241,9 +6241,9 @@
         {
           "key": "margin_per_client",
           "label": "Сер. чек",
-          "value": 1975.25,
+          "value": 1645.73,
           "prev": 1375.38,
-          "delta_pct": 43.61,
+          "delta_pct": 19.66,
           "unit": "zł",
           "manual": true,
           "delta_inverted": false
@@ -6251,9 +6251,9 @@
         {
           "key": "client_cr",
           "label": "Конверсія в клієнта",
-          "value": 9.34,
+          "value": 12.84,
           "prev": 12.96,
-          "delta_pct": -27.96,
+          "delta_pct": -0.94,
           "unit": "%",
           "manual": true,
           "delta_inverted": false
@@ -6261,9 +6261,9 @@
         {
           "key": "romi",
           "label": "ROMI",
-          "value": 375.41,
+          "value": 444.64,
           "prev": 429.32,
-          "delta_pct": -12.56,
+          "delta_pct": 3.57,
           "unit": "%",
           "manual": true,
           "delta_inverted": false
@@ -6319,14 +6319,14 @@
         },
         {
           "name": "Клієнтів",
-          "current": 24,
+          "current": 33,
           "previous": 42,
           "unit": "",
           "manual": true
         },
         {
           "name": "Ціна клієнта",
-          "current": 415.48,
+          "current": 302.17,
           "previous": 259.84,
           "unit": "zł",
           "manual": true,
@@ -6371,28 +6371,28 @@
         },
         {
           "name": "Маржа",
-          "current": 47406,
+          "current": 54309,
           "previous": 57766,
           "unit": "zł",
           "manual": true
         },
         {
           "name": "Маржа 1 клієнта (сер. чек)",
-          "current": 1975.25,
+          "current": 1645.73,
           "previous": 1375.38,
           "unit": "zł",
           "manual": true
         },
         {
           "name": "Конверсія в клієнта",
-          "current": 9.34,
+          "current": 12.84,
           "previous": 12.96,
           "unit": "%",
           "manual": true
         },
         {
           "name": "ROMI",
-          "current": 375.41,
+          "current": 444.64,
           "previous": 429.32,
           "unit": "%",
           "manual": true
@@ -7385,11 +7385,11 @@
           "spend": 2289.48,
           "clicks": 547,
           "conv": 12.0,
-          "closed_ads": 1,
+          "closed_ads": 3,
           "closed_maps": 0,
-          "revenue": 2328.0,
-          "avg_check": 2328.0,
-          "romi": 1.7,
+          "revenue": 3862.0,
+          "avg_check": 1287.33,
+          "romi": 68.7,
           "flag": null
         },
         {
@@ -7424,12 +7424,12 @@
           "spend": 248.71,
           "clicks": 59,
           "conv": 2.0,
-          "closed_ads": 0,
+          "closed_ads": 1,
           "closed_maps": 0,
-          "revenue": 0.0,
-          "avg_check": null,
-          "romi": null,
-          "flag": "no_close"
+          "revenue": 767.0,
+          "avg_check": 767.0,
+          "romi": 208.4,
+          "flag": null
         },
         {
           "name": "Ремонт двигуна",
@@ -7437,11 +7437,11 @@
           "spend": 239.83,
           "clicks": 92,
           "conv": 4.0,
-          "closed_ads": 0,
+          "closed_ads": 1,
           "closed_maps": 2,
-          "revenue": 3356.0,
-          "avg_check": 1678.0,
-          "romi": 1299.3,
+          "revenue": 4123.0,
+          "avg_check": 1374.33,
+          "romi": 1619.1,
           "flag": null
         },
         {
@@ -7450,11 +7450,11 @@
           "spend": 236.58,
           "clicks": 59,
           "conv": 1.0,
-          "closed_ads": 2,
+          "closed_ads": 3,
           "closed_maps": 0,
-          "revenue": 4656.0,
-          "avg_check": 2328.0,
-          "romi": 1868.0,
+          "revenue": 5423.0,
+          "avg_check": 1807.67,
+          "romi": 2192.2,
           "flag": null
         },
         {
@@ -7476,11 +7476,11 @@
           "spend": 149.56,
           "clicks": 62,
           "conv": 0.5,
-          "closed_ads": 4,
+          "closed_ads": 8,
           "closed_maps": 1,
-          "revenue": 6730.0,
-          "avg_check": 1346.0,
-          "romi": 4399.8,
+          "revenue": 9798.0,
+          "avg_check": 1088.67,
+          "romi": 6451.1,
           "flag": null
         },
         {
@@ -7571,7 +7571,7 @@
       34356,
       26830,
       57766,
-      47406
+      54309
     ]
   }
 }

@@ -30,8 +30,8 @@
       "margin": 57766
     },
     "2026-08": {
-      "clients": 24,
-      "margin": 47406
+      "clients": 33,
+      "margin": 54309
     }
   },
   "services": {
@@ -126,6 +126,41 @@
         "source": "maps",
         "closed": 1,
         "revenue": 1215
+      },
+      {
+        "week": "24-31.08",
+        "service": "Сервіс і діагностика",
+        "source": "ads",
+        "closed": 4,
+        "revenue": 3068
+      },
+      {
+        "week": "24-31.08",
+        "service": "Ремонт двигуна",
+        "source": "ads",
+        "closed": 1,
+        "revenue": 767
+      },
+      {
+        "week": "24-31.08",
+        "service": "Шини та шиномонтаж",
+        "source": "ads",
+        "closed": 1,
+        "revenue": 767
+      },
+      {
+        "week": "24-31.08",
+        "service": "Гальма",
+        "source": "ads",
+        "closed": 1,
+        "revenue": 767
+      },
+      {
+        "week": "24-31.08",
+        "service": "Кузовні роботи та фарбування",
+        "source": "ads",
+        "closed": 2,
+        "revenue": 1534
       }
     ]
   }
