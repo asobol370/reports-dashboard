@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Літо 2026 · Зведення · Bohatyrov Marketing</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<meta name="robots" content="noindex, nofollow">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #f4f5f7; --surface: #ffffff; --border: #e5e7eb;
+    --text: #0f172a; --text-muted: #64748b; --text-soft: #94a3b8;
+    --brand: #0f172a; --accent: #3b82f6;
+    --shadow-sm: 0 1px 2px rgba(15,23,42,.05);
+  }
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 32px 20px 60px; }
+  .top { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 28px; flex-wrap: wrap; }
+  .top img { height: 30px; }
+  .top .period { font-size: 13px; color: var(--text-muted); }
+  h1 { font-size: 26px; letter-spacing: -0.02em; margin-bottom: 6px; }
+  .sub { font-size: 13.5px; color: var(--text-muted); margin-bottom: 24px; }
+  .tabs { display: flex; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 4px; box-shadow: var(--shadow-sm); margin-bottom: 22px; max-width: 520px; }
+  .tab { flex: 1; padding: 10px 14px; border: none; background: transparent; border-radius: 9px; font-family: inherit; font-size: 14px; font-weight: 600; color: var(--text-muted); cursor: pointer; }
+  .tab.active { background: var(--brand); color: #fff; }
+  .proj { display: none; }
+  .proj.show { display: block; }
+  .proj-meta { font-size: 12.5px; color: var(--text-soft); margin-bottom: 14px; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 14px; }
+  .kpi { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px 16px; box-shadow: var(--shadow-sm); }
+  .kpi-label { font-size: 12.5px; color: var(--text-muted); margin-bottom: 8px; }
+  .kpi-value { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+  .kpi-value small { font-size: 13px; color: var(--text-soft); font-weight: 500; margin-left: 3px; }
+  .note { margin-top: 26px; font-size: 12.5px; color: var(--text-soft); }
+  @media (max-width: 820px) { .kpi-grid { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; } .kpi-value { font-size: 21px; } }
+  /* auth */
+  #auth { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+  #auth form { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 34px; width: 320px; box-shadow: var(--shadow-sm); text-align: center; }
+  #auth img { height: 28px; margin-bottom: 18px; }
+  #auth input { width: 100%; padding: 11px 12px; border: 1px solid var(--border); border-radius: 9px; font-family: inherit; font-size: 14px; margin-bottom: 12px; }
+  #auth button { width: 100%; padding: 11px; border: none; border-radius: 9px; background: var(--brand); color: #fff; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+  #err { color: #dc2626; font-size: 12.5px; margin-top: 10px; min-height: 16px; }
+</style>
+</head>
+<body>
+
+<div id="auth">
+  <form id="authForm">
+    <img src="logo-bohatyrov.png" alt="Bohatyrov Marketing">
+    <input type="password" id="pwd" placeholder="Пароль">
+    <button type="submit">Увійти</button>
+    <div id="err"></div>
+  </form>
+</div>
+
+<div class="wrap" id="app" style="display:none">
+  <div class="top">
+    <img src="logo-bohatyrov.png" alt="Bohatyrov Marketing">
+    <div class="period">оновлено: 01.09.2026</div>
+  </div>
+  <h1>Літо 2026</h1>
+  <div class="sub">Зведена статистика за літні місяці по проєктах</div>
+
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-p="minelly">Minelly</button>
+    <button class="tab" data-p="kancbaza">Kancbaza</button>
+    <button class="tab" data-p="honestcar">HonestCar</button>
+  </div>
+
+  <div class="proj show" id="p-minelly">
+    <div class="proj-meta">01.06 — 31.08.2026 · Google Ads · дані Google Ads API</div>
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-label">Виручка</div><div class="kpi-value">5 988 369<small>грн</small></div></div>
+      <div class="kpi"><div class="kpi-label">Витрати</div><div class="kpi-value">218 295<small>грн</small></div></div>
+      <div class="kpi"><div class="kpi-label">ROAS</div><div class="kpi-value">2 743<small>%</small></div></div>
+      <div class="kpi"><div class="kpi-label">Покупок</div><div class="kpi-value">4 869</div></div>
+      <div class="kpi"><div class="kpi-label">CPA (ціна покупки)</div><div class="kpi-value">44,83<small>грн</small></div></div>
+      <div class="kpi"><div class="kpi-label">Ср. чек</div><div class="kpi-value">1 230<small>грн</small></div></div>
+      <div class="kpi"><div class="kpi-label">Кф. конверсії</div><div class="kpi-value">17,15<small>%</small></div></div>
+      <div class="kpi"><div class="kpi-label">CPC (ціна кліку)</div><div class="kpi-value">7,69<small>грн</small></div></div>
+    </div>
+  </div>
+
+  <div class="proj" id="p-kancbaza">
+    <div class="proj-meta">01.07 — 31.08.2026 (проєкт з липня) · Horoshop + Google Ads + Meta Ads</div>
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-label">Виручка (Horoshop)</div><div class="kpi-value">3 965 347<small>грн</small></div></div>
+      <div class="kpi"><div class="kpi-label">Успішних замовлень</div><div class="kpi-value">1 917</div></div>
+      <div class="kpi"><div class="kpi-label">Ср. чек</div><div class="kpi-value">2 069<small>грн</small></div></div>
+      <div class="kpi"><div class="kpi-label">% відвалів</div><div class="kpi-value">13,77<small>%</small></div></div>
+      <div class="kpi"><div class="kpi-label">Витрати на рекламу</div><div class="kpi-value">266 930<small>грн</small></div></div>
+      <div class="kpi"><div class="kpi-label">Blended ROAS</div><div class="kpi-value">1 486<small>%</small></div></div>
+      <div class="kpi"><div class="kpi-label">Вартість замовлення</div><div class="kpi-value">139<small>грн</small></div></div>
+      <div class="kpi"><div class="kpi-label">ДРР</div><div class="kpi-value">6,73<small>%</small></div></div>
+    </div>
+  </div>
+
+  <div class="proj" id="p-honestcar">
+    <div class="proj-meta">01.06 — 31.08.2026 · Google Ads · клієнти й маржа — дані клієнта</div>
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-label">Бюджет</div><div class="kpi-value">33 758<small>zł</small></div></div>
+      <div class="kpi"><div class="kpi-label">Всього клієнтів</div><div class="kpi-value">103</div></div>
+      <div class="kpi"><div class="kpi-label">Ціна клієнта</div><div class="kpi-value">328<small>zł</small></div></div>
+      <div class="kpi"><div class="kpi-label">Маржа</div><div class="kpi-value">138 905<small>zł</small></div></div>
+      <div class="kpi"><div class="kpi-label">Сер. чек</div><div class="kpi-value">1 349<small>zł</small></div></div>
+      <div class="kpi"><div class="kpi-label">Конверсія в клієнта</div><div class="kpi-value">9,89<small>%</small></div></div>
+      <div class="kpi"><div class="kpi-label">ROMI</div><div class="kpi-value">311,5<small>%</small></div></div>
+      <div class="kpi"><div class="kpi-label">CPC</div><div class="kpi-value">4,96<small>zł</small></div></div>
+    </div>
+  </div>
+
+  <div class="note">Джерела — місячні звіти проєктів. Літо = червень–серпень 2026 (Kancbaza — з липня, старт проєкту).</div>
+</div>
+
+<script>
+const PASSWORD = 'lito2026';
+const authOk = () => sessionStorage.getItem('summer_auth') === PASSWORD;
+function showApp() {
+  document.getElementById('auth').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+}
+if (authOk()) showApp();
+document.getElementById('authForm').addEventListener('submit', e => {
+  e.preventDefault();
+  if (document.getElementById('pwd').value.trim() === PASSWORD) {
+    sessionStorage.setItem('summer_auth', PASSWORD);
+    showApp();
+  } else {
+    document.getElementById('err').textContent = 'Невірний пароль';
+  }
+});
+document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+  document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+  document.querySelectorAll('.proj').forEach(x => x.classList.remove('show'));
+  t.classList.add('active');
+  document.getElementById('p-' + t.dataset.p).classList.add('show');
+}));
+</script>
+</body>
+</html>
