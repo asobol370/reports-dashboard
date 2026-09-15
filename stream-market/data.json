@@ -6,7 +6,7 @@
   "agency": {
     "name": "Bohatyrov Marketing"
   },
-  "updated_at": "2026-09-14T16:57:33.309988Z",
+  "updated_at": "2026-09-15T09:44:31.809585Z",
   "source": "google_ads_api",
   "weekly": [
     {
@@ -43195,19 +43195,19 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 915.28,
+          "current": 914.38,
           "previous": 988.62,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 55.1,
+          "current": 55.05,
           "previous": 75.18,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 12.82,
+          "current": 12.83,
           "previous": 9.44,
           "unit": "грн",
           "delta_inverted": true
@@ -43535,9 +43535,9 @@
         {
           "key": "revenue",
           "label": "Виручка",
-          "value": 102614.99,
+          "value": 107207.08,
           "unit": "грн",
-          "delta_pct": -27.11,
+          "delta_pct": -23.85,
           "prev": 140785.44,
           "delta_inverted": false
         },
@@ -43553,18 +43553,18 @@
         {
           "key": "roas",
           "label": "ROAS",
-          "value": 914.87,
+          "value": 955.81,
           "unit": "%",
-          "delta_pct": -23.76,
+          "delta_pct": -20.34,
           "prev": 1199.92,
           "delta_inverted": false
         },
         {
           "key": "purchases",
           "label": "Покупок",
-          "value": 36,
+          "value": 37,
           "unit": "",
-          "delta_pct": -16.41,
+          "delta_pct": -14.06,
           "prev": 43,
           "delta_inverted": false
         }
@@ -43573,27 +43573,27 @@
         {
           "key": "cpa",
           "label": "CPA (ціна покупки)",
-          "value": 314.79,
+          "value": 306.2,
           "unit": "грн",
-          "delta_pct": 14.36,
+          "delta_pct": 11.24,
           "prev": 275.25,
           "delta_inverted": true
         },
         {
           "key": "avg_check",
           "label": "Ср. чек",
-          "value": 2879.92,
+          "value": 2926.66,
           "unit": "грн",
-          "delta_pct": -12.8,
+          "delta_pct": -11.39,
           "prev": 3302.81,
           "delta_inverted": false
         },
         {
           "key": "cr_purchase",
           "label": "Кф. конверсії",
-          "value": 2.04,
+          "value": 2.1,
           "unit": "%",
-          "delta_pct": -20.34,
+          "delta_pct": -18.11,
           "prev": 2.57,
           "delta_inverted": false
         },
@@ -43624,7 +43624,7 @@
             6936.32,
             1540.55,
             10807.57,
-            1691.5,
+            6283.58,
             11113.66
           ],
           "spend": [
@@ -43642,7 +43642,7 @@
             409.32,
             99.49,
             671.92,
-            124.2,
+            461.36,
             624.12
           ],
           "purchases": [
@@ -43651,7 +43651,7 @@
             5.56,
             2.33,
             7.13,
-            3.4,
+            4.4,
             4.62
           ],
           "cpa": [
@@ -43660,7 +43660,7 @@
             304.88,
             663.63,
             225.58,
-            400.52,
+            309.5,
             385.14
           ],
           "avg_check": [
@@ -43669,7 +43669,7 @@
             1247.96,
             660.24,
             1515.73,
-            497.42,
+            1427.91,
             2403.76
           ],
           "cr_purchase": [
@@ -43678,7 +43678,7 @@
             2.02,
             0.88,
             2.76,
-            1.43,
+            1.85,
             2.03
           ],
           "cpc": [
@@ -43695,20 +43695,20 @@
       "metrics": [
         {
           "name": "Вартість покупки",
-          "current": 314.79,
+          "current": 306.2,
           "previous": 275.25,
           "unit": "грн",
           "delta_inverted": true
         },
         {
           "name": "Ср. чек",
-          "current": 2879.92,
+          "current": 2926.66,
           "previous": 3302.81,
           "unit": "грн"
         },
         {
           "name": "Кф. конверсії",
-          "current": 2.04,
+          "current": 2.1,
           "previous": 2.57,
           "unit": "%"
         },
@@ -43739,20 +43739,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 717.45,
-          "previous": 915.28,
+          "current": 727.33,
+          "previous": 914.38,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 41.16,
-          "previous": 55.1,
+          "current": 41.73,
+          "previous": 55.05,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 15.63,
-          "previous": 12.82,
+          "current": 15.42,
+          "previous": 12.83,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -43864,11 +43864,11 @@
           "type": "PMax",
           "summary": {
             "spend": 2752.93,
-            "revenue": 8085.19,
-            "roas": 293.69,
-            "conversions": 6,
-            "delta_roas": -90.77,
-            "cpa": 491.04
+            "revenue": 12677.27,
+            "roas": 460.5,
+            "conversions": 7,
+            "delta_roas": -85.53,
+            "cpa": 416.71
           },
           "details": [
             {
@@ -43880,38 +43880,38 @@
             },
             {
               "name": "Покупок",
-              "current": 5.61,
+              "current": 6.61,
               "previous": 10.86,
               "unit": ""
             },
             {
               "name": "Вартість покупки",
-              "current": 491.04,
+              "current": 416.71,
               "previous": 266.69,
               "unit": "грн",
               "delta_inverted": true
             },
             {
               "name": "Ср.чек",
-              "current": 1442.16,
+              "current": 1918.96,
               "previous": 8485.14,
               "unit": "грн"
             },
             {
               "name": "Виручка",
-              "current": 8085.19,
+              "current": 12677.27,
               "previous": 92171.16,
               "unit": "грн"
             },
             {
               "name": "Кф. конверсії",
-              "current": 1.53,
+              "current": 1.81,
               "previous": 2.92,
               "unit": "%"
             },
             {
               "name": "ROAS",
-              "current": 293.69,
+              "current": 460.5,
               "previous": 3181.65,
               "unit": "%"
             },
@@ -44081,8 +44081,8 @@
           "label": "Виручка",
           "value": 2335.57,
           "unit": "грн",
-          "delta_pct": -97.72,
-          "prev": 102614.99,
+          "delta_pct": -97.82,
+          "prev": 107207.08,
           "delta_inverted": false
         },
         {
@@ -44099,8 +44099,8 @@
           "label": "ROAS",
           "value": 59.78,
           "unit": "%",
-          "delta_pct": -93.47,
-          "prev": 914.87,
+          "delta_pct": -93.75,
+          "prev": 955.81,
           "delta_inverted": false
         },
         {
@@ -44108,8 +44108,8 @@
           "label": "Покупок",
           "value": 3,
           "unit": "",
-          "delta_pct": -91.14,
-          "prev": 36,
+          "delta_pct": -91.38,
+          "prev": 37,
           "delta_inverted": false
         }
       ],
@@ -44119,8 +44119,8 @@
           "label": "CPA (ціна покупки)",
           "value": 1237.26,
           "unit": "грн",
-          "delta_pct": 293.04,
-          "prev": 314.79,
+          "delta_pct": 304.08,
+          "prev": 306.2,
           "delta_inverted": true
         },
         {
@@ -44128,8 +44128,8 @@
           "label": "Ср. чек",
           "value": 739.63,
           "unit": "грн",
-          "delta_pct": -74.32,
-          "prev": 2879.92,
+          "delta_pct": -74.73,
+          "prev": 2926.66,
           "delta_inverted": false
         },
         {
@@ -44137,8 +44137,8 @@
           "label": "Кф. конверсії",
           "value": 0.48,
           "unit": "%",
-          "delta_pct": -76.45,
-          "prev": 2.04,
+          "delta_pct": -77.1,
+          "prev": 2.1,
           "delta_inverted": false
         },
         {
@@ -44240,20 +44240,20 @@
         {
           "name": "Вартість покупки",
           "current": 1237.26,
-          "previous": 314.79,
+          "previous": 306.2,
           "unit": "грн",
           "delta_inverted": true
         },
         {
           "name": "Ср. чек",
           "current": 739.63,
-          "previous": 2879.92,
+          "previous": 2926.66,
           "unit": "грн"
         },
         {
           "name": "Кф. конверсії",
           "current": 0.48,
-          "previous": 2.04,
+          "previous": 2.1,
           "unit": "%"
         },
         {
@@ -44283,20 +44283,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 211.18,
-          "previous": 717.45,
+          "current": 210.88,
+          "previous": 727.33,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 32.19,
-          "previous": 41.16,
+          "current": 32.15,
+          "previous": 41.73,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 18.5,
-          "previous": 15.63,
+          "current": 18.53,
+          "previous": 15.42,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -44411,7 +44411,7 @@
             "revenue": 867.17,
             "roas": 96.07,
             "conversions": 1,
-            "delta_roas": -67.29,
+            "delta_roas": -79.14,
             "cpa": 902.68
           },
           "details": [
@@ -44425,38 +44425,38 @@
             {
               "name": "Покупок",
               "current": 1.0,
-              "previous": 5.61,
+              "previous": 6.61,
               "unit": ""
             },
             {
               "name": "Вартість покупки",
               "current": 902.68,
-              "previous": 491.04,
+              "previous": 416.71,
               "unit": "грн",
               "delta_inverted": true
             },
             {
               "name": "Ср.чек",
               "current": 867.17,
-              "previous": 1442.16,
+              "previous": 1918.96,
               "unit": "грн"
             },
             {
               "name": "Виручка",
               "current": 867.17,
-              "previous": 8085.19,
+              "previous": 12677.27,
               "unit": "грн"
             },
             {
               "name": "Кф. конверсії",
               "current": 0.74,
-              "previous": 1.53,
+              "previous": 1.81,
               "unit": "%"
             },
             {
               "name": "ROAS",
               "current": 96.07,
-              "previous": 293.69,
+              "previous": 460.5,
               "unit": "%"
             },
             {
@@ -44827,20 +44827,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 747.37,
-          "previous": 211.18,
+          "current": 746.87,
+          "previous": 210.88,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 40.29,
-          "previous": 32.19,
+          "current": 40.26,
+          "previous": 32.15,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 18.28,
-          "previous": 18.5,
+          "current": 18.3,
+          "previous": 18.53,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -45371,20 +45371,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 640.55,
-          "previous": 747.37,
+          "current": 640.66,
+          "previous": 746.87,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 41.95,
-          "previous": 40.29,
+          "current": 41.96,
+          "previous": 40.26,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
           "current": 15.33,
-          "previous": 18.28,
+          "previous": 18.3,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -45915,14 +45915,14 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 653.74,
-          "previous": 640.55,
+          "current": 653.77,
+          "previous": 640.66,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
           "current": 39.17,
-          "previous": 41.95,
+          "previous": 41.96,
           "unit": "%"
         },
         {
@@ -46459,19 +46459,19 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 446.28,
-          "previous": 653.74,
+          "current": 445.83,
+          "previous": 653.77,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 43.97,
+          "current": 43.92,
           "previous": 39.17,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 16.54,
+          "current": 16.56,
           "previous": 14.77,
           "unit": "грн",
           "delta_inverted": true
@@ -47104,20 +47104,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 356.59,
-          "previous": 446.28,
+          "current": 357.06,
+          "previous": 445.83,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 36.02,
-          "previous": 43.97,
+          "current": 36.07,
+          "previous": 43.92,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 23.01,
-          "previous": 16.54,
+          "current": 22.98,
+          "previous": 16.56,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -47648,20 +47648,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 423.16,
-          "previous": 356.59,
+          "current": 430.35,
+          "previous": 357.06,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 34.37,
-          "previous": 36.02,
+          "current": 34.96,
+          "previous": 36.07,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 18.73,
-          "previous": 23.01,
+          "current": 18.42,
+          "previous": 22.98,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -48192,20 +48192,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 391.69,
-          "previous": 423.16,
+          "current": 406.63,
+          "previous": 430.35,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 29.72,
-          "previous": 34.37,
+          "current": 30.85,
+          "previous": 34.96,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 25.58,
-          "previous": 18.73,
+          "current": 24.64,
+          "previous": 18.42,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -48736,20 +48736,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 558.62,
-          "previous": 391.69,
+          "current": 562.26,
+          "previous": 406.63,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 44.65,
-          "previous": 29.72,
+          "current": 44.94,
+          "previous": 30.85,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 18.52,
-          "previous": 25.58,
+          "current": 18.4,
+          "previous": 24.64,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -49381,20 +49381,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 322.49,
-          "previous": 558.62,
+          "current": 322.29,
+          "previous": 562.26,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 23.4,
-          "previous": 44.65,
+          "current": 23.39,
+          "previous": 44.94,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 30.48,
-          "previous": 18.52,
+          "current": 30.49,
+          "previous": 18.4,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -50001,7 +50001,7 @@
         },
         {
           "name": "Покази",
-          "current": 41168,
+          "current": 41167,
           "previous": 35359,
           "unit": ""
         },
@@ -50026,20 +50026,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 419.89,
-          "previous": 322.49,
+          "current": 437.17,
+          "previous": 322.29,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 28.43,
-          "previous": 23.4,
+          "current": 29.6,
+          "previous": 23.39,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 24.36,
-          "previous": 30.48,
+          "current": 23.4,
+          "previous": 30.49,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -50103,7 +50103,7 @@
             },
             {
               "name": "Покази",
-              "current": 20203,
+              "current": 20202,
               "previous": 15218,
               "unit": ""
             },
@@ -65370,9 +65370,9 @@
         {
           "key": "revenue",
           "label": "Виручка",
-          "value": 386921.59,
+          "value": 391513.67,
           "unit": "грн",
-          "delta_pct": 70.58,
+          "delta_pct": 72.6,
           "prev": 226831.32,
           "delta_inverted": false
         },
@@ -65388,18 +65388,18 @@
         {
           "key": "roas",
           "label": "ROAS",
-          "value": 840.43,
+          "value": 850.4,
           "unit": "%",
-          "delta_pct": 52.77,
+          "delta_pct": 54.58,
           "prev": 550.14,
           "delta_inverted": false
         },
         {
           "key": "purchases",
           "label": "Покупок",
-          "value": 134,
+          "value": 135,
           "unit": "",
-          "delta_pct": 46.44,
+          "delta_pct": 47.53,
           "prev": 92,
           "delta_inverted": false
         }
@@ -65408,27 +65408,27 @@
         {
           "key": "cpa",
           "label": "CPA (ціна покупки)",
-          "value": 342.39,
+          "value": 339.87,
           "unit": "грн",
-          "delta_pct": -23.75,
+          "delta_pct": -24.31,
           "prev": 449.04,
           "delta_inverted": true
         },
         {
           "key": "avg_check",
           "label": "Ср. чек",
-          "value": 2877.59,
+          "value": 2890.25,
           "unit": "грн",
-          "delta_pct": 16.48,
+          "delta_pct": 17.0,
           "prev": 2470.37,
           "delta_inverted": false
         },
         {
           "key": "cr_purchase",
           "label": "Кф. конверсії",
-          "value": 1.99,
+          "value": 2.0,
           "unit": "%",
-          "delta_pct": 26.86,
+          "delta_pct": 27.81,
           "prev": 1.57,
           "delta_inverted": false
         },
@@ -65503,7 +65503,7 @@
             6936.32,
             1540.55,
             10807.57,
-            1691.5,
+            6283.58,
             11113.66,
             833.42,
             1502.15
@@ -65567,7 +65567,7 @@
             409.32,
             99.49,
             671.92,
-            124.2,
+            461.36,
             624.12,
             53.89,
             96.98
@@ -65599,7 +65599,7 @@
             5.56,
             2.33,
             7.13,
-            3.4,
+            4.4,
             4.62,
             0.08,
             3.08
@@ -65631,7 +65631,7 @@
             304.88,
             663.63,
             225.58,
-            400.52,
+            309.5,
             385.14,
             19134.8,
             503.39
@@ -65663,7 +65663,7 @@
             1247.96,
             660.24,
             1515.73,
-            497.42,
+            1427.91,
             2403.76,
             10310.8,
             488.2
@@ -65695,7 +65695,7 @@
             2.02,
             0.88,
             2.76,
-            1.43,
+            1.85,
             2.03,
             0.03,
             1.18
@@ -65737,20 +65737,20 @@
       "metrics": [
         {
           "name": "Вартість покупки",
-          "current": 342.39,
+          "current": 339.87,
           "previous": 449.04,
           "unit": "грн",
           "delta_inverted": true
         },
         {
           "name": "Ср. чек",
-          "current": 2877.59,
+          "current": 2890.25,
           "previous": 2470.37,
           "unit": "грн"
         },
         {
           "name": "Кф. конверсії",
-          "current": 1.99,
+          "current": 2.0,
           "previous": 1.57,
           "unit": "%"
         },
@@ -65781,19 +65781,19 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 3463.14,
+          "current": 3471.83,
           "previous": 3196.48,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 51.21,
+          "current": 51.34,
           "previous": 54.56,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 13.29,
+          "current": 13.26,
           "previous": 12.9,
           "unit": "грн",
           "delta_inverted": true
@@ -65906,11 +65906,11 @@
           "type": "PMax",
           "summary": {
             "spend": 7587.11,
-            "revenue": 106876.56,
-            "roas": 1408.66,
-            "conversions": 20,
+            "revenue": 111468.64,
+            "roas": 1469.19,
+            "conversions": 21,
             "delta_roas": 0,
-            "cpa": 387.32
+            "cpa": 368.5
           },
           "details": [
             {
@@ -65922,38 +65922,38 @@
             },
             {
               "name": "Покупок",
-              "current": 19.59,
+              "current": 20.59,
               "previous": 0,
               "unit": ""
             },
             {
               "name": "Вартість покупки",
-              "current": 387.32,
+              "current": 368.5,
               "previous": 0,
               "unit": "грн",
               "delta_inverted": true
             },
             {
               "name": "Ср.чек",
-              "current": 5455.97,
+              "current": 5414.01,
               "previous": 0,
               "unit": "грн"
             },
             {
               "name": "Виручка",
-              "current": 106876.56,
+              "current": 111468.64,
               "previous": 0,
               "unit": "грн"
             },
             {
               "name": "Кф. конверсії",
-              "current": 2.06,
+              "current": 2.16,
               "previous": 0,
               "unit": "%"
             },
             {
               "name": "ROAS",
-              "current": 1408.66,
+              "current": 1469.19,
               "previous": 0,
               "unit": "%"
             },
@@ -66224,8 +66224,8 @@
           "label": "Виручка",
           "value": 306210.62,
           "unit": "грн",
-          "delta_pct": -20.86,
-          "prev": 386921.59,
+          "delta_pct": -21.79,
+          "prev": 391513.67,
           "delta_inverted": false
         },
         {
@@ -66242,8 +66242,8 @@
           "label": "ROAS",
           "value": 765.95,
           "unit": "%",
-          "delta_pct": -8.86,
-          "prev": 840.43,
+          "delta_pct": -9.93,
+          "prev": 850.4,
           "delta_inverted": false
         },
         {
@@ -66251,8 +66251,8 @@
           "label": "Покупок",
           "value": 89,
           "unit": "",
-          "delta_pct": -33.65,
-          "prev": 134,
+          "delta_pct": -34.14,
+          "prev": 135,
           "delta_inverted": false
         }
       ],
@@ -66262,8 +66262,8 @@
           "label": "CPA (ціна покупки)",
           "value": 448.12,
           "unit": "грн",
-          "delta_pct": 30.88,
-          "prev": 342.39,
+          "delta_pct": 31.85,
+          "prev": 339.87,
           "delta_inverted": true
         },
         {
@@ -66271,8 +66271,8 @@
           "label": "Ср. чек",
           "value": 3432.4,
           "unit": "грн",
-          "delta_pct": 19.28,
-          "prev": 2877.59,
+          "delta_pct": 18.76,
+          "prev": 2890.25,
           "delta_inverted": false
         },
         {
@@ -66280,8 +66280,8 @@
           "label": "Кф. конверсії",
           "value": 1.48,
           "unit": "%",
-          "delta_pct": -25.61,
-          "prev": 1.99,
+          "delta_pct": -26.16,
+          "prev": 2.0,
           "delta_inverted": false
         },
         {
@@ -66599,20 +66599,20 @@
         {
           "name": "Вартість покупки",
           "current": 448.12,
-          "previous": 342.39,
+          "previous": 339.87,
           "unit": "грн",
           "delta_inverted": true
         },
         {
           "name": "Ср. чек",
           "current": 3432.4,
-          "previous": 2877.59,
+          "previous": 2890.25,
           "unit": "грн"
         },
         {
           "name": "Кф. конверсії",
           "current": 1.48,
-          "previous": 1.99,
+          "previous": 2.0,
           "unit": "%"
         },
         {
@@ -66642,20 +66642,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 2490.35,
-          "previous": 3463.14,
+          "current": 2489.53,
+          "previous": 3471.83,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 41.29,
-          "previous": 51.21,
+          "current": 41.27,
+          "previous": 51.34,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 16.05,
-          "previous": 13.29,
+          "current": 16.06,
+          "previous": 13.26,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -66770,7 +66770,7 @@
             "revenue": 241008.17,
             "roas": 1332.58,
             "conversions": 40,
-            "delta_roas": -5.4,
+            "delta_roas": -9.3,
             "cpa": 455.38
           },
           "details": [
@@ -66784,38 +66784,38 @@
             {
               "name": "Покупок",
               "current": 39.72,
-              "previous": 19.59,
+              "previous": 20.59,
               "unit": ""
             },
             {
               "name": "Вартість покупки",
               "current": 455.38,
-              "previous": 387.32,
+              "previous": 368.5,
               "unit": "грн",
               "delta_inverted": true
             },
             {
               "name": "Ср.чек",
               "current": 6068.33,
-              "previous": 5455.97,
+              "previous": 5414.01,
               "unit": "грн"
             },
             {
               "name": "Виручка",
               "current": 241008.17,
-              "previous": 106876.56,
+              "previous": 111468.64,
               "unit": "грн"
             },
             {
               "name": "Кф. конверсії",
               "current": 1.56,
-              "previous": 2.06,
+              "previous": 2.16,
               "unit": "%"
             },
             {
               "name": "ROAS",
               "current": 1332.58,
-              "previous": 1408.66,
+              "previous": 1469.19,
               "unit": "%"
             },
             {
@@ -67402,20 +67402,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 1903.4,
-          "previous": 2490.35,
+          "current": 1929.64,
+          "previous": 2489.53,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 37.1,
-          "previous": 41.29,
+          "current": 37.61,
+          "previous": 41.27,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 20.46,
-          "previous": 16.05,
+          "current": 20.18,
+          "previous": 16.06,
           "unit": "грн",
           "delta_inverted": true
         }
