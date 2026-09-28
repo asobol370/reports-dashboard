@@ -117,10 +117,14 @@ def fetch_metrics(date_from, date_to):
 
 
 def fetch_purchases(metrics_daily, date_from, date_to):
-    """Вливает покупки/выручку (только PURCHASE_ACTION) в metrics_daily."""
+    """Вливает покупки/выручку (только PURCHASE_ACTION) в metrics_daily.
+
+    all_conversions, а не conversions: в кампаниях с campaign-level goals
+    (оптимизация на Покупка_опт) действие Покупка_GAds выпадает из
+    metrics.conversions, но остаётся в all_conversions."""
     query = f"""
       SELECT segments.date, campaign.id, segments.conversion_action_name,
-             metrics.conversions, metrics.conversions_value
+             metrics.all_conversions, metrics.all_conversions_value
       FROM campaign
       WHERE segments.date BETWEEN '{fmt(date_from)}' AND '{fmt(date_to)}'
         AND segments.conversion_action_name = '{PURCHASE_ACTION}'
@@ -128,8 +132,8 @@ def fetch_purchases(metrics_daily, date_from, date_to):
     for r in GS.search(customer_id=CID, query=query):
         key = (r.campaign.id, r.segments.date)
         if key in metrics_daily:
-            metrics_daily[key]['purchases'] += r.metrics.conversions
-            metrics_daily[key]['revenue'] += r.metrics.conversions_value
+            metrics_daily[key]['purchases'] += r.metrics.all_conversions
+            metrics_daily[key]['revenue'] += r.metrics.all_conversions_value
 
 
 def fetch_add_to_carts(date_from, date_to):
