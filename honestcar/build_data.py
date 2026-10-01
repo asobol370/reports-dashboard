@@ -259,7 +259,9 @@ def derive_all(tot, man):
         'site_cr': sdiv(conv, clk) * 100,
         'margin': margin,
         'margin_per_client': (sdiv(margin, clients) if (margin is not None and clients) else None),
-        'client_cr': (sdiv(clients, conv) * 100 if (clients is not None and conv) else None),
+        # ручной override из manual.json (months[мес]['client_cr']) важнее расчёта
+        'client_cr': (man.get('client_cr') if man.get('client_cr') is not None
+                      else (sdiv(clients, conv) * 100 if (clients is not None and conv) else None)),
         'romi': (sdiv(margin - cost, cost) * 100 if (margin is not None and cost) else None),
     }
 

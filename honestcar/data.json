@@ -7,7 +7,7 @@
     "name": "Bohatyrov Marketing"
   },
   "currency": "zł",
-  "updated_at": "2026-10-01T10:14:21.015403Z",
+  "updated_at": "2026-10-01T10:33:22.886505Z",
   "source": "google_ads_api + manual.json",
   "monthly": [
     {
@@ -6251,9 +6251,9 @@
         {
           "key": "client_cr",
           "label": "Конверсія в клієнта",
-          "value": 12.22,
+          "value": 28.21,
           "prev": 12.96,
-          "delta_pct": -5.71,
+          "delta_pct": 117.62,
           "unit": "%",
           "manual": true,
           "delta_inverted": false
@@ -6385,7 +6385,7 @@
         },
         {
           "name": "Конверсія в клієнта",
-          "current": 12.22,
+          "current": 28.21,
           "previous": 12.96,
           "unit": "%",
           "manual": true
@@ -7626,9 +7626,9 @@
         {
           "key": "client_cr",
           "label": "Конверсія в клієнта",
-          "value": 13.51,
-          "prev": 12.22,
-          "delta_pct": 10.57,
+          "value": 25.94,
+          "prev": 28.21,
+          "delta_pct": -8.05,
           "unit": "%",
           "manual": true,
           "delta_inverted": false
@@ -7760,8 +7760,8 @@
         },
         {
           "name": "Конверсія в клієнта",
-          "current": 13.51,
-          "previous": 12.22,
+          "current": 25.94,
+          "previous": 28.21,
           "unit": "%",
           "manual": true
         },
