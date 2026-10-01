@@ -7,7 +7,7 @@
     "name": "Bohatyrov Marketing"
   },
   "currency": "zł",
-  "updated_at": "2026-10-01T10:07:15.858942Z",
+  "updated_at": "2026-10-01T10:14:21.015403Z",
   "source": "google_ads_api + manual.json",
   "monthly": [
     {
@@ -7606,9 +7606,9 @@
         {
           "key": "margin",
           "label": "Маржа",
-          "value": null,
+          "value": 40729,
           "prev": 54309,
-          "delta_pct": null,
+          "delta_pct": -25.01,
           "unit": "zł",
           "manual": true,
           "delta_inverted": false
@@ -7616,9 +7616,9 @@
         {
           "key": "margin_per_client",
           "label": "Сер. чек",
-          "value": null,
+          "value": 1357.63,
           "prev": 1645.73,
-          "delta_pct": null,
+          "delta_pct": -17.51,
           "unit": "zł",
           "manual": true,
           "delta_inverted": false
@@ -7636,9 +7636,9 @@
         {
           "key": "romi",
           "label": "ROMI",
-          "value": null,
+          "value": 296.48,
           "prev": 444.64,
-          "delta_pct": null,
+          "delta_pct": -33.32,
           "unit": "%",
           "manual": true,
           "delta_inverted": false
@@ -7746,14 +7746,14 @@
         },
         {
           "name": "Маржа",
-          "current": null,
+          "current": 40729,
           "previous": 54309,
           "unit": "zł",
           "manual": true
         },
         {
           "name": "Маржа 1 клієнта (сер. чек)",
-          "current": null,
+          "current": 1357.63,
           "previous": 1645.73,
           "unit": "zł",
           "manual": true
@@ -7767,7 +7767,7 @@
         },
         {
           "name": "ROMI",
-          "current": null,
+          "current": 296.48,
           "previous": 444.64,
           "unit": "%",
           "manual": true
@@ -9078,7 +9078,7 @@
       26830,
       57766,
       54309,
-      null
+      40729
     ]
   }
 }
