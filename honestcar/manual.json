@@ -1,167 +1,306 @@
 {
-  "_readme": "Ручні дані. months: clients = закриті клієнти за місяць, margin = маржа (zł). services: список записів {week, service, closed, revenue} — з тижневих скрінів клієнта; service має збігатися з назвою напрямку у звіті.",
-  "months": {
-    "2026-01": {
-      "clients": null,
-      "margin": null
-    },
-    "2026-02": {
-      "clients": null,
-      "margin": null
-    },
-    "2026-03": {
-      "clients": null,
-      "margin": null
-    },
-    "2026-04": {
-      "clients": null,
-      "margin": null
-    },
-    "2026-05": {
-      "clients": 48,
-      "margin": 34356
-    },
-    "2026-06": {
-      "clients": 28,
-      "margin": 26830
-    },
-    "2026-07": {
-      "clients": 42,
-      "margin": 57766
-    },
-    "2026-08": {
-      "clients": 33,
-      "margin": 54309
-    }
+ "_readme": "Ручні дані. months: clients = закриті клієнти за місяць, margin = маржа (zł). services: список записів {week, service, closed, revenue} — з тижневих скрінів клієнта; service має збігатися з назвою напрямку у звіті.",
+ "months": {
+  "2026-01": {
+   "clients": null,
+   "margin": null
   },
-  "services": {
-    "2026-01": [],
-    "2026-02": [],
-    "2026-03": [],
-    "2026-04": [],
-    "2026-05": [],
-    "2026-06": [],
-    "2026-07": [],
-    "2026-08": [
-      {
-        "week": "01-08.08",
-        "service": "Автомобільний кондиціонер",
-        "source": "ads",
-        "closed": 7,
-        "revenue": 16611
-      },
-      {
-        "week": "01-08.08",
-        "service": "Сервіс і діагностика",
-        "source": "ads",
-        "closed": 1,
-        "revenue": 2373
-      },
-      {
-        "week": "10-15.08",
-        "service": "Автомобільний кондиціонер",
-        "source": "ads",
-        "closed": 3,
-        "revenue": 6984
-      },
-      {
-        "week": "10-15.08",
-        "service": "Заміна рідин і фільтрів",
-        "source": "ads",
-        "closed": 2,
-        "revenue": 4656
-      },
-      {
-        "week": "10-15.08",
-        "service": "Шини та шиномонтаж",
-        "source": "ads",
-        "closed": 2,
-        "revenue": 4656
-      },
-      {
-        "week": "10-15.08",
-        "service": "Кузовні роботи та фарбування",
-        "source": "ads",
-        "closed": 1,
-        "revenue": 2328
-      },
-      {
-        "week": "10-15.08",
-        "service": "Сервіс і діагностика",
-        "source": "ads",
-        "closed": 1,
-        "revenue": 2328
-      },
-      {
-        "week": "17-22.08",
-        "service": "Сервіс і діагностика",
-        "source": "ads",
-        "closed": 2,
-        "revenue": 814
-      },
-      {
-        "week": "17-22.08",
-        "service": "Привідна система та коробка передач",
-        "source": "ads",
-        "closed": 1,
-        "revenue": 407
-      },
-      {
-        "week": "01-08.08",
-        "service": "Ремонт двигуна",
-        "source": "maps",
-        "closed": 2,
-        "revenue": 3356
-      },
-      {
-        "week": "01-08.08",
-        "service": "Автомобільний кондиціонер",
-        "source": "maps",
-        "closed": 1,
-        "revenue": 1678
-      },
-      {
-        "week": "10-15.08",
-        "service": "Сервіс і діагностика",
-        "source": "maps",
-        "closed": 1,
-        "revenue": 1215
-      },
-      {
-        "week": "24-31.08",
-        "service": "Сервіс і діагностика",
-        "source": "ads",
-        "closed": 4,
-        "revenue": 3068
-      },
-      {
-        "week": "24-31.08",
-        "service": "Ремонт двигуна",
-        "source": "ads",
-        "closed": 1,
-        "revenue": 767
-      },
-      {
-        "week": "24-31.08",
-        "service": "Шини та шиномонтаж",
-        "source": "ads",
-        "closed": 1,
-        "revenue": 767
-      },
-      {
-        "week": "24-31.08",
-        "service": "Гальма",
-        "source": "ads",
-        "closed": 1,
-        "revenue": 767
-      },
-      {
-        "week": "24-31.08",
-        "service": "Кузовні роботи та фарбування",
-        "source": "ads",
-        "closed": 2,
-        "revenue": 1534
-      }
-    ]
+  "2026-02": {
+   "clients": null,
+   "margin": null
+  },
+  "2026-03": {
+   "clients": null,
+   "margin": null
+  },
+  "2026-04": {
+   "clients": null,
+   "margin": null
+  },
+  "2026-05": {
+   "clients": 48,
+   "margin": 34356
+  },
+  "2026-06": {
+   "clients": 28,
+   "margin": 26830
+  },
+  "2026-07": {
+   "clients": 42,
+   "margin": 57766
+  },
+  "2026-08": {
+   "clients": 33,
+   "margin": 54309
+  },
+  "2026-09": {
+   "clients": 30,
+   "margin": null
   }
+ },
+ "services": {
+  "2026-01": [],
+  "2026-02": [],
+  "2026-03": [],
+  "2026-04": [],
+  "2026-05": [],
+  "2026-06": [],
+  "2026-07": [],
+  "2026-08": [
+   {
+    "week": "01-08.08",
+    "service": "Автомобільний кондиціонер",
+    "source": "ads",
+    "closed": 7,
+    "revenue": 16611
+   },
+   {
+    "week": "01-08.08",
+    "service": "Сервіс і діагностика",
+    "source": "ads",
+    "closed": 1,
+    "revenue": 2373
+   },
+   {
+    "week": "10-15.08",
+    "service": "Автомобільний кондиціонер",
+    "source": "ads",
+    "closed": 3,
+    "revenue": 6984
+   },
+   {
+    "week": "10-15.08",
+    "service": "Заміна рідин і фільтрів",
+    "source": "ads",
+    "closed": 2,
+    "revenue": 4656
+   },
+   {
+    "week": "10-15.08",
+    "service": "Шини та шиномонтаж",
+    "source": "ads",
+    "closed": 2,
+    "revenue": 4656
+   },
+   {
+    "week": "10-15.08",
+    "service": "Кузовні роботи та фарбування",
+    "source": "ads",
+    "closed": 1,
+    "revenue": 2328
+   },
+   {
+    "week": "10-15.08",
+    "service": "Сервіс і діагностика",
+    "source": "ads",
+    "closed": 1,
+    "revenue": 2328
+   },
+   {
+    "week": "17-22.08",
+    "service": "Сервіс і діагностика",
+    "source": "ads",
+    "closed": 2,
+    "revenue": 814
+   },
+   {
+    "week": "17-22.08",
+    "service": "Привідна система та коробка передач",
+    "source": "ads",
+    "closed": 1,
+    "revenue": 407
+   },
+   {
+    "week": "01-08.08",
+    "service": "Ремонт двигуна",
+    "source": "maps",
+    "closed": 2,
+    "revenue": 3356
+   },
+   {
+    "week": "01-08.08",
+    "service": "Автомобільний кондиціонер",
+    "source": "maps",
+    "closed": 1,
+    "revenue": 1678
+   },
+   {
+    "week": "10-15.08",
+    "service": "Сервіс і діагностика",
+    "source": "maps",
+    "closed": 1,
+    "revenue": 1215
+   },
+   {
+    "week": "24-31.08",
+    "service": "Сервіс і діагностика",
+    "source": "ads",
+    "closed": 4,
+    "revenue": 3068
+   },
+   {
+    "week": "24-31.08",
+    "service": "Ремонт двигуна",
+    "source": "ads",
+    "closed": 1,
+    "revenue": 767
+   },
+   {
+    "week": "24-31.08",
+    "service": "Шини та шиномонтаж",
+    "source": "ads",
+    "closed": 1,
+    "revenue": 767
+   },
+   {
+    "week": "24-31.08",
+    "service": "Гальма",
+    "source": "ads",
+    "closed": 1,
+    "revenue": 767
+   },
+   {
+    "week": "24-31.08",
+    "service": "Кузовні роботи та фарбування",
+    "source": "ads",
+    "closed": 2,
+    "revenue": 1534
+   }
+  ],
+  "2026-09": [
+   {
+    "week": "01-05.09",
+    "service": "Сервіс і діагностика",
+    "source": "ads",
+    "closed": 1,
+    "revenue": 220
+   },
+   {
+    "week": "01-05.09",
+    "service": "Підвіска і ходова частина",
+    "source": "ads",
+    "closed": 1,
+    "revenue": 5867
+   },
+   {
+    "week": "01-05.09",
+    "service": "Заміна рідин і фільтрів",
+    "source": "ads",
+    "closed": 1,
+    "revenue": 120
+   },
+   {
+    "week": "01-05.09",
+    "service": "Сервіс і діагностика",
+    "source": "maps",
+    "closed": 1,
+    "revenue": 400
+   },
+   {
+    "week": "07-12.09",
+    "service": "Заміна рідин і фільтрів",
+    "source": "ads",
+    "closed": 3,
+    "revenue": 1427
+   },
+   {
+    "week": "07-12.09",
+    "service": "Автомобільний кондиціонер",
+    "source": "ads",
+    "closed": 1,
+    "revenue": 471
+   },
+   {
+    "week": "14-19.09",
+    "service": "Ремонт двигуна",
+    "source": "ads",
+    "closed": 2,
+    "revenue": 3831
+   },
+   {
+    "week": "14-19.09",
+    "service": "Заміна рідин і фільтрів",
+    "source": "ads",
+    "closed": 1,
+    "revenue": 676
+   },
+   {
+    "week": "14-19.09",
+    "service": "Сервіс і діагностика",
+    "source": "ads",
+    "closed": 1,
+    "revenue": 120
+   },
+   {
+    "week": "14-19.09",
+    "service": "Сервіс і діагностика",
+    "source": "maps",
+    "closed": 3,
+    "revenue": 490
+   },
+   {
+    "week": "21-26.09",
+    "service": "Підвіска і ходова частина",
+    "source": "ads",
+    "closed": 2,
+    "revenue": 850
+   },
+   {
+    "week": "21-26.09",
+    "service": "Привідна система та коробка передач",
+    "source": "ads",
+    "closed": 2,
+    "revenue": 2849
+   },
+   {
+    "week": "21-26.09",
+    "service": "Сервіс і діагностика",
+    "source": "ads",
+    "closed": 3,
+    "revenue": 1292
+   },
+   {
+    "week": "21-26.09",
+    "service": "Ремонт двигуна",
+    "source": "ads",
+    "closed": 1,
+    "revenue": 2943
+   },
+   {
+    "week": "21-26.09",
+    "service": "Заміна рідин і фільтрів",
+    "source": "ads",
+    "closed": 2,
+    "revenue": 2577
+   },
+   {
+    "week": "21-26.09",
+    "service": "Ремонт двигуна",
+    "source": "maps",
+    "closed": 1,
+    "revenue": 770
+   },
+   {
+    "week": "28-30.09",
+    "service": "Привідна система та коробка передач",
+    "source": "ads",
+    "closed": 2,
+    "revenue": 13540
+   },
+   {
+    "week": "28-30.09",
+    "service": "Гальма",
+    "source": "ads",
+    "closed": 1,
+    "revenue": 1591
+   },
+   {
+    "week": "28-30.09",
+    "service": "Заміна рідин і фільтрів",
+    "source": "maps",
+    "closed": 1,
+    "revenue": 695
+   }
+  ]
+ }
 }
