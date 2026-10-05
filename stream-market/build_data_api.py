@@ -121,19 +121,35 @@ def fetch_purchases(metrics_daily, date_from, date_to):
 
     all_conversions, а не conversions: в кампаниях с campaign-level goals
     (оптимизация на Покупка_опт) действие Покупка_GAds выпадает из
-    metrics.conversions, но остаётся в all_conversions."""
+    metrics.conversions, но остаётся в all_conversions.
+
+    *_by_conversion_date: конверсия ложится на дату ПОКУПКИ, а не клика —
+    неделя в отчёте совпадает с реальными заказами этой недели."""
     query = f"""
-      SELECT segments.date, campaign.id, segments.conversion_action_name,
-             metrics.all_conversions, metrics.all_conversions_value
+      SELECT segments.date, campaign.id, campaign.name,
+             campaign.advertising_channel_type, segments.conversion_action_name,
+             metrics.all_conversions_by_conversion_date,
+             metrics.all_conversions_value_by_conversion_date
       FROM campaign
       WHERE segments.date BETWEEN '{fmt(date_from)}' AND '{fmt(date_to)}'
         AND segments.conversion_action_name = '{PURCHASE_ACTION}'
     """
     for r in GS.search(customer_id=CID, query=query):
+        if r.campaign.id in EXCLUDE_CAMPAIGN_IDS:
+            continue
         key = (r.campaign.id, r.segments.date)
-        if key in metrics_daily:
-            metrics_daily[key]['purchases'] += r.metrics.all_conversions
-            metrics_daily[key]['revenue'] += r.metrics.all_conversions_value
+        if key not in metrics_daily:
+            # конверсія в день без показів/кліків (клік був раніше, кампанія вже
+            # не крутиться) — створюємо нульовий рядок, щоб покупку не втратити
+            metrics_daily[key] = {
+                'name': r.campaign.name,
+                'channel': r.campaign.advertising_channel_type.name,
+                'cost': 0.0, 'imp': 0, 'clk': 0,
+                'purchases': 0.0, 'revenue': 0.0,
+                'is': 0, 'top_is': 0, 'first_is': 0,
+            }
+        metrics_daily[key]['purchases'] += r.metrics.all_conversions_by_conversion_date
+        metrics_daily[key]['revenue'] += r.metrics.all_conversions_value_by_conversion_date
 
 
 def fetch_add_to_carts(date_from, date_to):
