@@ -116,12 +116,25 @@ def fetch_metrics(date_from, date_to):
     return out
 
 
+OPT_ACTION = 'Покупка_опт (>=1500 UAH)'
+
+
 def fetch_purchases(metrics_daily, date_from, date_to):
-    """Вливает покупки/выручку (только PURCHASE_ACTION) в metrics_daily.
+    """Вливает покупки/выручку в metrics_daily.
+
+    База — PURCHASE_ACTION (Покупка_GAds): содержит ВСЕ заказы, включая опт,
+    поэтому Покупка_опт в норме НЕ прибавляется (иначе двойной счёт).
+
+    Добор из OPT_ACTION только при сбое записи GAds-тега: если за ДЕНЬ
+    (суммарно по аккаунту!) ценность опта ПРЕВЫШАЕТ ценность GAds — значит
+    оптовый заказ в GAds не записался (опт — подмножество GAds, в норме
+    value(GAds) >= value(опт) за день); добираем разницу. Сравнение именно
+    по дню, НЕ по кампании: атрибуция раскидывает одно действие по
+    кампаниям иначе, чем другое (прецедент 01.10 — ложный добор).
+    Реальные пропуски: 05.10 (1973.45), 04.10 (8154.14).
 
     all_conversions, а не conversions: в кампаниях с campaign-level goals
-    (оптимизация на Покупка_опт) действие Покупка_GAds выпадает из
-    metrics.conversions, но остаётся в all_conversions.
+    действие Покупка_GAds выпадает из metrics.conversions.
 
     *_by_conversion_date: конверсия ложится на дату ПОКУПКИ, а не клика —
     неделя в отчёте совпадает с реальными заказами этой недели."""
@@ -132,24 +145,62 @@ def fetch_purchases(metrics_daily, date_from, date_to):
              metrics.all_conversions_value_by_conversion_date
       FROM campaign
       WHERE segments.date BETWEEN '{fmt(date_from)}' AND '{fmt(date_to)}'
-        AND segments.conversion_action_name = '{PURCHASE_ACTION}'
+        AND segments.conversion_action_name IN ('{PURCHASE_ACTION}', '{OPT_ACTION}')
     """
+    gads, opt = {}, {}
+    meta = {}
     for r in GS.search(customer_id=CID, query=query):
         if r.campaign.id in EXCLUDE_CAMPAIGN_IDS:
             continue
         key = (r.campaign.id, r.segments.date)
+        meta[key] = (r.campaign.name, r.campaign.advertising_channel_type.name)
+        bucket = gads if r.segments.conversion_action_name == PURCHASE_ACTION else opt
+        c, v = bucket.get(key, (0.0, 0.0))
+        bucket[key] = (c + r.metrics.all_conversions_by_conversion_date,
+                       v + r.metrics.all_conversions_value_by_conversion_date)
+
+    def ensure(key):
         if key not in metrics_daily:
-            # конверсія в день без показів/кліків (клік був раніше, кампанія вже
-            # не крутиться) — створюємо нульовий рядок, щоб покупку не втратити
+            name, channel = meta[key]
             metrics_daily[key] = {
-                'name': r.campaign.name,
-                'channel': r.campaign.advertising_channel_type.name,
+                'name': name, 'channel': channel,
                 'cost': 0.0, 'imp': 0, 'clk': 0,
                 'purchases': 0.0, 'revenue': 0.0,
                 'is': 0, 'top_is': 0, 'first_is': 0,
             }
-        metrics_daily[key]['purchases'] += r.metrics.all_conversions_by_conversion_date
-        metrics_daily[key]['revenue'] += r.metrics.all_conversions_value_by_conversion_date
+
+    # база: все покупки из Покупка_GAds как есть
+    for key, (gc, gv) in gads.items():
+        ensure(key)
+        metrics_daily[key]['purchases'] += gc
+        metrics_daily[key]['revenue'] += gv
+
+    # добор пропусков: сравнение СУММАРНО ПО ДНЮ
+    from collections import defaultdict
+    day_g = defaultdict(lambda: [0.0, 0.0])
+    day_o = defaultdict(lambda: [0.0, 0.0])
+    for (cid, d), (c, v) in gads.items():
+        day_g[d][0] += c; day_g[d][1] += v
+    for (cid, d), (c, v) in opt.items():
+        day_o[d][0] += c; day_o[d][1] += v
+    for d, (oc, ov) in day_o.items():
+        gc, gv = day_g.get(d, [0.0, 0.0])
+        # сколько оптовых (каждый >= 1500) максимум может сидеть внутри GAds дня
+        capacity = int(gv // 1500)
+        if capacity == 0 and ov > 0.01:
+            # в GAds дня нет ни одного опта — весь опт потерян
+            gap_v, gap_c = ov, max(1.0, round(oc))
+        elif ov > gv + 0.01:
+            gap_v = ov - gv
+            gap_c = max(1.0, round(oc - gc)) if oc > gc else 1.0
+        else:
+            continue
+        if gap_v > 0.01:
+            # кладём добор в кампанию с наибольшим оптом этого дня
+            best = max((k for k in opt if k[1] == d), key=lambda k: opt[k][1])
+            ensure(best)
+            metrics_daily[best]['purchases'] += gap_c
+            metrics_daily[best]['revenue'] += gap_v
 
 
 def fetch_add_to_carts(date_from, date_to):
