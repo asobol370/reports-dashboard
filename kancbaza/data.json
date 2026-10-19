@@ -6,7 +6,7 @@
   "agency": {
     "name": "Bohatyrov Marketing"
   },
-  "updated_at": "2026-10-19T12:47:44.529542Z",
+  "updated_at": "2026-10-19T14:39:16.205965Z",
   "source": "horoshop_api + google_ads_api + meta_csv",
   "weekly": [
     {
@@ -12766,36 +12766,36 @@
         {
           "key": "shop_revenue",
           "label": "Виручка (Horoshop)",
-          "value": 134712.11,
+          "value": 160283.56,
           "unit": "грн",
-          "delta_pct": -21.53,
+          "delta_pct": -6.63,
           "prev": 171664.11,
           "delta_inverted": false
         },
         {
           "key": "shop_orders",
           "label": "Успішних замовлень",
-          "value": 79,
+          "value": 87,
           "unit": "",
-          "delta_pct": -18.56,
+          "delta_pct": -10.31,
           "prev": 97,
           "delta_inverted": false
         },
         {
           "key": "avg_check",
           "label": "Ср. чек",
-          "value": 1705.22,
+          "value": 1842.34,
           "unit": "грн",
-          "delta_pct": -3.65,
+          "delta_pct": 4.1,
           "prev": 1769.73,
           "delta_inverted": false
         },
         {
           "key": "dropoff",
           "label": "% відвалів",
-          "value": 27.52,
+          "value": 20.18,
           "unit": "%",
-          "delta_pct": 68.03,
+          "delta_pct": 23.23,
           "prev": 16.38,
           "delta_inverted": true
         }
@@ -12822,18 +12822,18 @@
         {
           "key": "blended_roas",
           "label": "Blended ROAS",
-          "value": 504.89,
+          "value": 600.73,
           "unit": "%",
-          "delta_pct": -22.26,
+          "delta_pct": -7.51,
           "prev": 649.5,
           "delta_inverted": false
         },
         {
           "key": "cpo",
           "label": "Вартість замовлення",
-          "value": 337.74,
+          "value": 306.68,
           "unit": "грн",
-          "delta_pct": 23.95,
+          "delta_pct": 12.55,
           "prev": 272.48,
           "delta_inverted": true
         }
@@ -12855,8 +12855,8 @@
             17936.86,
             33894.89,
             28989.87,
-            16420.43,
-            0.0
+            20326.73,
+            21665.15
           ],
           "shop_orders": [
             9,
@@ -12864,8 +12864,8 @@
             9,
             17,
             19,
-            11,
-            0
+            14,
+            5
           ],
           "avg_check": [
             1183.93,
@@ -12873,8 +12873,8 @@
             1992.98,
             1993.82,
             1525.78,
-            1492.77,
-            0
+            1451.91,
+            4333.03
           ],
           "dropoff": [
             25.0,
@@ -12882,8 +12882,8 @@
             18.18,
             5.56,
             13.64,
-            35.29,
-            100.0
+            17.65,
+            58.33
           ],
           "ad_spend": [
             4284.22,
@@ -12909,8 +12909,8 @@
             500.84,
             877.78,
             772.23,
-            430.47,
-            0.0
+            532.88,
+            604.15
           ],
           "cpo": [
             476.02,
@@ -12918,8 +12918,8 @@
             397.93,
             227.14,
             197.58,
-            346.77,
-            0
+            272.47,
+            717.21
           ]
         }
       },
@@ -12932,32 +12932,32 @@
         },
         {
           "name": "Успішних замовлень",
-          "current": 79,
+          "current": 87,
           "previous": 97,
           "unit": ""
         },
         {
           "name": "Виручка (Horoshop)",
-          "current": 134712.11,
+          "current": 160283.56,
           "previous": 171664.11,
           "unit": "грн"
         },
         {
           "name": "Ср. чек",
-          "current": 1705.22,
+          "current": 1842.34,
           "previous": 1769.73,
           "unit": "грн"
         },
         {
           "name": "% відвалів",
-          "current": 27.52,
+          "current": 20.18,
           "previous": 16.38,
           "unit": "%",
           "delta_inverted": true
         },
         {
           "name": "ДРР",
-          "current": 19.81,
+          "current": 16.65,
           "previous": 15.4,
           "unit": "%",
           "delta_inverted": true
@@ -12978,7 +12978,7 @@
         },
         {
           "name": "Виручка за кабінетами",
-          "current": 156741.34,
+          "current": 158161.86,
           "previous": 191916.53,
           "unit": "грн"
         },
@@ -12990,7 +12990,7 @@
         },
         {
           "name": "Покази (реклама)",
-          "current": 122164.0,
+          "current": 122165.0,
           "previous": 140875.0,
           "unit": ""
         }
@@ -12998,10 +12998,10 @@
       "channels": {
         "google": {
           "spend": 25722.07,
-          "purchases": 86.34,
-          "revenue": 144726.26,
+          "purchases": 88.34,
+          "revenue": 146146.78,
           "clicks": 3142,
-          "impressions": 115956
+          "impressions": 115957
         },
         "meta": {
           "spend": 959.3,
@@ -13102,11 +13102,11 @@
           "type": "PMax",
           "summary": {
             "spend": 4808.32,
-            "revenue": 21644.45,
-            "roas": 450.15,
-            "conversions": 16,
-            "delta_roas": -38.98,
-            "cpa": 303.51
+            "revenue": 23064.97,
+            "roas": 479.69,
+            "conversions": 18,
+            "delta_roas": -34.98,
+            "cpa": 269.49
           },
           "details": [
             {
@@ -13118,38 +13118,38 @@
             },
             {
               "name": "Покупок",
-              "current": 16,
+              "current": 18,
               "previous": 14,
               "unit": ""
             },
             {
               "name": "Вартість покупки",
-              "current": 303.51,
+              "current": 269.49,
               "previous": 329.97,
               "unit": "грн",
               "delta_inverted": true
             },
             {
               "name": "Ср.чек",
-              "current": 1366.24,
+              "current": 1292.71,
               "previous": 2434.3,
               "unit": "грн"
             },
             {
               "name": "Виручка",
-              "current": 21644.45,
+              "current": 23064.97,
               "previous": 34507.2,
               "unit": "грн"
             },
             {
               "name": "Кф. конверсії",
-              "current": 2.97,
+              "current": 3.34,
               "previous": 2.42,
               "unit": "%"
             },
             {
               "name": "ROAS",
-              "current": 450.15,
+              "current": 479.69,
               "previous": 737.74,
               "unit": "%"
             },
@@ -13407,7 +13407,7 @@
             },
             {
               "name": "Покази",
-              "current": 9926,
+              "current": 9927,
               "previous": 17039,
               "unit": ""
             },
