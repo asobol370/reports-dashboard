@@ -117,13 +117,16 @@ def fetch_metrics(date_from, date_to):
 
 
 OPT_ACTION = 'Покупка_опт (>=1500 UAH)'
+SPEED_ACTION = 'speed_purchase'  # быстрый заказ, появился 02.10.2026; НЕ дублируется в Покупка_GAds — прибавляется
 
 
 def fetch_purchases(metrics_daily, date_from, date_to):
     """Вливает покупки/выручку в metrics_daily.
 
-    База — PURCHASE_ACTION (Покупка_GAds): содержит ВСЕ заказы, включая опт,
-    поэтому Покупка_опт в норме НЕ прибавляется (иначе двойной счёт).
+    База — PURCHASE_ACTION (Покупка_GAds) ПЛЮС SPEED_ACTION (speed_purchase,
+    быстрые заказы — отдельный поток, в Покупка_GAds и GA4 purchase не попадает,
+    проверено 26.10.2026). Покупка_опт в норме НЕ прибавляется (иначе двойной
+    счёт — опт есть подмножество Покупка_GAds).
 
     Добор из OPT_ACTION только при сбое записи GAds-тега: если за ДЕНЬ
     (суммарно по аккаунту!) ценность опта ПРЕВЫШАЕТ ценность GAds — значит
@@ -145,16 +148,17 @@ def fetch_purchases(metrics_daily, date_from, date_to):
              metrics.all_conversions_value_by_conversion_date
       FROM campaign
       WHERE segments.date BETWEEN '{fmt(date_from)}' AND '{fmt(date_to)}'
-        AND segments.conversion_action_name IN ('{PURCHASE_ACTION}', '{OPT_ACTION}')
+        AND segments.conversion_action_name IN ('{PURCHASE_ACTION}', '{OPT_ACTION}', '{SPEED_ACTION}')
     """
-    gads, opt = {}, {}
+    gads, opt, speed = {}, {}, {}
     meta = {}
+    buckets = {PURCHASE_ACTION: gads, OPT_ACTION: opt, SPEED_ACTION: speed}
     for r in GS.search(customer_id=CID, query=query):
         if r.campaign.id in EXCLUDE_CAMPAIGN_IDS:
             continue
         key = (r.campaign.id, r.segments.date)
         meta[key] = (r.campaign.name, r.campaign.advertising_channel_type.name)
-        bucket = gads if r.segments.conversion_action_name == PURCHASE_ACTION else opt
+        bucket = buckets[r.segments.conversion_action_name]
         c, v = bucket.get(key, (0.0, 0.0))
         bucket[key] = (c + r.metrics.all_conversions_by_conversion_date,
                        v + r.metrics.all_conversions_value_by_conversion_date)
@@ -174,6 +178,13 @@ def fetch_purchases(metrics_daily, date_from, date_to):
         ensure(key)
         metrics_daily[key]['purchases'] += gc
         metrics_daily[key]['revenue'] += gv
+
+    # плюс speed_purchase целиком (отдельный поток заказов, не дублируется;
+    # в сравнении GAds vs опт НЕ участвует — опт подмножество только GAds)
+    for key, (sc, sv) in speed.items():
+        ensure(key)
+        metrics_daily[key]['purchases'] += sc
+        metrics_daily[key]['revenue'] += sv
 
     # добор пропусков: сравнение СУММАРНО ПО ДНЮ
     from collections import defaultdict
