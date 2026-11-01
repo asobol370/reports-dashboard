@@ -6,7 +6,7 @@
   "agency": {
     "name": "Bohatyrov Marketing"
   },
-  "updated_at": "2026-10-26T11:02:02.188498Z",
+  "updated_at": "2026-11-01T12:23:58.772736Z",
   "source": "google_ads_api",
   "weekly": [
     {
@@ -48177,19 +48177,19 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 467.29,
+          "current": 474.4,
           "previous": 749.74,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 46.04,
+          "current": 46.74,
           "previous": 44.92,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 15.8,
+          "current": 15.56,
           "previous": 12.88,
           "unit": "грн",
           "delta_inverted": true
@@ -48822,20 +48822,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 430.48,
-          "previous": 467.29,
+          "current": 452.44,
+          "previous": 474.4,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 43.48,
-          "previous": 46.04,
+          "current": 45.7,
+          "previous": 46.74,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 19.06,
-          "previous": 15.8,
+          "current": 18.14,
+          "previous": 15.56,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -49467,20 +49467,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 584.75,
-          "previous": 430.48,
+          "current": 615.76,
+          "previous": 452.44,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 47.5,
-          "previous": 43.48,
+          "current": 50.02,
+          "previous": 45.7,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 13.56,
-          "previous": 19.06,
+          "current": 12.87,
+          "previous": 18.14,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -50112,20 +50112,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 408.29,
-          "previous": 584.75,
+          "current": 418.3,
+          "previous": 615.76,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 30.98,
-          "previous": 47.5,
+          "current": 31.74,
+          "previous": 50.02,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 24.54,
-          "previous": 13.56,
+          "current": 23.95,
+          "previous": 12.87,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -50757,20 +50757,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 593.03,
-          "previous": 408.29,
+          "current": 596.03,
+          "previous": 418.3,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 47.4,
-          "previous": 30.98,
+          "current": 47.64,
+          "previous": 31.74,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 17.45,
-          "previous": 24.54,
+          "current": 17.36,
+          "previous": 23.95,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -51402,20 +51402,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 369.57,
-          "previous": 593.03,
+          "current": 385.8,
+          "previous": 596.03,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 26.82,
-          "previous": 47.4,
+          "current": 28.0,
+          "previous": 47.64,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 26.59,
-          "previous": 17.45,
+          "current": 25.48,
+          "previous": 17.36,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -52047,20 +52047,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 447.16,
-          "previous": 369.57,
+          "current": 456.31,
+          "previous": 385.8,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 30.32,
-          "previous": 26.82,
+          "current": 30.94,
+          "previous": 28.0,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 22.82,
-          "previous": 26.59,
+          "current": 22.36,
+          "previous": 25.48,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -52692,20 +52692,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 199.86,
-          "previous": 447.16,
+          "current": 207.42,
+          "previous": 456.31,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 14.84,
-          "previous": 30.32,
+          "current": 15.4,
+          "previous": 30.94,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 45.0,
-          "previous": 22.82,
+          "current": 43.36,
+          "previous": 22.36,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -53236,20 +53236,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 203.01,
-          "previous": 199.86,
+          "current": 232.02,
+          "previous": 207.42,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 15.21,
-          "previous": 14.84,
+          "current": 17.38,
+          "previous": 15.4,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 43.33,
-          "previous": 45.0,
+          "current": 37.91,
+          "previous": 43.36,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -53982,20 +53982,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 287.18,
-          "previous": 203.01,
+          "current": 322.66,
+          "previous": 232.02,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 45.01,
-          "previous": 15.21,
+          "current": 50.57,
+          "previous": 17.38,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 27.54,
-          "previous": 43.33,
+          "current": 24.51,
+          "previous": 37.91,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -54432,7 +54432,7 @@
         {
           "key": "spend",
           "label": "Витрати",
-          "value": 8874.01,
+          "value": 8873.85,
           "unit": "грн",
           "delta_pct": 12.2,
           "prev": 7909.07,
@@ -54461,7 +54461,7 @@
         {
           "key": "cpa",
           "label": "CPA (ціна покупки)",
-          "value": 682.62,
+          "value": 682.6,
           "unit": "грн",
           "delta_pct": 12.2,
           "prev": 608.39,
@@ -54516,11 +54516,11 @@
             0.0
           ],
           "spend": [
-            1458.3,
-            1210.7,
+            1458.29,
+            1210.6,
             1249.38,
-            1024.44,
-            1357.52,
+            1024.41,
+            1357.5,
             936.47,
             1637.19
           ],
@@ -54528,8 +54528,8 @@
             190.18,
             0.0,
             1154.4,
-            711.69,
-            122.43,
+            711.71,
+            122.44,
             482.76,
             0.0
           ],
@@ -54546,8 +54546,8 @@
             729.15,
             0,
             416.46,
-            341.48,
-            1357.52,
+            341.47,
+            1357.5,
             234.12,
             0
           ],
@@ -54583,7 +54583,7 @@
       "metrics": [
         {
           "name": "Вартість покупки",
-          "current": 682.62,
+          "current": 682.6,
           "previous": 608.39,
           "unit": "грн",
           "delta_inverted": true
@@ -54602,7 +54602,7 @@
         },
         {
           "name": "Покази",
-          "current": 30247,
+          "current": 30242,
           "previous": 24435,
           "unit": ""
         },
@@ -54627,20 +54627,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 256.3,
-          "previous": 287.18,
+          "current": 274.29,
+          "previous": 322.66,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 39.13,
-          "previous": 45.01,
+          "current": 41.88,
+          "previous": 50.57,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 34.62,
-          "previous": 27.54,
+          "current": 32.35,
+          "previous": 24.51,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -54650,17 +54650,17 @@
           "name": "BV | PMax опт | 260926",
           "type": "PMax",
           "summary": {
-            "spend": 6669.36,
+            "spend": 6669.2,
             "revenue": 10926.34,
             "roas": 163.83,
             "conversions": 6,
             "delta_roas": 130.79,
-            "cpa": 1026.05
+            "cpa": 1026.03
           },
           "details": [
             {
               "name": "Витрати",
-              "current": 6669.36,
+              "current": 6669.2,
               "previous": 5791.75,
               "unit": "грн",
               "delta_inverted": true
@@ -54673,7 +54673,7 @@
             },
             {
               "name": "Вартість покупки",
-              "current": 1026.05,
+              "current": 1026.03,
               "previous": 951.89,
               "unit": "грн",
               "delta_inverted": true
@@ -54704,7 +54704,7 @@
             },
             {
               "name": "Покази",
-              "current": 28996,
+              "current": 28991,
               "previous": 23344,
               "unit": ""
             },
@@ -55178,18 +55178,18 @@
         {
           "key": "spend",
           "label": "Витрати",
-          "value": 9567.3,
+          "value": 9565.1,
           "unit": "грн",
-          "delta_pct": 7.81,
-          "prev": 8874.01,
+          "delta_pct": 7.79,
+          "prev": 8873.85,
           "delta_inverted": true
         },
         {
           "key": "roas",
           "label": "ROAS",
-          "value": 281.24,
+          "value": 281.3,
           "unit": "%",
-          "delta_pct": -18.63,
+          "delta_pct": -18.61,
           "prev": 345.62,
           "delta_inverted": false
         },
@@ -55207,10 +55207,10 @@
         {
           "key": "cpa",
           "label": "CPA (ціна покупки)",
-          "value": 531.52,
+          "value": 531.39,
           "unit": "грн",
-          "delta_pct": -22.14,
-          "prev": 682.62,
+          "delta_pct": -22.15,
+          "prev": 682.6,
           "delta_inverted": true
         },
         {
@@ -55227,16 +55227,16 @@
           "label": "Кф. конверсії",
           "value": 1.86,
           "unit": "%",
-          "delta_pct": -6.5,
+          "delta_pct": -6.41,
           "prev": 1.98,
           "delta_inverted": false
         },
         {
           "key": "cpc",
           "label": "CPC (ціна кліку)",
-          "value": 9.86,
+          "value": 9.87,
           "unit": "грн",
-          "delta_pct": -27.2,
+          "delta_pct": -27.14,
           "prev": 13.55,
           "delta_inverted": true
         }
@@ -55268,7 +55268,7 @@
             640.75,
             1254.9,
             2235.15,
-            2131.48
+            2129.28
           ],
           "roas": [
             550.07,
@@ -55277,7 +55277,7 @@
             740.52,
             369.85,
             207.97,
-            82.35
+            82.44
           ],
           "purchases": [
             5.0,
@@ -55295,7 +55295,7 @@
             213.58,
             313.73,
             558.79,
-            2131.48
+            2129.28
           ],
           "avg_check": [
             1467.64,
@@ -55322,15 +55322,15 @@
             10.5,
             9.44,
             9.76,
-            9.23
+            9.26
           ]
         }
       },
       "metrics": [
         {
           "name": "Вартість покупки",
-          "current": 531.52,
-          "previous": 682.62,
+          "current": 531.39,
+          "previous": 682.6,
           "unit": "грн",
           "delta_inverted": true
         },
@@ -55348,19 +55348,19 @@
         },
         {
           "name": "Покази",
-          "current": 33630,
-          "previous": 30247,
+          "current": 33624,
+          "previous": 30242,
           "unit": ""
         },
         {
           "name": "Кліки",
-          "current": 970,
+          "current": 969,
           "previous": 655,
           "unit": ""
         },
         {
           "name": "CPC",
-          "current": 9.86,
+          "current": 9.87,
           "previous": 13.55,
           "unit": "грн",
           "delta_inverted": true
@@ -55373,20 +55373,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 430.7,
-          "previous": 256.3,
+          "current": 450.19,
+          "previous": 274.29,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 44.4,
-          "previous": 39.13,
+          "current": 46.46,
+          "previous": 41.88,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 22.21,
-          "previous": 34.62,
+          "current": 21.25,
+          "previous": 32.35,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -55407,7 +55407,7 @@
             {
               "name": "Витрати",
               "current": 5153.99,
-              "previous": 6669.36,
+              "previous": 6669.2,
               "unit": "грн",
               "delta_inverted": true
             },
@@ -55420,7 +55420,7 @@
             {
               "name": "Вартість покупки",
               "current": 515.4,
-              "previous": 1026.05,
+              "previous": 1026.03,
               "unit": "грн",
               "delta_inverted": true
             },
@@ -55451,7 +55451,7 @@
             {
               "name": "Покази",
               "current": 20583,
-              "previous": 28996,
+              "previous": 28991,
               "unit": ""
             },
             {
@@ -55497,17 +55497,17 @@
           "name": "BV | PMax tROAS Test | 120626",
           "type": "PMax",
           "summary": {
-            "spend": 3380.88,
+            "spend": 3378.68,
             "revenue": 7988.1,
-            "roas": 236.27,
+            "roas": 236.43,
             "conversions": 5,
             "delta_roas": 0,
-            "cpa": 676.18
+            "cpa": 675.74
           },
           "details": [
             {
               "name": "Витрати",
-              "current": 3380.88,
+              "current": 3378.68,
               "previous": 0.0,
               "unit": "грн",
               "delta_inverted": true
@@ -55520,7 +55520,7 @@
             },
             {
               "name": "Вартість покупки",
-              "current": 676.18,
+              "current": 675.74,
               "previous": 0.0,
               "unit": "грн",
               "delta_inverted": true
@@ -55539,38 +55539,38 @@
             },
             {
               "name": "Кф. конверсії",
-              "current": 1.15,
+              "current": 1.16,
               "previous": 0,
               "unit": "%"
             },
             {
               "name": "ROAS",
-              "current": 236.27,
+              "current": 236.43,
               "previous": 0,
               "unit": "%"
             },
             {
               "name": "Покази",
-              "current": 12025,
+              "current": 12019,
               "previous": 0,
               "unit": ""
             },
             {
               "name": "Кліки",
-              "current": 433,
+              "current": 432,
               "previous": 0,
               "unit": ""
             },
             {
               "name": "CPC",
-              "current": 7.81,
+              "current": 7.82,
               "previous": 0,
               "unit": "грн",
               "delta_inverted": true
             },
             {
               "name": "CTR",
-              "current": 3.6,
+              "current": 3.59,
               "previous": 0,
               "unit": "%"
             },
@@ -55924,19 +55924,19 @@
         {
           "key": "spend",
           "label": "Витрати",
-          "value": 9407.88,
+          "value": 9423.54,
           "unit": "грн",
-          "delta_pct": -1.67,
-          "prev": 9567.3,
+          "delta_pct": -1.48,
+          "prev": 9565.1,
           "delta_inverted": true
         },
         {
           "key": "roas",
           "label": "ROAS",
-          "value": 362.53,
+          "value": 361.93,
           "unit": "%",
-          "delta_pct": 28.91,
-          "prev": 281.24,
+          "delta_pct": 28.66,
+          "prev": 281.3,
           "delta_inverted": false
         },
         {
@@ -55953,10 +55953,10 @@
         {
           "key": "cpa",
           "label": "CPA (ціна покупки)",
-          "value": 587.99,
+          "value": 588.97,
           "unit": "грн",
-          "delta_pct": 10.63,
-          "prev": 531.52,
+          "delta_pct": 10.84,
+          "prev": 531.39,
           "delta_inverted": true
         },
         {
@@ -55973,17 +55973,17 @@
           "label": "Кф. конверсії",
           "value": 1.55,
           "unit": "%",
-          "delta_pct": -16.37,
+          "delta_pct": -16.46,
           "prev": 1.86,
           "delta_inverted": false
         },
         {
           "key": "cpc",
           "label": "CPC (ціна кліку)",
-          "value": 9.13,
+          "value": 9.14,
           "unit": "грн",
-          "delta_pct": -7.48,
-          "prev": 9.86,
+          "delta_pct": -7.4,
+          "prev": 9.87,
           "delta_inverted": true
         }
       ],
@@ -56013,8 +56013,8 @@
             1759.23,
             1472.81,
             1375.98,
-            895.7,
-            1424.74
+            895.38,
+            1440.71
           ],
           "roas": [
             846.32,
@@ -56022,8 +56022,8 @@
             167.96,
             129.08,
             65.02,
-            751.38,
-            365.36
+            751.65,
+            361.31
           ],
           "purchases": [
             3.0,
@@ -56040,8 +56040,8 @@
             879.62,
             490.94,
             1375.98,
-            447.85,
-            712.37
+            447.69,
+            720.36
           ],
           "avg_check": [
             4744.35,
@@ -56067,16 +56067,16 @@
             8.42,
             9.69,
             9.56,
-            7.17,
-            7.12
+            7.16,
+            7.2
           ]
         }
       },
       "metrics": [
         {
           "name": "Вартість покупки",
-          "current": 587.99,
-          "previous": 531.52,
+          "current": 588.97,
+          "previous": 531.39,
           "unit": "грн",
           "delta_inverted": true
         },
@@ -56094,20 +56094,20 @@
         },
         {
           "name": "Покази",
-          "current": 26931,
-          "previous": 33630,
+          "current": 26910,
+          "previous": 33624,
           "unit": ""
         },
         {
           "name": "Кліки",
           "current": 1031,
-          "previous": 970,
+          "previous": 969,
           "unit": ""
         },
         {
           "name": "CPC",
-          "current": 9.13,
-          "previous": 9.86,
+          "current": 9.14,
+          "previous": 9.87,
           "unit": "грн",
           "delta_inverted": true
         },
@@ -56119,20 +56119,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 505.01,
-          "previous": 430.7,
+          "current": 535.58,
+          "previous": 450.19,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 48.98,
-          "previous": 44.4,
+          "current": 51.95,
+          "previous": 46.46,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 18.63,
-          "previous": 22.21,
+          "current": 17.59,
+          "previous": 21.25,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -56142,18 +56142,18 @@
           "name": "BV | PMax tROAS Test | 120626",
           "type": "PMax",
           "summary": {
-            "spend": 4818.43,
+            "spend": 4821.06,
             "revenue": 21473.62,
-            "roas": 445.66,
+            "roas": 445.41,
             "conversions": 8,
-            "delta_roas": 88.62,
-            "cpa": 569.06
+            "delta_roas": 88.39,
+            "cpa": 569.37
           },
           "details": [
             {
               "name": "Витрати",
-              "current": 4818.43,
-              "previous": 3380.88,
+              "current": 4821.06,
+              "previous": 3378.68,
               "unit": "грн",
               "delta_inverted": true
             },
@@ -56165,8 +56165,8 @@
             },
             {
               "name": "Вартість покупки",
-              "current": 569.06,
-              "previous": 676.18,
+              "current": 569.37,
+              "previous": 675.74,
               "unit": "грн",
               "delta_inverted": true
             },
@@ -56185,38 +56185,38 @@
             {
               "name": "Кф. конверсії",
               "current": 1.25,
-              "previous": 1.15,
+              "previous": 1.16,
               "unit": "%"
             },
             {
               "name": "ROAS",
-              "current": 445.66,
-              "previous": 236.27,
+              "current": 445.41,
+              "previous": 236.43,
               "unit": "%"
             },
             {
               "name": "Покази",
-              "current": 13025,
-              "previous": 12025,
+              "current": 13012,
+              "previous": 12019,
               "unit": ""
             },
             {
               "name": "Кліки",
-              "current": 679,
-              "previous": 433,
+              "current": 680,
+              "previous": 432,
               "unit": ""
             },
             {
               "name": "CPC",
-              "current": 7.1,
-              "previous": 7.81,
+              "current": 7.09,
+              "previous": 7.82,
               "unit": "грн",
               "delta_inverted": true
             },
             {
               "name": "CTR",
-              "current": 5.21,
-              "previous": 3.6,
+              "current": 5.23,
+              "previous": 3.59,
               "unit": "%"
             },
             {
@@ -56243,17 +56243,17 @@
           "name": "BV | PMax опт | 260926",
           "type": "PMax",
           "summary": {
-            "spend": 4589.45,
+            "spend": 4602.48,
             "revenue": 11428.92,
-            "roas": 249.03,
+            "roas": 248.32,
             "conversions": 6,
-            "delta_roas": -1.08,
-            "cpa": 709.63
+            "delta_roas": -1.36,
+            "cpa": 711.64
           },
           "details": [
             {
               "name": "Витрати",
-              "current": 4589.45,
+              "current": 4602.48,
               "previous": 5153.99,
               "unit": "грн",
               "delta_inverted": true
@@ -56266,7 +56266,7 @@
             },
             {
               "name": "Вартість покупки",
-              "current": 709.63,
+              "current": 711.64,
               "previous": 515.4,
               "unit": "грн",
               "delta_inverted": true
@@ -56291,25 +56291,25 @@
             },
             {
               "name": "ROAS",
-              "current": 249.03,
+              "current": 248.32,
               "previous": 251.74,
               "unit": "%"
             },
             {
               "name": "Покази",
-              "current": 13906,
+              "current": 13898,
               "previous": 20583,
               "unit": ""
             },
             {
               "name": "Кліки",
-              "current": 352,
+              "current": 351,
               "previous": 390,
               "unit": ""
             },
             {
               "name": "CPC",
-              "current": 13.04,
+              "current": 13.11,
               "previous": 13.22,
               "unit": "грн",
               "delta_inverted": true
@@ -56322,7 +56322,7 @@
             },
             {
               "name": "Impression Share",
-              "current": 10.65,
+              "current": 10.64,
               "previous": 10.23,
               "unit": "%"
             },
@@ -56382,6 +56382,651 @@
               "name": "Виручка",
               "current": 1204.26,
               "previous": 5248.3,
+              "unit": "грн"
+            },
+            {
+              "name": "Кф. конверсії",
+              "current": 0,
+              "previous": 0,
+              "unit": "%"
+            },
+            {
+              "name": "ROAS",
+              "current": 0,
+              "previous": 0,
+              "unit": "%"
+            },
+            {
+              "name": "Покази",
+              "current": 0,
+              "previous": 0,
+              "unit": ""
+            },
+            {
+              "name": "Кліки",
+              "current": 0,
+              "previous": 0,
+              "unit": ""
+            },
+            {
+              "name": "CPC",
+              "current": 0,
+              "previous": 0,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "CTR",
+              "current": 0,
+              "previous": 0,
+              "unit": "%"
+            },
+            {
+              "name": "Impression Share",
+              "current": 0,
+              "previous": 0,
+              "unit": "%"
+            },
+            {
+              "name": "Показів у верхній ч.",
+              "current": 0,
+              "previous": 0,
+              "unit": "%"
+            },
+            {
+              "name": "Показів на 1-й поз.",
+              "current": 0,
+              "previous": 0,
+              "unit": "%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "26.10-01.11.2026",
+      "period": {
+        "current": {
+          "from": "2026-10-26",
+          "to": "2026-11-01"
+        },
+        "previous": {
+          "from": "2026-10-19",
+          "to": "2026-10-25"
+        }
+      },
+      "kpi": [
+        {
+          "key": "revenue",
+          "label": "Виручка",
+          "value": 94806.2,
+          "unit": "грн",
+          "delta_pct": 177.97,
+          "prev": 34106.81,
+          "delta_inverted": false
+        },
+        {
+          "key": "spend",
+          "label": "Витрати",
+          "value": 9081.82,
+          "unit": "грн",
+          "delta_pct": -3.63,
+          "prev": 9423.54,
+          "delta_inverted": true
+        },
+        {
+          "key": "roas",
+          "label": "ROAS",
+          "value": 1043.91,
+          "unit": "%",
+          "delta_pct": 188.43,
+          "prev": 361.93,
+          "delta_inverted": false
+        },
+        {
+          "key": "purchases",
+          "label": "Покупок",
+          "value": 31,
+          "unit": "",
+          "delta_pct": 93.75,
+          "prev": 16,
+          "delta_inverted": false
+        }
+      ],
+      "kpi_secondary": [
+        {
+          "key": "cpa",
+          "label": "CPA (ціна покупки)",
+          "value": 292.96,
+          "unit": "грн",
+          "delta_pct": -50.26,
+          "prev": 588.97,
+          "delta_inverted": true
+        },
+        {
+          "key": "avg_check",
+          "label": "Ср. чек",
+          "value": 3058.26,
+          "unit": "грн",
+          "delta_pct": 43.47,
+          "prev": 2131.68,
+          "delta_inverted": false
+        },
+        {
+          "key": "cr_purchase",
+          "label": "Кф. конверсії",
+          "value": 2.77,
+          "unit": "%",
+          "delta_pct": 78.67,
+          "prev": 1.55,
+          "delta_inverted": false
+        },
+        {
+          "key": "cpc",
+          "label": "CPC (ціна кліку)",
+          "value": 8.12,
+          "unit": "грн",
+          "delta_pct": -11.13,
+          "prev": 9.14,
+          "delta_inverted": true
+        }
+      ],
+      "chart": {
+        "labels": [
+          "26.10",
+          "27.10",
+          "28.10",
+          "29.10",
+          "30.10",
+          "31.10",
+          "01.11"
+        ],
+        "series": {
+          "revenue": [
+            32871.94,
+            2230.05,
+            3526.71,
+            27266.16,
+            15858.76,
+            13052.58,
+            0.0
+          ],
+          "spend": [
+            1372.54,
+            1603.51,
+            1322.0,
+            1541.83,
+            1143.09,
+            1867.27,
+            231.59
+          ],
+          "roas": [
+            2394.98,
+            139.07,
+            266.77,
+            1768.43,
+            1387.36,
+            699.02,
+            0.0
+          ],
+          "purchases": [
+            8.0,
+            3.0,
+            4.0,
+            4.0,
+            7.0,
+            5.0,
+            0.0
+          ],
+          "cpa": [
+            171.57,
+            534.5,
+            330.5,
+            385.46,
+            163.3,
+            373.45,
+            0
+          ],
+          "avg_check": [
+            4108.99,
+            743.35,
+            881.68,
+            6816.54,
+            2265.54,
+            2610.52,
+            0
+          ],
+          "cr_purchase": [
+            6.15,
+            1.57,
+            2.41,
+            2.12,
+            4.07,
+            2.21,
+            0.0
+          ],
+          "cpc": [
+            10.56,
+            8.4,
+            7.96,
+            8.16,
+            6.65,
+            8.26,
+            5.26
+          ]
+        }
+      },
+      "metrics": [
+        {
+          "name": "Вартість покупки",
+          "current": 292.96,
+          "previous": 588.97,
+          "unit": "грн",
+          "delta_inverted": true
+        },
+        {
+          "name": "Ср. чек",
+          "current": 3058.26,
+          "previous": 2131.68,
+          "unit": "грн"
+        },
+        {
+          "name": "Кф. конверсії",
+          "current": 2.77,
+          "previous": 1.55,
+          "unit": "%"
+        },
+        {
+          "name": "Покази",
+          "current": 29410,
+          "previous": 26910,
+          "unit": ""
+        },
+        {
+          "name": "Кліки",
+          "current": 1118,
+          "previous": 1031,
+          "unit": ""
+        },
+        {
+          "name": "CPC",
+          "current": 8.12,
+          "previous": 9.14,
+          "unit": "грн",
+          "delta_inverted": true
+        },
+        {
+          "name": "CTR",
+          "current": 3.8,
+          "previous": 3.83,
+          "unit": "%"
+        },
+        {
+          "name": "Додавання в кошик",
+          "current": 459.38,
+          "previous": 535.58,
+          "unit": ""
+        },
+        {
+          "name": "CR → Add to cart",
+          "current": 41.09,
+          "previous": 51.95,
+          "unit": "%"
+        },
+        {
+          "name": "Ціна дод. в кошик",
+          "current": 19.77,
+          "previous": 17.59,
+          "unit": "грн",
+          "delta_inverted": true
+        }
+      ],
+      "campaigns": [
+        {
+          "name": "BV | PMax tROAS Test | 120626",
+          "type": "PMax",
+          "summary": {
+            "spend": 5292.23,
+            "revenue": 42501.29,
+            "roas": 803.09,
+            "conversions": 18,
+            "delta_roas": 80.3,
+            "cpa": 289.59
+          },
+          "details": [
+            {
+              "name": "Витрати",
+              "current": 5292.23,
+              "previous": 4821.06,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Покупок",
+              "current": 18.27,
+              "previous": 8.47,
+              "unit": ""
+            },
+            {
+              "name": "Вартість покупки",
+              "current": 289.59,
+              "previous": 569.37,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Ср.чек",
+              "current": 2325.67,
+              "previous": 2536.04,
+              "unit": "грн"
+            },
+            {
+              "name": "Виручка",
+              "current": 42501.29,
+              "previous": 21473.62,
+              "unit": "грн"
+            },
+            {
+              "name": "Кф. конверсії",
+              "current": 2.2,
+              "previous": 1.25,
+              "unit": "%"
+            },
+            {
+              "name": "ROAS",
+              "current": 803.09,
+              "previous": 445.41,
+              "unit": "%"
+            },
+            {
+              "name": "Покази",
+              "current": 21147,
+              "previous": 13012,
+              "unit": ""
+            },
+            {
+              "name": "Кліки",
+              "current": 831,
+              "previous": 680,
+              "unit": ""
+            },
+            {
+              "name": "CPC",
+              "current": 6.37,
+              "previous": 7.09,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "CTR",
+              "current": 3.93,
+              "previous": 5.23,
+              "unit": "%"
+            },
+            {
+              "name": "Impression Share",
+              "current": 9.99,
+              "previous": 9.99,
+              "unit": "%"
+            },
+            {
+              "name": "Показів у верхній ч.",
+              "current": 0.0,
+              "previous": 0.0,
+              "unit": "%"
+            },
+            {
+              "name": "Показів на 1-й поз.",
+              "current": 0.0,
+              "previous": 0.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "name": "BV | PMax опт | 260926",
+          "type": "PMax",
+          "summary": {
+            "spend": 3789.59,
+            "revenue": 39315.01,
+            "roas": 1037.45,
+            "conversions": 9,
+            "delta_roas": 317.79,
+            "cpa": 418.35
+          },
+          "details": [
+            {
+              "name": "Витрати",
+              "current": 3789.59,
+              "previous": 4602.48,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Покупок",
+              "current": 9.06,
+              "previous": 6.47,
+              "unit": ""
+            },
+            {
+              "name": "Вартість покупки",
+              "current": 418.35,
+              "previous": 711.64,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Ср.чек",
+              "current": 4340.15,
+              "previous": 1767.16,
+              "unit": "грн"
+            },
+            {
+              "name": "Виручка",
+              "current": 39315.01,
+              "previous": 11428.92,
+              "unit": "грн"
+            },
+            {
+              "name": "Кф. конверсії",
+              "current": 3.16,
+              "previous": 1.84,
+              "unit": "%"
+            },
+            {
+              "name": "ROAS",
+              "current": 1037.45,
+              "previous": 248.32,
+              "unit": "%"
+            },
+            {
+              "name": "Покази",
+              "current": 8263,
+              "previous": 13898,
+              "unit": ""
+            },
+            {
+              "name": "Кліки",
+              "current": 287,
+              "previous": 351,
+              "unit": ""
+            },
+            {
+              "name": "CPC",
+              "current": 13.2,
+              "previous": 13.11,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "CTR",
+              "current": 3.47,
+              "previous": 2.53,
+              "unit": "%"
+            },
+            {
+              "name": "Impression Share",
+              "current": 11.76,
+              "previous": 10.64,
+              "unit": "%"
+            },
+            {
+              "name": "Показів у верхній ч.",
+              "current": 0.0,
+              "previous": 0.0,
+              "unit": "%"
+            },
+            {
+              "name": "Показів на 1-й поз.",
+              "current": 0.0,
+              "previous": 0.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "name": "BV | PMax общая оптовая | 281125",
+          "type": "PMax",
+          "summary": {
+            "spend": 0.0,
+            "revenue": 11976.89,
+            "roas": 0,
+            "conversions": 3,
+            "delta_roas": 0,
+            "cpa": 0.0
+          },
+          "details": [
+            {
+              "name": "Витрати",
+              "current": 0.0,
+              "previous": 0.0,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Покупок",
+              "current": 2.67,
+              "previous": 1.07,
+              "unit": ""
+            },
+            {
+              "name": "Вартість покупки",
+              "current": 0.0,
+              "previous": 0.0,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Ср.чек",
+              "current": 4491.34,
+              "previous": 1130.54,
+              "unit": "грн"
+            },
+            {
+              "name": "Виручка",
+              "current": 11976.89,
+              "previous": 1204.26,
+              "unit": "грн"
+            },
+            {
+              "name": "Кф. конверсії",
+              "current": 0,
+              "previous": 0,
+              "unit": "%"
+            },
+            {
+              "name": "ROAS",
+              "current": 0,
+              "previous": 0,
+              "unit": "%"
+            },
+            {
+              "name": "Покази",
+              "current": 0,
+              "previous": 0,
+              "unit": ""
+            },
+            {
+              "name": "Кліки",
+              "current": 0,
+              "previous": 0,
+              "unit": ""
+            },
+            {
+              "name": "CPC",
+              "current": 0,
+              "previous": 0,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "CTR",
+              "current": 0,
+              "previous": 0,
+              "unit": "%"
+            },
+            {
+              "name": "Impression Share",
+              "current": 0,
+              "previous": 0,
+              "unit": "%"
+            },
+            {
+              "name": "Показів у верхній ч.",
+              "current": 0,
+              "previous": 0,
+              "unit": "%"
+            },
+            {
+              "name": "Показів на 1-й поз.",
+              "current": 0,
+              "previous": 0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "name": "BV | Remarketing Basket 14 | 241025",
+          "type": "Display",
+          "summary": {
+            "spend": 0.0,
+            "revenue": 1013.0,
+            "roas": 0,
+            "conversions": 1,
+            "delta_roas": 0,
+            "cpa": 0.0
+          },
+          "details": [
+            {
+              "name": "Витрати",
+              "current": 0.0,
+              "previous": 0,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Покупок",
+              "current": 1.0,
+              "previous": 0,
+              "unit": ""
+            },
+            {
+              "name": "Вартість покупки",
+              "current": 0.0,
+              "previous": 0,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Ср.чек",
+              "current": 1013.0,
+              "previous": 0,
+              "unit": "грн"
+            },
+            {
+              "name": "Виручка",
+              "current": 1013.0,
+              "previous": 0,
               "unit": "грн"
             },
             {
@@ -73644,19 +74289,19 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 2649.41,
+          "current": 2653.4,
           "previous": 3493.43,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 43.92,
+          "current": 43.99,
           "previous": 51.66,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 15.09,
+          "current": 15.07,
           "previous": 13.18,
           "unit": "грн",
           "delta_inverted": true
@@ -74404,20 +75049,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 2206.77,
-          "previous": 2649.41,
+          "current": 2275.88,
+          "previous": 2653.4,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 43.01,
-          "previous": 43.92,
+          "current": 44.36,
+          "previous": 43.99,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 17.65,
-          "previous": 15.09,
+          "current": 17.11,
+          "previous": 15.07,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -75256,20 +75901,20 @@
         },
         {
           "name": "Додавання в кошик",
-          "current": 1231.33,
-          "previous": 2206.77,
+          "current": 1293.29,
+          "previous": 2275.88,
           "unit": ""
         },
         {
           "name": "CR → Add to cart",
-          "current": 21.92,
-          "previous": 43.01,
+          "current": 23.02,
+          "previous": 44.36,
           "unit": "%"
         },
         {
           "name": "Ціна дод. в кошик",
-          "current": 32.49,
-          "previous": 17.65,
+          "current": 30.93,
+          "previous": 17.11,
           "unit": "грн",
           "delta_inverted": true
         }
@@ -75859,6 +76504,1069 @@
               "name": "CTR",
               "current": 0.52,
               "previous": 0.68,
+              "unit": "%"
+            },
+            {
+              "name": "Impression Share",
+              "current": 0,
+              "previous": 0,
+              "unit": "%"
+            },
+            {
+              "name": "Показів у верхній ч.",
+              "current": 0,
+              "previous": 0,
+              "unit": "%"
+            },
+            {
+              "name": "Показів на 1-й поз.",
+              "current": 0,
+              "previous": 0,
+              "unit": "%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "01.10-31.10.2026",
+      "period": {
+        "current": {
+          "from": "2026-10-01",
+          "to": "2026-10-31"
+        },
+        "previous": {
+          "from": "2026-09-01",
+          "to": "2026-09-30"
+        }
+      },
+      "kpi": [
+        {
+          "key": "revenue",
+          "label": "Виручка",
+          "value": 207928.51,
+          "unit": "грн",
+          "delta_pct": 15.52,
+          "prev": 179996.95,
+          "delta_inverted": false
+        },
+        {
+          "key": "spend",
+          "label": "Витрати",
+          "value": 41349.97,
+          "unit": "грн",
+          "delta_pct": 3.35,
+          "prev": 40007.9,
+          "delta_inverted": true
+        },
+        {
+          "key": "roas",
+          "label": "ROAS",
+          "value": 502.85,
+          "unit": "%",
+          "delta_pct": 11.77,
+          "prev": 449.9,
+          "delta_inverted": false
+        },
+        {
+          "key": "purchases",
+          "label": "Покупок",
+          "value": 85,
+          "unit": "",
+          "delta_pct": 10.39,
+          "prev": 77,
+          "delta_inverted": false
+        }
+      ],
+      "kpi_secondary": [
+        {
+          "key": "cpa",
+          "label": "CPA (ціна покупки)",
+          "value": 486.47,
+          "unit": "грн",
+          "delta_pct": -6.37,
+          "prev": 519.58,
+          "delta_inverted": true
+        },
+        {
+          "key": "avg_check",
+          "label": "Ср. чек",
+          "value": 2446.22,
+          "unit": "грн",
+          "delta_pct": 4.65,
+          "prev": 2337.62,
+          "delta_inverted": false
+        },
+        {
+          "key": "cr_purchase",
+          "label": "Кф. конверсії",
+          "value": 2.06,
+          "unit": "%",
+          "delta_pct": 50.56,
+          "prev": 1.37,
+          "delta_inverted": false
+        },
+        {
+          "key": "cpc",
+          "label": "CPC (ціна кліку)",
+          "value": 10.04,
+          "unit": "грн",
+          "delta_pct": 40.97,
+          "prev": 7.12,
+          "delta_inverted": true
+        }
+      ],
+      "chart": {
+        "labels": [
+          "01.10",
+          "02.10",
+          "03.10",
+          "04.10",
+          "05.10",
+          "06.10",
+          "07.10",
+          "08.10",
+          "09.10",
+          "10.10",
+          "11.10",
+          "12.10",
+          "13.10",
+          "14.10",
+          "15.10",
+          "16.10",
+          "17.10",
+          "18.10",
+          "19.10",
+          "20.10",
+          "21.10",
+          "22.10",
+          "23.10",
+          "24.10",
+          "25.10",
+          "26.10",
+          "27.10",
+          "28.10",
+          "29.10",
+          "30.10",
+          "31.10"
+        ],
+        "series": {
+          "revenue": [
+            7492.94,
+            140.7,
+            0.0,
+            13805.14,
+            2773.39,
+            0.0,
+            14422.93,
+            7290.83,
+            1662.06,
+            4520.9,
+            0.0,
+            7338.22,
+            3778.4,
+            0.0,
+            4744.93,
+            4641.28,
+            4648.47,
+            1755.31,
+            14233.06,
+            2187.68,
+            2954.88,
+            1901.03,
+            894.62,
+            6730.15,
+            5205.39,
+            32871.94,
+            2230.05,
+            3526.71,
+            27266.16,
+            15858.76,
+            13052.58
+          ],
+          "spend": [
+            1218.4,
+            1144.69,
+            1288.17,
+            985.99,
+            1458.29,
+            1210.6,
+            1249.38,
+            1024.41,
+            1357.5,
+            936.47,
+            1637.19,
+            1334.05,
+            1156.52,
+            814.44,
+            640.75,
+            1254.9,
+            2235.15,
+            2129.28,
+            1681.75,
+            797.67,
+            1759.23,
+            1472.81,
+            1375.98,
+            895.38,
+            1440.71,
+            1372.54,
+            1603.51,
+            1322.0,
+            1541.83,
+            1143.09,
+            1867.27
+          ],
+          "roas": [
+            614.98,
+            12.29,
+            0.0,
+            1400.14,
+            190.18,
+            0.0,
+            1154.4,
+            711.71,
+            122.44,
+            482.76,
+            0.0,
+            550.07,
+            326.7,
+            0.0,
+            740.52,
+            369.85,
+            207.97,
+            82.44,
+            846.32,
+            274.26,
+            167.96,
+            129.08,
+            65.02,
+            751.65,
+            361.31,
+            2394.98,
+            139.07,
+            266.77,
+            1768.43,
+            1387.36,
+            699.02
+          ],
+          "purchases": [
+            2.0,
+            2.0,
+            1.0,
+            2.0,
+            2.0,
+            0.0,
+            3.0,
+            3.0,
+            1.0,
+            4.0,
+            0.0,
+            5.0,
+            1.0,
+            0.0,
+            3.0,
+            4.0,
+            4.0,
+            1.0,
+            3.0,
+            3.0,
+            2.0,
+            3.0,
+            1.0,
+            2.0,
+            2.0,
+            8.0,
+            3.0,
+            4.0,
+            4.0,
+            7.0,
+            5.0
+          ],
+          "cpa": [
+            609.2,
+            572.35,
+            1288.17,
+            492.99,
+            729.15,
+            0,
+            416.46,
+            341.47,
+            1357.5,
+            234.12,
+            0,
+            266.81,
+            1156.52,
+            0,
+            213.58,
+            313.73,
+            558.79,
+            2129.28,
+            560.58,
+            265.89,
+            879.62,
+            490.94,
+            1375.98,
+            447.69,
+            720.36,
+            171.57,
+            534.5,
+            330.5,
+            385.46,
+            163.3,
+            373.45
+          ],
+          "avg_check": [
+            3746.47,
+            70.35,
+            0.0,
+            6902.57,
+            1386.7,
+            0,
+            4807.64,
+            2430.28,
+            1662.06,
+            1130.23,
+            0,
+            1467.64,
+            3778.4,
+            0,
+            1581.64,
+            1160.32,
+            1162.12,
+            1755.31,
+            4744.35,
+            729.23,
+            1477.44,
+            633.68,
+            894.62,
+            3365.08,
+            2602.69,
+            4108.99,
+            743.35,
+            881.68,
+            6816.54,
+            2265.54,
+            2610.52
+          ],
+          "cr_purchase": [
+            1.9,
+            2.06,
+            1.11,
+            2.04,
+            1.69,
+            0.0,
+            4.76,
+            3.09,
+            1.14,
+            4.55,
+            0.0,
+            3.91,
+            0.79,
+            0.0,
+            4.92,
+            3.01,
+            1.75,
+            0.43,
+            2.75,
+            3.26,
+            0.96,
+            1.97,
+            0.69,
+            1.6,
+            1.0,
+            6.15,
+            1.57,
+            2.41,
+            2.12,
+            4.07,
+            2.21
+          ],
+          "cpc": [
+            11.6,
+            11.8,
+            14.31,
+            10.06,
+            12.36,
+            15.13,
+            19.83,
+            10.56,
+            15.43,
+            10.64,
+            13.53,
+            10.42,
+            9.11,
+            13.35,
+            10.5,
+            9.44,
+            9.76,
+            9.26,
+            15.43,
+            8.67,
+            8.42,
+            9.69,
+            9.56,
+            7.16,
+            7.2,
+            10.56,
+            8.4,
+            7.96,
+            8.16,
+            6.65,
+            8.26
+          ]
+        }
+      },
+      "metrics": [
+        {
+          "name": "Вартість покупки",
+          "current": 486.47,
+          "previous": 519.58,
+          "unit": "грн",
+          "delta_inverted": true
+        },
+        {
+          "name": "Ср. чек",
+          "current": 2446.22,
+          "previous": 2337.62,
+          "unit": "грн"
+        },
+        {
+          "name": "Кф. конверсії",
+          "current": 2.06,
+          "previous": 1.37,
+          "unit": "%"
+        },
+        {
+          "name": "Покази",
+          "current": 138574,
+          "previous": 147026,
+          "unit": ""
+        },
+        {
+          "name": "Кліки",
+          "current": 4119,
+          "previous": 5618,
+          "unit": ""
+        },
+        {
+          "name": "CPC",
+          "current": 10.04,
+          "previous": 7.12,
+          "unit": "грн",
+          "delta_inverted": true
+        },
+        {
+          "name": "CTR",
+          "current": 2.97,
+          "previous": 3.82,
+          "unit": "%"
+        },
+        {
+          "name": "Додавання в кошик",
+          "current": 1967.97,
+          "previous": 1293.29,
+          "unit": ""
+        },
+        {
+          "name": "CR → Add to cart",
+          "current": 47.78,
+          "previous": 23.02,
+          "unit": "%"
+        },
+        {
+          "name": "Ціна дод. в кошик",
+          "current": 21.01,
+          "previous": 30.93,
+          "unit": "грн",
+          "delta_inverted": true
+        }
+      ],
+      "campaigns": [
+        {
+          "name": "BV | PMax опт | 260926",
+          "type": "PMax",
+          "summary": {
+            "spend": 23476.38,
+            "revenue": 76710.46,
+            "roas": 326.76,
+            "conversions": 35,
+            "delta_roas": 221.8,
+            "cpa": 669.17
+          },
+          "details": [
+            {
+              "name": "Витрати",
+              "current": 23476.38,
+              "previous": 4237.76,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Покупок",
+              "current": 35.08,
+              "previous": 4.03,
+              "unit": ""
+            },
+            {
+              "name": "Вартість покупки",
+              "current": 669.17,
+              "previous": 1052.28,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Ср.чек",
+              "current": 2186.54,
+              "previous": 1068.48,
+              "unit": "грн"
+            },
+            {
+              "name": "Виручка",
+              "current": 76710.46,
+              "previous": 4303.0,
+              "unit": "грн"
+            },
+            {
+              "name": "Кф. конверсії",
+              "current": 2.03,
+              "previous": 1.01,
+              "unit": "%"
+            },
+            {
+              "name": "ROAS",
+              "current": 326.76,
+              "previous": 101.54,
+              "unit": "%"
+            },
+            {
+              "name": "Покази",
+              "current": 90329,
+              "previous": 10894,
+              "unit": ""
+            },
+            {
+              "name": "Кліки",
+              "current": 1726,
+              "previous": 397,
+              "unit": ""
+            },
+            {
+              "name": "CPC",
+              "current": 13.6,
+              "previous": 10.67,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "CTR",
+              "current": 1.91,
+              "previous": 3.64,
+              "unit": "%"
+            },
+            {
+              "name": "Impression Share",
+              "current": 10.3,
+              "previous": 12.53,
+              "unit": "%"
+            },
+            {
+              "name": "Показів у верхній ч.",
+              "current": 0.0,
+              "previous": 0.0,
+              "unit": "%"
+            },
+            {
+              "name": "Показів на 1-й поз.",
+              "current": 0.0,
+              "previous": 0.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "name": "BV | PMax tROAS Test | 120626",
+          "type": "PMax",
+          "summary": {
+            "spend": 13384.56,
+            "revenue": 95076.66,
+            "roas": 710.35,
+            "conversions": 36,
+            "delta_roas": 21.65,
+            "cpa": 369.31
+          },
+          "details": [
+            {
+              "name": "Витрати",
+              "current": 13384.56,
+              "previous": 18083.33,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Покупок",
+              "current": 36.24,
+              "previous": 32.18,
+              "unit": ""
+            },
+            {
+              "name": "Вартість покупки",
+              "current": 369.31,
+              "previous": 561.86,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Ср.чек",
+              "current": 2623.36,
+              "previous": 3280.92,
+              "unit": "грн"
+            },
+            {
+              "name": "Виручка",
+              "current": 95076.66,
+              "previous": 105595.62,
+              "unit": "грн"
+            },
+            {
+              "name": "Кф. конверсії",
+              "current": 1.9,
+              "previous": 1.43,
+              "unit": "%"
+            },
+            {
+              "name": "ROAS",
+              "current": 710.35,
+              "previous": 583.94,
+              "unit": "%"
+            },
+            {
+              "name": "Покази",
+              "current": 45324,
+              "previous": 57970,
+              "unit": ""
+            },
+            {
+              "name": "Кліки",
+              "current": 1912,
+              "previous": 2249,
+              "unit": ""
+            },
+            {
+              "name": "CPC",
+              "current": 7.0,
+              "previous": 8.04,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "CTR",
+              "current": 4.22,
+              "previous": 3.88,
+              "unit": "%"
+            },
+            {
+              "name": "Impression Share",
+              "current": 10.03,
+              "previous": 9.99,
+              "unit": "%"
+            },
+            {
+              "name": "Показів у верхній ч.",
+              "current": 0.0,
+              "previous": 0.0,
+              "unit": "%"
+            },
+            {
+              "name": "Показів на 1-й поз.",
+              "current": 0.0,
+              "previous": 0.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "name": "BV | Search опт | 260926",
+          "type": "Search",
+          "summary": {
+            "spend": 4214.8,
+            "revenue": 1495.63,
+            "roas": 35.49,
+            "conversions": 2,
+            "delta_roas": 0,
+            "cpa": 2107.4
+          },
+          "details": [
+            {
+              "name": "Витрати",
+              "current": 4214.8,
+              "previous": 1499.95,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Покупок",
+              "current": 2.0,
+              "previous": 0.0,
+              "unit": ""
+            },
+            {
+              "name": "Вартість покупки",
+              "current": 2107.4,
+              "previous": 0,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Ср.чек",
+              "current": 747.82,
+              "previous": 0,
+              "unit": "грн"
+            },
+            {
+              "name": "Виручка",
+              "current": 1495.63,
+              "previous": 0.0,
+              "unit": "грн"
+            },
+            {
+              "name": "Кф. конверсії",
+              "current": 0.45,
+              "previous": 0.0,
+              "unit": "%"
+            },
+            {
+              "name": "ROAS",
+              "current": 35.49,
+              "previous": 0.0,
+              "unit": "%"
+            },
+            {
+              "name": "Покази",
+              "current": 2456,
+              "previous": 774,
+              "unit": ""
+            },
+            {
+              "name": "Кліки",
+              "current": 444,
+              "previous": 145,
+              "unit": ""
+            },
+            {
+              "name": "CPC",
+              "current": 9.49,
+              "previous": 10.34,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "CTR",
+              "current": 18.08,
+              "previous": 18.73,
+              "unit": "%"
+            },
+            {
+              "name": "Impression Share",
+              "current": 24.45,
+              "previous": 26.09,
+              "unit": "%"
+            },
+            {
+              "name": "Показів у верхній ч.",
+              "current": 17.52,
+              "previous": 20.55,
+              "unit": "%"
+            },
+            {
+              "name": "Показів на 1-й поз.",
+              "current": 11.8,
+              "previous": 11.15,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "name": "BV | search | season_pechnoe lit'e| 150925",
+          "type": "Search",
+          "summary": {
+            "spend": 274.23,
+            "revenue": 0.0,
+            "roas": 0.0,
+            "conversions": 0,
+            "delta_roas": 0,
+            "cpa": 0
+          },
+          "details": [
+            {
+              "name": "Витрати",
+              "current": 274.23,
+              "previous": 0,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Покупок",
+              "current": 0.0,
+              "previous": 0,
+              "unit": ""
+            },
+            {
+              "name": "Вартість покупки",
+              "current": 0,
+              "previous": 0,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Ср.чек",
+              "current": 0,
+              "previous": 0,
+              "unit": "грн"
+            },
+            {
+              "name": "Виручка",
+              "current": 0.0,
+              "previous": 0,
+              "unit": "грн"
+            },
+            {
+              "name": "Кф. конверсії",
+              "current": 0.0,
+              "previous": 0,
+              "unit": "%"
+            },
+            {
+              "name": "ROAS",
+              "current": 0.0,
+              "previous": 0,
+              "unit": "%"
+            },
+            {
+              "name": "Покази",
+              "current": 465,
+              "previous": 0,
+              "unit": ""
+            },
+            {
+              "name": "Кліки",
+              "current": 37,
+              "previous": 0,
+              "unit": ""
+            },
+            {
+              "name": "CPC",
+              "current": 7.41,
+              "previous": 0,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "CTR",
+              "current": 7.96,
+              "previous": 0,
+              "unit": "%"
+            },
+            {
+              "name": "Impression Share",
+              "current": 34.45,
+              "previous": 0,
+              "unit": "%"
+            },
+            {
+              "name": "Показів у верхній ч.",
+              "current": 18.87,
+              "previous": 0,
+              "unit": "%"
+            },
+            {
+              "name": "Показів на 1-й поз.",
+              "current": 10.44,
+              "previous": 0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "name": "BV | PMax общая оптовая | 281125",
+          "type": "PMax",
+          "summary": {
+            "spend": 0.0,
+            "revenue": 33632.76,
+            "roas": 0,
+            "conversions": 11,
+            "delta_roas": -100.0,
+            "cpa": 0.0
+          },
+          "details": [
+            {
+              "name": "Витрати",
+              "current": 0.0,
+              "previous": 10222.12,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Покупок",
+              "current": 10.67,
+              "previous": 35.79,
+              "unit": ""
+            },
+            {
+              "name": "Вартість покупки",
+              "current": 0.0,
+              "previous": 285.63,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Ср.чек",
+              "current": 3150.72,
+              "previous": 1837.95,
+              "unit": "грн"
+            },
+            {
+              "name": "Виручка",
+              "current": 33632.76,
+              "previous": 65776.63,
+              "unit": "грн"
+            },
+            {
+              "name": "Кф. конверсії",
+              "current": 0,
+              "previous": 1.59,
+              "unit": "%"
+            },
+            {
+              "name": "ROAS",
+              "current": 0,
+              "previous": 643.47,
+              "unit": "%"
+            },
+            {
+              "name": "Покази",
+              "current": 0,
+              "previous": 68682,
+              "unit": ""
+            },
+            {
+              "name": "Кліки",
+              "current": 0,
+              "previous": 2254,
+              "unit": ""
+            },
+            {
+              "name": "CPC",
+              "current": 0,
+              "previous": 4.54,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "CTR",
+              "current": 0,
+              "previous": 3.28,
+              "unit": "%"
+            },
+            {
+              "name": "Impression Share",
+              "current": 0,
+              "previous": 9.99,
+              "unit": "%"
+            },
+            {
+              "name": "Показів у верхній ч.",
+              "current": 0,
+              "previous": 0.0,
+              "unit": "%"
+            },
+            {
+              "name": "Показів на 1-й поз.",
+              "current": 0,
+              "previous": 0.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "name": "BV | Remarketing Basket 14 | 241025",
+          "type": "Display",
+          "summary": {
+            "spend": 0.0,
+            "revenue": 1013.0,
+            "roas": 0,
+            "conversions": 1,
+            "delta_roas": 0,
+            "cpa": 0.0
+          },
+          "details": [
+            {
+              "name": "Витрати",
+              "current": 0.0,
+              "previous": 298.66,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Покупок",
+              "current": 1.0,
+              "previous": 0.0,
+              "unit": ""
+            },
+            {
+              "name": "Вартість покупки",
+              "current": 0.0,
+              "previous": 0,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "Ср.чек",
+              "current": 1013.0,
+              "previous": 0,
+              "unit": "грн"
+            },
+            {
+              "name": "Виручка",
+              "current": 1013.0,
+              "previous": 0.0,
+              "unit": "грн"
+            },
+            {
+              "name": "Кф. конверсії",
+              "current": 0,
+              "previous": 0.0,
+              "unit": "%"
+            },
+            {
+              "name": "ROAS",
+              "current": 0,
+              "previous": 0.0,
+              "unit": "%"
+            },
+            {
+              "name": "Покази",
+              "current": 0,
+              "previous": 5715,
+              "unit": ""
+            },
+            {
+              "name": "Кліки",
+              "current": 0,
+              "previous": 30,
+              "unit": ""
+            },
+            {
+              "name": "CPC",
+              "current": 0,
+              "previous": 9.96,
+              "unit": "грн",
+              "delta_inverted": true
+            },
+            {
+              "name": "CTR",
+              "current": 0,
+              "previous": 0.52,
               "unit": "%"
             },
             {
